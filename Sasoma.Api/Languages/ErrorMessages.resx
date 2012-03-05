@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>"About" is not valid.</value>
+  </data>
+  <data name="acceptsReservations" xml:space="preserve">
+    <value>"Accepts Reservations" is not a valid text or URL.</value>
+  </data>
+  <data name="accountablePerson" xml:space="preserve">
+    <value>"Accountable Person" is not valid.</value>
+  </data>
+  <data name="actors" xml:space="preserve">
+    <value>"Actors" is not valid.</value>
+  </data>
+  <data name="additionalName" xml:space="preserve">
+    <value>"Additional Name" is not valid.</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>"Address" is not valid.</value>
+  </data>
+  <data name="addressCountry" xml:space="preserve">
+    <value>"Address Country" is not valid.</value>
+  </data>
+  <data name="addressLocality" xml:space="preserve">
+    <value>"Address Locality" is not valid.</value>
+  </data>
+  <data name="addressRegion" xml:space="preserve">
+    <value>"Address Region" is not valid.</value>
+  </data>
+  <data name="affiliation" xml:space="preserve">
+    <value>"Affiliation" is not valid.</value>
+  </data>
+  <data name="aggregateRating" xml:space="preserve">
+    <value>"Aggregate Rating" is not valid.</value>
+  </data>
+  <data name="albums" xml:space="preserve">
+    <value>"Albums" is not valid.</value>
+  </data>
+  <data name="alternativeHeadline" xml:space="preserve">
+    <value>"Alternative Headline" is not valid.</value>
+  </data>
+  <data name="alumni" xml:space="preserve">
+    <value>"Alumni" is not valid.</value>
+  </data>
+  <data name="alumniOf" xml:space="preserve">
+    <value>"Alumni of" is not valid.</value>
+  </data>
+  <data name="articleBody" xml:space="preserve">
+    <value>"Article Body" is not valid.</value>
+  </data>
+  <data name="articleSection" xml:space="preserve">
+    <value>"Article Section" is not valid.</value>
+  </data>
+  <data name="associatedArticle" xml:space="preserve">
+    <value>"Associated Article" is not valid.</value>
+  </data>
+  <data name="associatedMedia" xml:space="preserve">
+    <value>"Associated Media" is not valid.</value>
+  </data>
+  <data name="attendees" xml:space="preserve">
+    <value>"Attendees" is not valid.</value>
+  </data>
+  <data name="audio" xml:space="preserve">
+    <value>"Audio" is not valid.</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>"Comment" is not valid.</value>
+  </data>
+  <data name="commentText" xml:space="preserve">
+    <value>"Comment Text" is not valid.</value>
+  </data>
+  <data name="commentTime" xml:space="preserve">
+    <value>Check that "Comment Time" is a valid date.</value>
+  </data>
+  <data name="author" xml:space="preserve">
+    <value>"Author" is not valid.</value>
+  </data>
+  <data name="availability" xml:space="preserve">
+    <value>"Availability" is not valid.</value>
+  </data>
+  <data name="awards" xml:space="preserve">
+    <value>"Awards" is not valid.</value>
+  </data>
+  <data name="baseSalary" xml:space="preserve">
+    <value>Ensure that "Base Salary" is a valid number.</value>
+  </data>
+  <data name="benefits" xml:space="preserve">
+    <value>"Benefits" is not valid.</value>
+  </data>
+  <data name="bestRating" xml:space="preserve">
+    <value>"Best Rating" is not an alphanumeric value.</value>
+  </data>
+  <data name="birthDate" xml:space="preserve">
+    <value>Check that "Birth Date" is a valid date.</value>
+  </data>
+  <data name="bitrate" xml:space="preserve">
+    <value>"Bitrate" is not valid.</value>
+  </data>
+  <data name="blogPosts" xml:space="preserve">
+    <value>"Blog Posts" is not valid.</value>
+  </data>
+  <data name="bookEdition" xml:space="preserve">
+    <value>"Book Edition" is not valid.</value>
+  </data>
+  <data name="bookFormat" xml:space="preserve">
+    <value>"Book Format" is not valid.</value>
+  </data>
+  <data name="box" xml:space="preserve">
+    <value>"Box" is not valid.</value>
+  </data>
+  <data name="branchOf" xml:space="preserve">
+    <value>"Branch of" is not valid.</value>
+  </data>
+  <data name="brand" xml:space="preserve">
+    <value>"Brand" is not valid.</value>
+  </data>
+  <data name="breadcrumb" xml:space="preserve">
+    <value>"Breadcrumb" is not valid.</value>
+  </data>
+  <data name="byArtist" xml:space="preserve">
+    <value>"By Artist" is not valid.</value>
+  </data>
+  <data name="calories" xml:space="preserve">
+    <value>"Calories" is not valid.</value>
+  </data>
+  <data name="caption" xml:space="preserve">
+    <value>"Caption" is not valid.</value>
+  </data>
+  <data name="carbohydrateContent" xml:space="preserve">
+    <value>"Carbohydrate Content" is not valid.</value>
+  </data>
+  <data name="children" xml:space="preserve">
+    <value>"Children" is not valid.</value>
+  </data>
+  <data name="cholesterolContent" xml:space="preserve">
+    <value>"Cholesterol Content" is not valid.</value>
+  </data>
+  <data name="circle" xml:space="preserve">
+    <value>"Circle" is not valid.</value>
+  </data>
+  <data name="colleagues" xml:space="preserve">
+    <value>"Colleagues" is not valid.</value>
+  </data>
+  <data name="contactPoints" xml:space="preserve">
+    <value>"Contact Points" is not valid.</value>
+  </data>
+  <data name="contactType" xml:space="preserve">
+    <value>"Contact Type" is not valid.</value>
+  </data>
+  <data name="containedIn" xml:space="preserve">
+    <value>"Contained in" is not valid.</value>
+  </data>
+  <data name="contentLocation" xml:space="preserve">
+    <value>"Content Location" is not valid.</value>
+  </data>
+  <data name="contentRating" xml:space="preserve">
+    <value>"Content Rating" is not valid.</value>
+  </data>
+  <data name="contentSize" xml:space="preserve">
+    <value>"Content Size" is not valid.</value>
+  </data>
+  <data name="contentURL" xml:space="preserve">
+    <value>"Content URL" is not a valid URL.</value>
+  </data>
+  <data name="contributor" xml:space="preserve">
+    <value>"Contributor" is not valid.</value>
+  </data>
+  <data name="cookTime" xml:space="preserve">
+    <value>Check that "Cook Time" is a valid number.</value>
+  </data>
+  <data name="cookingMethod" xml:space="preserve">
+    <value>"Cooking Method" is not valid.</value>
+  </data>
+  <data name="copyrightHolder" xml:space="preserve">
+    <value>"Copyright Holder" is not valid.</value>
+  </data>
+  <data name="copyrightYear" xml:space="preserve">
+    <value>Ensure that "Copyright Year" is a valid number.</value>
+  </data>
+  <data name="creator" xml:space="preserve">
+    <value>"Creator" is not valid.</value>
+  </data>
+  <data name="currenciesAccepted" xml:space="preserve">
+    <value>"Currencies Accepted" is not valid.</value>
+  </data>
+  <data name="dateCreated" xml:space="preserve">
+    <value>Check that "Date Created" is a valid date.</value>
+  </data>
+  <data name="dateModified" xml:space="preserve">
+    <value>Check that "Date Modified" is a valid date.</value>
+  </data>
+  <data name="datePosted" xml:space="preserve">
+    <value>Check that "Date Posted" is a valid date.</value>
+  </data>
+  <data name="datePublished" xml:space="preserve">
+    <value>Check that "Date Published" is a valid date.</value>
+  </data>
+  <data name="dateline" xml:space="preserve">
+    <value>"Dateline" is not valid.</value>
+  </data>
+  <data name="deathDate" xml:space="preserve">
+    <value>Check that "Death Date" is a valid date.</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>"Description" is not valid.</value>
+  </data>
+  <data name="director" xml:space="preserve">
+    <value>"Director" is not valid.</value>
+  </data>
+  <data name="discusses" xml:space="preserve">
+    <value>"Discusses" is not valid.</value>
+  </data>
+  <data name="discussionUrl" xml:space="preserve">
+    <value>"Discussion Url" is not a valid URL.</value>
+  </data>
+  <data name="duration" xml:space="preserve">
+    <value>Check that "Duration" is a valid number.</value>
+  </data>
+  <data name="editor" xml:space="preserve">
+    <value>"Editor" is not valid.</value>
+  </data>
+  <data name="educationRequirements" xml:space="preserve">
+    <value>"Education Requirements" is not valid.</value>
+  </data>
+  <data name="elevation" xml:space="preserve">
+    <value>"Elevation" is not valid.</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>"Email" is not valid.</value>
+  </data>
+  <data name="embedURL" xml:space="preserve">
+    <value>"Embed URL" is not a valid URL.</value>
+  </data>
+  <data name="employees" xml:space="preserve">
+    <value>"Employees" is not valid.</value>
+  </data>
+  <data name="employmentType" xml:space="preserve">
+    <value>"Employment Type" is not valid.</value>
+  </data>
+  <data name="encodesCreativeWork" xml:space="preserve">
+    <value>"Encodes Creative Work" is not valid.</value>
+  </data>
+  <data name="encodingFormat" xml:space="preserve">
+    <value>"Encoding Format" is not valid.</value>
+  </data>
+  <data name="encodings" xml:space="preserve">
+    <value>"Encodings" is not valid.</value>
+  </data>
+  <data name="endDate" xml:space="preserve">
+    <value>Check that "End Date" is a valid date.</value>
+  </data>
+  <data name="episodeNumber" xml:space="preserve">
+    <value>Ensure that "Episode Number" is a valid number.</value>
+  </data>
+  <data name="episodes" xml:space="preserve">
+    <value>"Episodes" is not valid.</value>
+  </data>
+  <data name="events" xml:space="preserve">
+    <value>"Events" is not valid.</value>
+  </data>
+  <data name="exifData" xml:space="preserve">
+    <value>"Exif Data" is not valid.</value>
+  </data>
+  <data name="experienceRequirements" xml:space="preserve">
+    <value>"Experience Requirements" is not valid.</value>
+  </data>
+  <data name="expires" xml:space="preserve">
+    <value>Check that "Expires" is a valid date.</value>
+  </data>
+  <data name="familyName" xml:space="preserve">
+    <value>"Family Name" is not valid.</value>
+  </data>
+  <data name="fatContent" xml:space="preserve">
+    <value>"Fat Content" is not valid.</value>
+  </data>
+  <data name="faxNumber" xml:space="preserve">
+    <value>"Fax Number" is not valid.</value>
+  </data>
+  <data name="fiberContent" xml:space="preserve">
+    <value>"Fiber Content" is not valid.</value>
+  </data>
+  <data name="follows" xml:space="preserve">
+    <value>"Follows" is not valid.</value>
+  </data>
+  <data name="founders" xml:space="preserve">
+    <value>"Founders" is not valid.</value>
+  </data>
+  <data name="foundingDate" xml:space="preserve">
+    <value>Check that "Founding Date" is a valid date.</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>"Gender" is not valid.</value>
+  </data>
+  <data name="genre" xml:space="preserve">
+    <value>"Genre" is not valid.</value>
+  </data>
+  <data name="geo" xml:space="preserve">
+    <value>"Geo" is not valid.</value>
+  </data>
+  <data name="givenName" xml:space="preserve">
+    <value>"Given Name" is not valid.</value>
+  </data>
+  <data name="headline" xml:space="preserve">
+    <value>"Headline" is not valid.</value>
+  </data>
+  <data name="height" xml:space="preserve">
+    <value>"Height" is not valid.</value>
+  </data>
+  <data name="highPrice" xml:space="preserve">
+    <value>"High Price" is not an alphanumeric value.</value>
+  </data>
+  <data name="hiringOrganization" xml:space="preserve">
+    <value>"Hiring Organization" is not valid.</value>
+  </data>
+  <data name="homeLocation" xml:space="preserve">
+    <value>"Home Location" is not valid.</value>
+  </data>
+  <data name="honorificPrefix" xml:space="preserve">
+    <value>"Honorific Prefix" is not valid.</value>
+  </data>
+  <data name="honorificSuffix" xml:space="preserve">
+    <value>"Honorific Suffix" is not valid.</value>
+  </data>
+  <data name="illustrator" xml:space="preserve">
+    <value>"Illustrator" is not valid.</value>
+  </data>
+  <data name="image" xml:space="preserve">
+    <value>"Image" is not a valid URL.</value>
+  </data>
+  <data name="inAlbum" xml:space="preserve">
+    <value>"In Album" is not valid.</value>
+  </data>
+  <data name="inLanguage" xml:space="preserve">
+    <value>"In Language" is not valid.</value>
+  </data>
+  <data name="inPlaylist" xml:space="preserve">
+    <value>"In Playlist" is not valid.</value>
+  </data>
+  <data name="incentives" xml:space="preserve">
+    <value>"Incentives" is not valid.</value>
+  </data>
+  <data name="industry" xml:space="preserve">
+    <value>"Industry" is not valid.</value>
+  </data>
+  <data name="ingredients" xml:space="preserve">
+    <value>"Ingredients" is not valid.</value>
+  </data>
+  <data name="interactionCount" xml:space="preserve">
+    <value>"Interaction Count" is not valid.</value>
+  </data>
+  <data name="isFamilyFriendly" xml:space="preserve">
+    <value>"Is Family Friendly" can only have one of the values, true or false.</value>
+  </data>
+  <data name="isPartOf" xml:space="preserve">
+    <value>"Is Part of" is not valid.</value>
+  </data>
+  <data name="isbn" xml:space="preserve">
+    <value>"ISBN" is not valid.</value>
+  </data>
+  <data name="itemCondition" xml:space="preserve">
+    <value>"Item Condition" is not valid.</value>
+  </data>
+  <data name="itemListElement" xml:space="preserve">
+    <value>"Item List Element" is not valid.</value>
+  </data>
+  <data name="itemListOrder" xml:space="preserve">
+    <value>"Item List Order" is not valid.</value>
+  </data>
+  <data name="itemOffered" xml:space="preserve">
+    <value>"Item Offered" is not valid.</value>
+  </data>
+  <data name="itemReviewed" xml:space="preserve">
+    <value>"Item Reviewed" is not valid.</value>
+  </data>
+  <data name="jobLocation" xml:space="preserve">
+    <value>"Job Location" is not valid.</value>
+  </data>
+  <data name="jobTitle" xml:space="preserve">
+    <value>"Job Title" is not valid.</value>
+  </data>
+  <data name="keywords" xml:space="preserve">
+    <value>"Keywords" is not valid.</value>
+  </data>
+  <data name="knows" xml:space="preserve">
+    <value>"Knows" is not valid.</value>
+  </data>
+  <data name="latitude" xml:space="preserve">
+    <value>"Latitude" is not an alphanumeric value.</value>
+  </data>
+  <data name="line" xml:space="preserve">
+    <value>"Line" is not valid.</value>
+  </data>
+  <data name="location" xml:space="preserve">
+    <value>"Location" is not valid.</value>
+  </data>
+  <data name="longitude" xml:space="preserve">
+    <value>"Longitude" is not an alphanumeric value.</value>
+  </data>
+  <data name="lowPrice" xml:space="preserve">
+    <value>"Low Price" is not an alphanumeric value.</value>
+  </data>
+  <data name="mainContentOfPage" xml:space="preserve">
+    <value>"Main Content of Page" is not valid.</value>
+  </data>
+  <data name="manufacturer" xml:space="preserve">
+    <value>"Manufacturer" is not valid.</value>
+  </data>
+  <data name="maps" xml:space="preserve">
+    <value>"Maps" is not a valid URL.</value>
+  </data>
+  <data name="memberOf" xml:space="preserve">
+    <value>"Member of" is not valid.</value>
+  </data>
+  <data name="members" xml:space="preserve">
+    <value>"Members" is not valid.</value>
+  </data>
+  <data name="mentions" xml:space="preserve">
+    <value>"Mentions" is not valid.</value>
+  </data>
+  <data name="menu" xml:space="preserve">
+    <value>"Menu" is not a valid text or URL.</value>
+  </data>
+  <data name="model" xml:space="preserve">
+    <value>"Model" is not valid.</value>
+  </data>
+  <data name="musicBy" xml:space="preserve">
+    <value>"Music by" is not valid.</value>
+  </data>
+  <data name="musicGroupMember" xml:space="preserve">
+    <value>"Music Group Member" is not valid.</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>"Name" is not valid.</value>
+  </data>
+  <data name="nationality" xml:space="preserve">
+    <value>"Nationality" is not valid.</value>
+  </data>
+  <data name="numTracks" xml:space="preserve">
+    <value>"Num Tracks" must be a valid integer.</value>
+  </data>
+  <data name="numberOfEpisodes" xml:space="preserve">
+    <value>Ensure that "Number of Episodes" is a valid number.</value>
+  </data>
+  <data name="numberOfPages" xml:space="preserve">
+    <value>"Number of Pages" must be a valid integer.</value>
+  </data>
+  <data name="nutrition" xml:space="preserve">
+    <value>"Nutrition" is not valid.</value>
+  </data>
+  <data name="occupationalCategory" xml:space="preserve">
+    <value>"Occupational Category" is not valid.</value>
+  </data>
+  <data name="offerCount" xml:space="preserve">
+    <value>"Offer Count" must be a valid integer.</value>
+  </data>
+  <data name="offers" xml:space="preserve">
+    <value>"Offers" is not valid.</value>
+  </data>
+  <data name="openingHours" xml:space="preserve">
+    <value>Check that "Opening Hours" is a valid number.</value>
+  </data>
+  <data name="parents" xml:space="preserve">
+    <value>"Parents" is not valid.</value>
+  </data>
+  <data name="partOfSeason" xml:space="preserve">
+    <value>"Part of Season" is not valid.</value>
+  </data>
+  <data name="partOfTVSeries" xml:space="preserve">
+    <value>"Part of TV Series" is not valid.</value>
+  </data>
+  <data name="paymentAccepted" xml:space="preserve">
+    <value>"Payment Accepted" is not valid.</value>
+  </data>
+  <data name="performerIn" xml:space="preserve">
+    <value>"Performer in" is not valid.</value>
+  </data>
+  <data name="performers" xml:space="preserve">
+    <value>"Performers" is not valid.</value>
+  </data>
+  <data name="photos" xml:space="preserve">
+    <value>"Photos" is not valid.</value>
+  </data>
+  <data name="playerType" xml:space="preserve">
+    <value>"Player Type" is not valid.</value>
+  </data>
+  <data name="polygon" xml:space="preserve">
+    <value>"Polygon" is not valid.</value>
+  </data>
+  <data name="postOfficeBoxNumber" xml:space="preserve">
+    <value>"Post Office Box Number" is not valid.</value>
+  </data>
+  <data name="postalCode" xml:space="preserve">
+    <value>"Postal Code" is not valid.</value>
+  </data>
+  <data name="prepTime" xml:space="preserve">
+    <value>Check that "Prep Time" is a valid number.</value>
+  </data>
+  <data name="price" xml:space="preserve">
+    <value>"Price" is not an alphanumeric value.</value>
+  </data>
+  <data name="priceCurrency" xml:space="preserve">
+    <value>"Price Currency" is not valid.</value>
+  </data>
+  <data name="priceRange" xml:space="preserve">
+    <value>"Price Range" is not valid.</value>
+  </data>
+  <data name="priceValidUntil" xml:space="preserve">
+    <value>Check that "Price Valid Until" is a valid date.</value>
+  </data>
+  <data name="primaryImageOfPage" xml:space="preserve">
+    <value>"Primary Image of Page" is not valid.</value>
+  </data>
+  <data name="printColumn" xml:space="preserve">
+    <value>"Print Column" is not valid.</value>
+  </data>
+  <data name="printEdition" xml:space="preserve">
+    <value>"Print Edition" is not valid.</value>
+  </data>
+  <data name="printPage" xml:space="preserve">
+    <value>"Print Page" is not valid.</value>
+  </data>
+  <data name="printSection" xml:space="preserve">
+    <value>"Print Section" is not valid.</value>
+  </data>
+  <data name="producer" xml:space="preserve">
+    <value>"Producer" is not valid.</value>
+  </data>
+  <data name="productID" xml:space="preserve">
+    <value>"Product ID" is not valid.</value>
+  </data>
+  <data name="productionCompany" xml:space="preserve">
+    <value>"Production Company" is not valid.</value>
+  </data>
+  <data name="proteinContent" xml:space="preserve">
+    <value>"Protein Content" is not valid.</value>
+  </data>
+  <data name="provider" xml:space="preserve">
+    <value>"Provider" is not valid.</value>
+  </data>
+  <data name="publisher" xml:space="preserve">
+    <value>"Publisher" is not valid.</value>
+  </data>
+  <data name="publishingPrinciples" xml:space="preserve">
+    <value>"Publishing Principles" is not a valid URL.</value>
+  </data>
+  <data name="qualifications" xml:space="preserve">
+    <value>"Qualifications" is not valid.</value>
+  </data>
+  <data name="ratingCount" xml:space="preserve">
+    <value>Ensure that "Rating Count" is a valid number.</value>
+  </data>
+  <data name="ratingValue" xml:space="preserve">
+    <value>"Rating Value" is not valid.</value>
+  </data>
+  <data name="recipeCategory" xml:space="preserve">
+    <value>"Recipe Category" is not valid.</value>
+  </data>
+  <data name="recipeCuisine" xml:space="preserve">
+    <value>"Recipe Cuisine" is not valid.</value>
+  </data>
+  <data name="recipeInstructions" xml:space="preserve">
+    <value>"Recipe Instructions" is not valid.</value>
+  </data>
+  <data name="recipeYield" xml:space="preserve">
+    <value>"Recipe Yield" is not valid.</value>
+  </data>
+  <data name="regionsAllowed" xml:space="preserve">
+    <value>"Regions Allowed" is not valid.</value>
+  </data>
+  <data name="relatedTo" xml:space="preserve">
+    <value>"Related to" is not valid.</value>
+  </data>
+  <data name="replyToUrl" xml:space="preserve">
+    <value>"Reply to Url" is not a valid URL.</value>
+  </data>
+  <data name="representativeOfPage" xml:space="preserve">
+    <value>"Representative of Page" can only have one of the values, true or false.</value>
+  </data>
+  <data name="requiresSubscription" xml:space="preserve">
+    <value>"Requires Subscription" can only have one of the values, true or false.</value>
+  </data>
+  <data name="responsibilities" xml:space="preserve">
+    <value>"Responsibilities" is not valid.</value>
+  </data>
+  <data name="reviewBody" xml:space="preserve">
+    <value>"Review Body" is not valid.</value>
+  </data>
+  <data name="reviewCount" xml:space="preserve">
+    <value>Ensure that "Review Count" is a valid number.</value>
+  </data>
+  <data name="telephone" xml:space="preserve">
+    <value>"Telephone" is not valid.</value>
+  </data>
+  <data name="thumbnail" xml:space="preserve">
+    <value>"Thumbnail" is not valid.</value>
+  </data>
+  <data name="reviewRating" xml:space="preserve">
+    <value>Check that "Review Rating" is a valid integer.</value>
+  </data>
+  <data name="reviews" xml:space="preserve">
+    <value>"Reviews" is not valid.</value>
+  </data>
+  <data name="salaryCurrency" xml:space="preserve">
+    <value>"Salary Currency" is not valid.</value>
+  </data>
+  <data name="saturatedFatContent" xml:space="preserve">
+    <value>"Saturated Fat Content" is not valid.</value>
+  </data>
+  <data name="seasonNumber" xml:space="preserve">
+    <value>"Season Number" must be a valid integer.</value>
+  </data>
+  <data name="seasons" xml:space="preserve">
+    <value>"Seasons" is not valid.</value>
+  </data>
+  <data name="seller" xml:space="preserve">
+    <value>"Seller" is not valid.</value>
+  </data>
+  <data name="servesCuisine" xml:space="preserve">
+    <value>"Serves Cuisine" is not valid.</value>
+  </data>
+  <data name="servingSize" xml:space="preserve">
+    <value>"Serving Size" is not valid.</value>
+  </data>
+  <data name="siblings" xml:space="preserve">
+    <value>"Siblings" is not valid.</value>
+  </data>
+  <data name="significantLinks" xml:space="preserve">
+    <value>"Significant Links" is not a valid URL.</value>
+  </data>
+  <data name="skills" xml:space="preserve">
+    <value>"Skills" is not valid.</value>
+  </data>
+  <data name="sodiumContent" xml:space="preserve">
+    <value>"Sodium Content" is not valid.</value>
+  </data>
+  <data name="sourceOrganization" xml:space="preserve">
+    <value>"Source Organization" is not valid.</value>
+  </data>
+  <data name="specialCommitments" xml:space="preserve">
+    <value>"Special Commitments" is not valid.</value>
+  </data>
+  <data name="spouse" xml:space="preserve">
+    <value>"Spouse" is not valid.</value>
+  </data>
+  <data name="startDate" xml:space="preserve">
+    <value>Check that "Start Date" is a valid date.</value>
+  </data>
+  <data name="streetAddress" xml:space="preserve">
+    <value>"Street Address" is not valid.</value>
+  </data>
+  <data name="subEvents" xml:space="preserve">
+    <value>"Sub Events" is not valid.</value>
+  </data>
+  <data name="sugarContent" xml:space="preserve">
+    <value>"Sugar Content" is not valid.</value>
+  </data>
+  <data name="superEvent" xml:space="preserve">
+    <value>"Super Event" is not valid.</value>
+  </data>
+  <data name="thumbnailUrl" xml:space="preserve">
+    <value>"Thumbnail Url" is not a valid URL.</value>
+  </data>
+  <data name="tickerSymbol" xml:space="preserve">
+    <value>"Ticker Symbol" is not valid.</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>"Title" is not valid.</value>
+  </data>
+  <data name="totalTime" xml:space="preserve">
+    <value>Check that "Total Time" is a valid number.</value>
+  </data>
+  <data name="tracks" xml:space="preserve">
+    <value>"Tracks" is not valid.</value>
+  </data>
+  <data name="trailer" xml:space="preserve">
+    <value>"Trailer" is not valid.</value>
+  </data>
+  <data name="transFatContent" xml:space="preserve">
+    <value>"Trans Fat Content" is not valid.</value>
+  </data>
+  <data name="transcript" xml:space="preserve">
+    <value>"Transcript" is not valid.</value>
+  </data>
+  <data name="unsaturatedFatContent" xml:space="preserve">
+    <value>"Unsaturated Fat Content" is not valid.</value>
+  </data>
+  <data name="uploadDate" xml:space="preserve">
+    <value>Check that "Upload Date" is a valid date.</value>
+  </data>
+  <data name="url" xml:space="preserve">
+    <value>"URL" is not a valid URL.</value>
+  </data>
+  <data name="version" xml:space="preserve">
+    <value>Ensure that "Version" is a valid number.</value>
+  </data>
+  <data name="video" xml:space="preserve">
+    <value>"Video" is not valid.</value>
+  </data>
+  <data name="videoFrameSize" xml:space="preserve">
+    <value>"Video Frame Size" is not valid.</value>
+  </data>
+  <data name="videoQuality" xml:space="preserve">
+    <value>"Video Quality" is not valid.</value>
+  </data>
+  <data name="width" xml:space="preserve">
+    <value>"Width" is not valid.</value>
+  </data>
+  <data name="wordCount" xml:space="preserve">
+    <value>"Word Count" must be a valid integer.</value>
+  </data>
+  <data name="workHours" xml:space="preserve">
+    <value>"Work Hours" is not valid.</value>
+  </data>
+  <data name="workLocation" xml:space="preserve">
+    <value>"Work Location" is not valid.</value>
+  </data>
+  <data name="worksFor" xml:space="preserve">
+    <value>"Works for" is not valid.</value>
+  </data>
+  <data name="worstRating" xml:space="preserve">
+    <value>"Worst Rating" is not an alphanumeric value.</value>
+  </data>
+</root>

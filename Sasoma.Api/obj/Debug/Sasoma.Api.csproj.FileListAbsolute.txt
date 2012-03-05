@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\bin\Debug\Sasoma.Api.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\bin\Debug\Sasoma.Api.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\bin\Debug\Sasoma.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\bin\Debug\Sasoma.Core.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\obj\Debug\Sasoma.Api.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\obj\Debug\Sasoma.Api.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\bin\Debug\Sasoma.Extensions.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\bin\Debug\Sasoma.Extensions.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\obj\Debug\Sasoma.Api.Languages.ErrorMessages.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Api\obj\Debug\GenerateResource.write.1.tlog

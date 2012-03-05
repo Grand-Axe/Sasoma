@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="Sasoma.Microdata.Interfaces.IWebPageElement" Collapsed="true">
+    <Position X="50" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IWebPageElement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IDataType" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_IDataType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IMicrodata" Collapsed="true">
+    <Position X="35.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAEAAAAAAAACAAAAAAAAAAAgAgAAAAAAECAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_IMicrodata.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IThing" Collapsed="true">
+    <Position X="37.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAACAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_IThing.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IAdministrativeArea" Collapsed="true">
+    <Position X="70.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IAdministrativeArea.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IArticle" Collapsed="true">
+    <Position X="56.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAiAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IArticle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IAutomotiveBusiness" Collapsed="true">
+    <Position X="36.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IAutomotiveBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IBodyOfWater" Collapsed="true">
+    <Position X="65.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IBodyOfWater.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.ICivicStructure" Collapsed="true">
+    <Position X="62.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\ICivicStructure.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.ICollectionPage" Collapsed="true">
+    <Position X="54.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\ICollectionPage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IContactPoint" Collapsed="true">
+    <Position X="16.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAEAAAAAAAAAIAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IContactPoint.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.ICreativeWork" Collapsed="true">
+    <Position X="54.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAABECEAQAVIAEgyAMAAAYAkAAQARAAEBAUAAAAkBg=</HashCode>
+      <FileName>Microdata\Interfaces\ICreativeWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IEducationalOrganization" Collapsed="true">
+    <Position X="47.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IEducationalOrganization.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IEntertainmentBusiness" Collapsed="true">
+    <Position X="38.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IEntertainmentBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IEnumeration" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IEnumeration.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IEvent" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIQAAASAIAAAAIABAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IEvent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IFinancialService" Collapsed="true">
+    <Position X="23" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IFinancialService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IFoodEstablishment" Collapsed="true">
+    <Position X="25.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IFoodEstablishment.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IGovernmentBuilding" Collapsed="true">
+    <Position X="61.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IGovernmentBuilding.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IGovernmentOffice" Collapsed="true">
+    <Position X="32" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IGovernmentOffice.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IHealthAndBeautyBusiness" Collapsed="true">
+    <Position X="41" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IHealthAndBeautyBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IHomeAndConstructionBusiness" Collapsed="true">
+    <Position X="18.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IHomeAndConstructionBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IIntangible" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IIntangible.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.ILandform" Collapsed="true">
+    <Position X="65.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\ILandform.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.ILocalBusiness" Collapsed="true">
+    <Position X="30.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAFAAAAAAAQAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\ILocalBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.ILodgingBusiness" Collapsed="true">
+    <Position X="27.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\ILodgingBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IMediaObject" Collapsed="true">
+    <Position X="59" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAACAJAAgAAAAEAAAACMAAAAIAAAAABAIwA=</HashCode>
+      <FileName>Microdata\Interfaces\IMediaObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IMedicalOrganization" Collapsed="true">
+    <Position X="43.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IMedicalOrganization.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IMusicPlaylist" Collapsed="true">
+    <Position X="52.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IMusicPlaylist.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.INumber" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\INumber.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IOffer" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAwAAAAAAAAABIAAAAAAAAQEAAAAAAAAACAg=</HashCode>
+      <FileName>Microdata\Interfaces\IOffer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IOrganization" Collapsed="true">
+    <Position X="33" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAgACAAAAAAAAIAAAAACwAAIRACAIAEAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IOrganization.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IPerformingGroup" Collapsed="true">
+    <Position X="45.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IPerformingGroup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IPlace" Collapsed="true">
+    <Position X="65.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAACBAAAAAAAAAAgAAITACAIAAAACAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IPlace.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IPlaceOfWorship" Collapsed="true">
+    <Position X="63.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IPlaceOfWorship.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IProfessionalService" Collapsed="true">
+    <Position X="20.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IProfessionalService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IQuantity" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IQuantity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IRating" Collapsed="true">
+    <Position X="14" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IRating.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IResidence" Collapsed="true">
+    <Position X="68" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IResidence.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.ISportsActivityLocation" Collapsed="true">
+    <Position X="29.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\ISportsActivityLocation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IStore" Collapsed="true">
+    <Position X="34.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IStore.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IStructuredValue" Collapsed="true">
+    <Position X="16.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IStructuredValue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IText" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IText.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IUserInteraction" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IUserInteraction.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IWebPage" Collapsed="true">
+    <Position X="54.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAABACAAAAAAAAEAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Microdata\Interfaces\IWebPage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

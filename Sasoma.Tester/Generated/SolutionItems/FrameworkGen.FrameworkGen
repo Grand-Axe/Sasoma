@@ -1,0 +1,98 @@
+<frameworkGen version="4.1">
+  <classLibraryGuid>a0eca0ae-bae0-4b67-a8b8-3a536f32d450</classLibraryGuid>
+  <daGuid>4940762a-53d9-487b-b576-40ad890d7c97</daGuid>
+  <bizGuid>4eae65e3-1a61-48cc-adb4-6842b755b3ea</bizGuid>
+  <remotingProxyGuid>8d23e51e-a8da-4c0d-b1f0-22a442a08288</remotingProxyGuid>
+  <remotingServerGuid>39b11532-a61a-4edd-ae68-457a289d208a</remotingServerGuid>
+  <webServiceGuid>7fb3980f-0b6e-4b2d-963f-05a7a830d166</webServiceGuid>
+  <unitTestsGuid>74ef2ea1-fdde-492c-acee-1850fc937514</unitTestsGuid>
+  <dbGuid>8c86012c-dd58-4c2b-9a5b-cf81d5c26a42</dbGuid>
+  <webGuid>48e498fa-ad4a-43c5-aaab-d7efd73e71dc</webGuid>
+  <StoredProcedurePrefix>gsp_</StoredProcedurePrefix>
+  <UseCountAndPagingProcedures>False</UseCountAndPagingProcedures>
+  <BusinessObjectPrefix>
+  </BusinessObjectPrefix>
+  <BusinessObjectSuffix>Manager</BusinessObjectSuffix>
+  <DataAccessObjectPrefix>
+  </DataAccessObjectPrefix>
+  <DataAccessObjectSuffix>Data</DataAccessObjectSuffix>
+  <DataSetPrefix>
+  </DataSetPrefix>
+  <DataSetSuffix>DataSet</DataSetSuffix>
+  <EntityObjectPrefix>
+  </EntityObjectPrefix>
+  <EntityObjectSuffix>
+  </EntityObjectSuffix>
+  <MemberVariablePrefix>_</MemberVariablePrefix>
+  <InitialisationVector>Fg3n?*08</InitialisationVector>
+  <XsdExeFilePath>C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\Bin\xsd.exe</XsdExeFilePath>
+  <SnExeFilePath>C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\Bin\sn.exe</SnExeFilePath>
+  <StrongNameAssemblies>False</StrongNameAssemblies>
+  <FullComments>True</FullComments>
+  <IncludeTableNamesBeginingWithSys>True</IncludeTableNamesBeginingWithSys>
+  <EncryptImpersonationCredentails>True</EncryptImpersonationCredentails>
+  <IDEVersion>VS2008</IDEVersion>
+  <FrameworkVersion>v3.5</FrameworkVersion>
+  <CreateEntitySortMethods>False</CreateEntitySortMethods>
+  <CreateEntityFindMethods>False</CreateEntityFindMethods>
+  <SQLVersion>Not Defined</SQLVersion>
+  <WCFEntitySupport>False</WCFEntitySupport>
+  <AddEntityCachingSupport>False</AddEntityCachingSupport>
+  <DatabasePrefixesToRemoveFromObjectNames>tbl_,tbl,vw_,vw,sp_,sp,usp_,usp,gsp_,gsp</DatabasePrefixesToRemoveFromObjectNames>
+  <SQLScriptFile>One</SQLScriptFile>
+  <ProcedureNaming>1</ProcedureNaming>
+  <CreateReflectiveMethods>False</CreateReflectiveMethods>
+  <CreateRemotingProject>False</CreateRemotingProject>
+  <CreateStoredProcedures>False</CreateStoredProcedures>
+  <CreateScriptFilePerProcedure>False</CreateScriptFilePerProcedure>
+  <CreateTypedDataSets>False</CreateTypedDataSets>
+  <CreateDataTableMethods>False</CreateDataTableMethods>
+  <ShowEntityAndParameterValuesInExceptionMessages>False</ShowEntityAndParameterValuesInExceptionMessages>
+  <BusinessRulesValidation>False</BusinessRulesValidation>
+  <CreateWebProject>False</CreateWebProject>
+  <CreateUnitTests>False</CreateUnitTests>
+  <encryptionKey>BH4bzdMg4hJKKytp</encryptionKey>
+  <solutionName>Microdata</solutionName>
+  <namespace>Microdata</namespace>
+  <outputDirectory>C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Tester\Generated</outputDirectory>
+  <deploymentDirectory>
+  </deploymentDirectory>
+  <serverName>asame</serverName>
+  <databaseName>Microdata</databaseName>
+  <useImpersonation>False</useImpersonation>
+  <domain>
+  </domain>
+  <username>
+  </username>
+  <password>
+  </password>
+  <integratedSecurity>True</integratedSecurity>
+  <sqlUserName>
+  </sqlUserName>
+  <sqlPassword>
+  </sqlPassword>
+  <tables>
+    <table required="True" entityName="Property" entitiesName="Properties" optCon="False">Properties</table>
+    <table required="False" entityName="PropertyRange" entitiesName="PropertyRanges" optCon="False">PropertyRanges</table>
+    <table required="False" entityName="Sysdiagram" entitiesName="Sysdiagrams" optCon="False">sysdiagrams</table>
+    <table required="False" entityName="TypeAncestor" entitiesName="TypeAncestors" optCon="False">TypeAncestor</table>
+    <table required="False" entityName="TypeInstance" entitiesName="TypeInstances" optCon="False">TypeInstance</table>
+    <table required="False" entityName="TypeProperty" entitiesName="TypeProperties" optCon="False">TypeProperty</table>
+    <table required="True" entityName="Type" entitiesName="Types" optCon="False">Types</table>
+    <table required="False" entityName="TypeSpecific_Property" entitiesName="TypeSpecific_Properties" optCon="False">TypeSpecific_Property</table>
+    <table required="False" entityName="TypeSubType" entitiesName="TypeSubTypes" optCon="False">TypeSubType</table>
+    <table required="False" entityName="TypeSuperType" entitiesName="TypeSuperTypes" optCon="False">TypeSuperType</table>
+  </tables>
+  <sorting />
+  <searching />
+  <transactionGroups />
+  <existingProcedures />
+  <views />
+  <procedures>
+    <procedure name="propertiesgetall" />
+    <procedure name="propertiesgetbypropertyid" />
+    <procedure name="typesgetall" />
+    <procedure name="typesgetbytypeid" />
+  </procedures>
+  <forms create="False" />
+</frameworkGen>

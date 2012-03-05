@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="acceptsReservations" xml:space="preserve">
+    <value>Accepts Reservations</value>
+  </data>
+  <data name="accountablePerson" xml:space="preserve">
+    <value>Accountable Person</value>
+  </data>
+  <data name="actors" xml:space="preserve">
+    <value>Actors</value>
+  </data>
+  <data name="additionalName" xml:space="preserve">
+    <value>Additional Name</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="addressCountry" xml:space="preserve">
+    <value>Address Country</value>
+  </data>
+  <data name="addressLocality" xml:space="preserve">
+    <value>Address Locality</value>
+  </data>
+  <data name="addressRegion" xml:space="preserve">
+    <value>Address Region</value>
+  </data>
+  <data name="affiliation" xml:space="preserve">
+    <value>Affiliation</value>
+  </data>
+  <data name="aggregateRating" xml:space="preserve">
+    <value>Aggregate Rating</value>
+  </data>
+  <data name="albums" xml:space="preserve">
+    <value>Albums</value>
+  </data>
+  <data name="alternativeHeadline" xml:space="preserve">
+    <value>Alternative Headline</value>
+  </data>
+  <data name="alumni" xml:space="preserve">
+    <value>Alumni</value>
+  </data>
+  <data name="alumniOf" xml:space="preserve">
+    <value>Alumni of</value>
+  </data>
+  <data name="articleBody" xml:space="preserve">
+    <value>Article Body</value>
+  </data>
+  <data name="articleSection" xml:space="preserve">
+    <value>Article Section</value>
+  </data>
+  <data name="associatedArticle" xml:space="preserve">
+    <value>Associated Article</value>
+  </data>
+  <data name="associatedMedia" xml:space="preserve">
+    <value>Associated Media</value>
+  </data>
+  <data name="attendees" xml:space="preserve">
+    <value>Attendees</value>
+  </data>
+  <data name="audio" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="commentText" xml:space="preserve">
+    <value>Comment Text</value>
+  </data>
+  <data name="commentTime" xml:space="preserve">
+    <value>Comment Time</value>
+  </data>
+  <data name="author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="availability" xml:space="preserve">
+    <value>Availability</value>
+  </data>
+  <data name="awards" xml:space="preserve">
+    <value>Awards</value>
+  </data>
+  <data name="baseSalary" xml:space="preserve">
+    <value>Base Salary</value>
+  </data>
+  <data name="benefits" xml:space="preserve">
+    <value>Benefits</value>
+  </data>
+  <data name="bestRating" xml:space="preserve">
+    <value>Best Rating</value>
+  </data>
+  <data name="birthDate" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="bitrate" xml:space="preserve">
+    <value>Bitrate</value>
+  </data>
+  <data name="blogPosts" xml:space="preserve">
+    <value>Blog Posts</value>
+  </data>
+  <data name="bookEdition" xml:space="preserve">
+    <value>Book Edition</value>
+  </data>
+  <data name="bookFormat" xml:space="preserve">
+    <value>Book Format</value>
+  </data>
+  <data name="box" xml:space="preserve">
+    <value>Box</value>
+  </data>
+  <data name="branchOf" xml:space="preserve">
+    <value>Branch of</value>
+  </data>
+  <data name="brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="breadcrumb" xml:space="preserve">
+    <value>Breadcrumb</value>
+  </data>
+  <data name="byArtist" xml:space="preserve">
+    <value>By Artist</value>
+  </data>
+  <data name="calories" xml:space="preserve">
+    <value>Calories</value>
+  </data>
+  <data name="caption" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="carbohydrateContent" xml:space="preserve">
+    <value>Carbohydrate Content</value>
+  </data>
+  <data name="children" xml:space="preserve">
+    <value>Children</value>
+  </data>
+  <data name="cholesterolContent" xml:space="preserve">
+    <value>Cholesterol Content</value>
+  </data>
+  <data name="circle" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="colleagues" xml:space="preserve">
+    <value>Colleagues</value>
+  </data>
+  <data name="contactPoints" xml:space="preserve">
+    <value>Contact Points</value>
+  </data>
+  <data name="contactType" xml:space="preserve">
+    <value>Contact Type</value>
+  </data>
+  <data name="containedIn" xml:space="preserve">
+    <value>Contained in</value>
+  </data>
+  <data name="contentLocation" xml:space="preserve">
+    <value>Content Location</value>
+  </data>
+  <data name="contentRating" xml:space="preserve">
+    <value>Content Rating</value>
+  </data>
+  <data name="contentSize" xml:space="preserve">
+    <value>Content Size</value>
+  </data>
+  <data name="contentURL" xml:space="preserve">
+    <value>Content URL</value>
+  </data>
+  <data name="contributor" xml:space="preserve">
+    <value>Contributor</value>
+  </data>
+  <data name="cookTime" xml:space="preserve">
+    <value>Cook Time</value>
+  </data>
+  <data name="cookingMethod" xml:space="preserve">
+    <value>Cooking Method</value>
+  </data>
+  <data name="copyrightHolder" xml:space="preserve">
+    <value>Copyright Holder</value>
+  </data>
+  <data name="copyrightYear" xml:space="preserve">
+    <value>Copyright Year</value>
+  </data>
+  <data name="creator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="currenciesAccepted" xml:space="preserve">
+    <value>Currencies Accepted</value>
+  </data>
+  <data name="dateCreated" xml:space="preserve">
+    <value>Date Created</value>
+  </data>
+  <data name="dateModified" xml:space="preserve">
+    <value>Date Modified</value>
+  </data>
+  <data name="datePosted" xml:space="preserve">
+    <value>Date Posted</value>
+  </data>
+  <data name="datePublished" xml:space="preserve">
+    <value>Date Published</value>
+  </data>
+  <data name="dateline" xml:space="preserve">
+    <value>Dateline</value>
+  </data>
+  <data name="deathDate" xml:space="preserve">
+    <value>Death Date</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="director" xml:space="preserve">
+    <value>Director</value>
+  </data>
+  <data name="discusses" xml:space="preserve">
+    <value>Discusses</value>
+  </data>
+  <data name="discussionUrl" xml:space="preserve">
+    <value>Discussion Url</value>
+  </data>
+  <data name="duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="editor" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="educationRequirements" xml:space="preserve">
+    <value>Education Requirements</value>
+  </data>
+  <data name="elevation" xml:space="preserve">
+    <value>Elevation</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="embedURL" xml:space="preserve">
+    <value>Embed URL</value>
+  </data>
+  <data name="employees" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="employmentType" xml:space="preserve">
+    <value>Employment Type</value>
+  </data>
+  <data name="encodesCreativeWork" xml:space="preserve">
+    <value>Encodes Creative Work</value>
+  </data>
+  <data name="encodingFormat" xml:space="preserve">
+    <value>Encoding Format</value>
+  </data>
+  <data name="encodings" xml:space="preserve">
+    <value>Encodings</value>
+  </data>
+  <data name="endDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="episodeNumber" xml:space="preserve">
+    <value>Episode Number</value>
+  </data>
+  <data name="episodes" xml:space="preserve">
+    <value>Episodes</value>
+  </data>
+  <data name="events" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="exifData" xml:space="preserve">
+    <value>Exif Data</value>
+  </data>
+  <data name="experienceRequirements" xml:space="preserve">
+    <value>Experience Requirements</value>
+  </data>
+  <data name="expires" xml:space="preserve">
+    <value>Expires</value>
+  </data>
+  <data name="familyName" xml:space="preserve">
+    <value>Family Name</value>
+  </data>
+  <data name="fatContent" xml:space="preserve">
+    <value>Fat Content</value>
+  </data>
+  <data name="faxNumber" xml:space="preserve">
+    <value>Fax Number</value>
+  </data>
+  <data name="fiberContent" xml:space="preserve">
+    <value>Fiber Content</value>
+  </data>
+  <data name="follows" xml:space="preserve">
+    <value>Follows</value>
+  </data>
+  <data name="founders" xml:space="preserve">
+    <value>Founders</value>
+  </data>
+  <data name="foundingDate" xml:space="preserve">
+    <value>Founding Date</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="genre" xml:space="preserve">
+    <value>Genre</value>
+  </data>
+  <data name="geo" xml:space="preserve">
+    <value>Geo</value>
+  </data>
+  <data name="givenName" xml:space="preserve">
+    <value>Given Name</value>
+  </data>
+  <data name="headline" xml:space="preserve">
+    <value>Headline</value>
+  </data>
+  <data name="height" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="highPrice" xml:space="preserve">
+    <value>High Price</value>
+  </data>
+  <data name="hiringOrganization" xml:space="preserve">
+    <value>Hiring Organization</value>
+  </data>
+  <data name="homeLocation" xml:space="preserve">
+    <value>Home Location</value>
+  </data>
+  <data name="honorificPrefix" xml:space="preserve">
+    <value>Honorific Prefix</value>
+  </data>
+  <data name="honorificSuffix" xml:space="preserve">
+    <value>Honorific Suffix</value>
+  </data>
+  <data name="illustrator" xml:space="preserve">
+    <value>Illustrator</value>
+  </data>
+  <data name="image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="inAlbum" xml:space="preserve">
+    <value>In Album</value>
+  </data>
+  <data name="inLanguage" xml:space="preserve">
+    <value>In Language</value>
+  </data>
+  <data name="inPlaylist" xml:space="preserve">
+    <value>In Playlist</value>
+  </data>
+  <data name="incentives" xml:space="preserve">
+    <value>Incentives</value>
+  </data>
+  <data name="industry" xml:space="preserve">
+    <value>Industry</value>
+  </data>
+  <data name="ingredients" xml:space="preserve">
+    <value>Ingredients</value>
+  </data>
+  <data name="interactionCount" xml:space="preserve">
+    <value>Interaction Count</value>
+  </data>
+  <data name="isFamilyFriendly" xml:space="preserve">
+    <value>Is Family Friendly</value>
+  </data>
+  <data name="isPartOf" xml:space="preserve">
+    <value>Is Part of</value>
+  </data>
+  <data name="isbn" xml:space="preserve">
+    <value>ISBN</value>
+  </data>
+  <data name="itemCondition" xml:space="preserve">
+    <value>Item Condition</value>
+  </data>
+  <data name="itemListElement" xml:space="preserve">
+    <value>Item List Element</value>
+  </data>
+  <data name="itemListOrder" xml:space="preserve">
+    <value>Item List Order</value>
+  </data>
+  <data name="itemOffered" xml:space="preserve">
+    <value>Item Offered</value>
+  </data>
+  <data name="itemReviewed" xml:space="preserve">
+    <value>Item Reviewed</value>
+  </data>
+  <data name="jobLocation" xml:space="preserve">
+    <value>Job Location</value>
+  </data>
+  <data name="jobTitle" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="keywords" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="knows" xml:space="preserve">
+    <value>Knows</value>
+  </data>
+  <data name="latitude" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="line" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="longitude" xml:space="preserve">
+    <value>Longitude</value>
+  </data>
+  <data name="lowPrice" xml:space="preserve">
+    <value>Low Price</value>
+  </data>
+  <data name="mainContentOfPage" xml:space="preserve">
+    <value>Main Content of Page</value>
+  </data>
+  <data name="manufacturer" xml:space="preserve">
+    <value>Manufacturer</value>
+  </data>
+  <data name="maps" xml:space="preserve">
+    <value>Maps</value>
+  </data>
+  <data name="memberOf" xml:space="preserve">
+    <value>Member of</value>
+  </data>
+  <data name="members" xml:space="preserve">
+    <value>Members</value>
+  </data>
+  <data name="mentions" xml:space="preserve">
+    <value>Mentions</value>
+  </data>
+  <data name="menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="musicBy" xml:space="preserve">
+    <value>Music by</value>
+  </data>
+  <data name="musicGroupMember" xml:space="preserve">
+    <value>Music Group Member</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="nationality" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="numTracks" xml:space="preserve">
+    <value>Num Tracks</value>
+  </data>
+  <data name="numberOfEpisodes" xml:space="preserve">
+    <value>Number of Episodes</value>
+  </data>
+  <data name="numberOfPages" xml:space="preserve">
+    <value>Number of Pages</value>
+  </data>
+  <data name="nutrition" xml:space="preserve">
+    <value>Nutrition</value>
+  </data>
+  <data name="occupationalCategory" xml:space="preserve">
+    <value>Occupational Category</value>
+  </data>
+  <data name="offerCount" xml:space="preserve">
+    <value>Offer Count</value>
+  </data>
+  <data name="offers" xml:space="preserve">
+    <value>Offers</value>
+  </data>
+  <data name="openingHours" xml:space="preserve">
+    <value>Opening Hours</value>
+  </data>
+  <data name="parents" xml:space="preserve">
+    <value>Parents</value>
+  </data>
+  <data name="partOfSeason" xml:space="preserve">
+    <value>Part of Season</value>
+  </data>
+  <data name="partOfTVSeries" xml:space="preserve">
+    <value>Part of TV Series</value>
+  </data>
+  <data name="paymentAccepted" xml:space="preserve">
+    <value>Payment Accepted</value>
+  </data>
+  <data name="performerIn" xml:space="preserve">
+    <value>Performer in</value>
+  </data>
+  <data name="performers" xml:space="preserve">
+    <value>Performers</value>
+  </data>
+  <data name="photos" xml:space="preserve">
+    <value>Photos</value>
+  </data>
+  <data name="playerType" xml:space="preserve">
+    <value>Player Type</value>
+  </data>
+  <data name="polygon" xml:space="preserve">
+    <value>Polygon</value>
+  </data>
+  <data name="postOfficeBoxNumber" xml:space="preserve">
+    <value>Post Office Box Number</value>
+  </data>
+  <data name="postalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="prepTime" xml:space="preserve">
+    <value>Prep Time</value>
+  </data>
+  <data name="price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="priceCurrency" xml:space="preserve">
+    <value>Price Currency</value>
+  </data>
+  <data name="priceRange" xml:space="preserve">
+    <value>Price Range</value>
+  </data>
+  <data name="priceValidUntil" xml:space="preserve">
+    <value>Price Valid Until</value>
+  </data>
+  <data name="primaryImageOfPage" xml:space="preserve">
+    <value>Primary Image of Page</value>
+  </data>
+  <data name="printColumn" xml:space="preserve">
+    <value>Print Column</value>
+  </data>
+  <data name="printEdition" xml:space="preserve">
+    <value>Print Edition</value>
+  </data>
+  <data name="printPage" xml:space="preserve">
+    <value>Print Page</value>
+  </data>
+  <data name="printSection" xml:space="preserve">
+    <value>Print Section</value>
+  </data>
+  <data name="producer" xml:space="preserve">
+    <value>Producer</value>
+  </data>
+  <data name="productID" xml:space="preserve">
+    <value>Product ID</value>
+  </data>
+  <data name="productionCompany" xml:space="preserve">
+    <value>Production Company</value>
+  </data>
+  <data name="proteinContent" xml:space="preserve">
+    <value>Protein Content</value>
+  </data>
+  <data name="provider" xml:space="preserve">
+    <value>Provider</value>
+  </data>
+  <data name="publisher" xml:space="preserve">
+    <value>Publisher</value>
+  </data>
+  <data name="publishingPrinciples" xml:space="preserve">
+    <value>Publishing Principles</value>
+  </data>
+  <data name="qualifications" xml:space="preserve">
+    <value>Qualifications</value>
+  </data>
+  <data name="ratingCount" xml:space="preserve">
+    <value>Rating Count</value>
+  </data>
+  <data name="ratingValue" xml:space="preserve">
+    <value>Rating Value</value>
+  </data>
+  <data name="recipeCategory" xml:space="preserve">
+    <value>Recipe Category</value>
+  </data>
+  <data name="recipeCuisine" xml:space="preserve">
+    <value>Recipe Cuisine</value>
+  </data>
+  <data name="recipeInstructions" xml:space="preserve">
+    <value>Recipe Instructions</value>
+  </data>
+  <data name="recipeYield" xml:space="preserve">
+    <value>Recipe Yield</value>
+  </data>
+  <data name="regionsAllowed" xml:space="preserve">
+    <value>Regions Allowed</value>
+  </data>
+  <data name="relatedTo" xml:space="preserve">
+    <value>Related to</value>
+  </data>
+  <data name="replyToUrl" xml:space="preserve">
+    <value>Reply to Url</value>
+  </data>
+  <data name="representativeOfPage" xml:space="preserve">
+    <value>Representative of Page</value>
+  </data>
+  <data name="requiresSubscription" xml:space="preserve">
+    <value>Requires Subscription</value>
+  </data>
+  <data name="responsibilities" xml:space="preserve">
+    <value>Responsibilities</value>
+  </data>
+  <data name="reviewBody" xml:space="preserve">
+    <value>Review Body</value>
+  </data>
+  <data name="reviewCount" xml:space="preserve">
+    <value>Review Count</value>
+  </data>
+  <data name="telephone" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="thumbnail" xml:space="preserve">
+    <value>Thumbnail</value>
+  </data>
+  <data name="reviewRating" xml:space="preserve">
+    <value>Review Rating</value>
+  </data>
+  <data name="reviews" xml:space="preserve">
+    <value>Reviews</value>
+  </data>
+  <data name="salaryCurrency" xml:space="preserve">
+    <value>Salary Currency</value>
+  </data>
+  <data name="saturatedFatContent" xml:space="preserve">
+    <value>Saturated Fat Content</value>
+  </data>
+  <data name="seasonNumber" xml:space="preserve">
+    <value>Season Number</value>
+  </data>
+  <data name="seasons" xml:space="preserve">
+    <value>Seasons</value>
+  </data>
+  <data name="seller" xml:space="preserve">
+    <value>Seller</value>
+  </data>
+  <data name="servesCuisine" xml:space="preserve">
+    <value>Serves Cuisine</value>
+  </data>
+  <data name="servingSize" xml:space="preserve">
+    <value>Serving Size</value>
+  </data>
+  <data name="siblings" xml:space="preserve">
+    <value>Siblings</value>
+  </data>
+  <data name="significantLinks" xml:space="preserve">
+    <value>Significant Links</value>
+  </data>
+  <data name="skills" xml:space="preserve">
+    <value>Skills</value>
+  </data>
+  <data name="sodiumContent" xml:space="preserve">
+    <value>Sodium Content</value>
+  </data>
+  <data name="sourceOrganization" xml:space="preserve">
+    <value>Source Organization</value>
+  </data>
+  <data name="specialCommitments" xml:space="preserve">
+    <value>Special Commitments</value>
+  </data>
+  <data name="spouse" xml:space="preserve">
+    <value>Spouse</value>
+  </data>
+  <data name="startDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="streetAddress" xml:space="preserve">
+    <value>Street Address</value>
+  </data>
+  <data name="subEvents" xml:space="preserve">
+    <value>Sub Events</value>
+  </data>
+  <data name="sugarContent" xml:space="preserve">
+    <value>Sugar Content</value>
+  </data>
+  <data name="superEvent" xml:space="preserve">
+    <value>Super Event</value>
+  </data>
+  <data name="thumbnailUrl" xml:space="preserve">
+    <value>Thumbnail Url</value>
+  </data>
+  <data name="tickerSymbol" xml:space="preserve">
+    <value>Ticker Symbol</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="totalTime" xml:space="preserve">
+    <value>Total Time</value>
+  </data>
+  <data name="tracks" xml:space="preserve">
+    <value>Tracks</value>
+  </data>
+  <data name="trailer" xml:space="preserve">
+    <value>Trailer</value>
+  </data>
+  <data name="transFatContent" xml:space="preserve">
+    <value>Trans Fat Content</value>
+  </data>
+  <data name="transcript" xml:space="preserve">
+    <value>Transcript</value>
+  </data>
+  <data name="unsaturatedFatContent" xml:space="preserve">
+    <value>Unsaturated Fat Content</value>
+  </data>
+  <data name="uploadDate" xml:space="preserve">
+    <value>Upload Date</value>
+  </data>
+  <data name="url" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="video" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="videoFrameSize" xml:space="preserve">
+    <value>Video Frame Size</value>
+  </data>
+  <data name="videoQuality" xml:space="preserve">
+    <value>Video Quality</value>
+  </data>
+  <data name="width" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="wordCount" xml:space="preserve">
+    <value>Word Count</value>
+  </data>
+  <data name="workHours" xml:space="preserve">
+    <value>Work Hours</value>
+  </data>
+  <data name="workLocation" xml:space="preserve">
+    <value>Work Location</value>
+  </data>
+  <data name="worksFor" xml:space="preserve">
+    <value>Works for</value>
+  </data>
+  <data name="worstRating" xml:space="preserve">
+    <value>Worst Rating</value>
+  </data>
+</root>

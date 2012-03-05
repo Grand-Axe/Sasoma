@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Core\bin\Debug\Sasoma.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Core\bin\Debug\Sasoma.Core.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Core\obj\Debug\Sasoma.Languages.Core.PropertyLabels.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Core\obj\Debug\Sasoma.Languages.Core.TypeLabels.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Core\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Core\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Core\obj\Debug\Sasoma.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Core\obj\Debug\Sasoma.Core.pdb

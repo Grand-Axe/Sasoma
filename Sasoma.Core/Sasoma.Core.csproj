@@ -1,0 +1,1751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9630F4EE-25AA-44E2-83BE-3ECA193DA144}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>Sasoma.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Sasoma</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Sasoma.Core.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Languages\Core\PropertyLabels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PropertyLabels.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\Core\TypeLabels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TypeLabels.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Microdata\Core\MicrodataCore.cs" />
+    <Compile Include="Microdata\Core\VerySimpleCacheObj.cs" />
+    <Compile Include="Microdata\Interfaces\_ICache.cs" />
+    <Compile Include="Microdata\Core\TypeCore.cs" />
+    <Compile Include="Microdata\Core\Core.cs" />
+    <Compile Include="Microdata\Core\PropertyCore.cs" />
+    <Compile Include="Microdata\Interfaces\IAdministrativeArea.cs" />
+    <Compile Include="Microdata\Interfaces\IArticle.cs" />
+    <Compile Include="Microdata\Interfaces\IAutomotiveBusiness.cs" />
+    <Compile Include="Microdata\Interfaces\IBodyOfWater.cs" />
+    <Compile Include="Microdata\Interfaces\ICivicStructure.cs" />
+    <Compile Include="Microdata\Interfaces\ICollectionPage.cs" />
+    <Compile Include="Microdata\Interfaces\IContactPoint.cs" />
+    <Compile Include="Microdata\Interfaces\ICreativeWork.cs" />
+    <Compile Include="Microdata\Interfaces\IEducationalOrganization.cs" />
+    <Compile Include="Microdata\Interfaces\IEntertainmentBusiness.cs" />
+    <Compile Include="Microdata\Interfaces\IEnumeration.cs" />
+    <Compile Include="Microdata\Interfaces\IEvent.cs" />
+    <Compile Include="Microdata\Interfaces\IFinancialService.cs" />
+    <Compile Include="Microdata\Interfaces\IFoodEstablishment.cs" />
+    <Compile Include="Microdata\Interfaces\IGovernmentBuilding.cs" />
+    <Compile Include="Microdata\Interfaces\IGovernmentOffice.cs" />
+    <Compile Include="Microdata\Interfaces\IHealthAndBeautyBusiness.cs" />
+    <Compile Include="Microdata\Interfaces\IHomeAndConstructionBusiness.cs" />
+    <Compile Include="Microdata\Interfaces\IIntangible.cs" />
+    <Compile Include="Microdata\Interfaces\ILandform.cs" />
+    <Compile Include="Microdata\Interfaces\ILocalBusiness.cs" />
+    <Compile Include="Microdata\Interfaces\ILodgingBusiness.cs" />
+    <Compile Include="Microdata\Interfaces\IMediaObject.cs" />
+    <Compile Include="Microdata\Interfaces\IMedicalOrganization.cs" />
+    <Compile Include="Microdata\Interfaces\IMusicPlaylist.cs" />
+    <Compile Include="Microdata\Interfaces\INumber.cs" />
+    <Compile Include="Microdata\Interfaces\IOffer.cs" />
+    <Compile Include="Microdata\Interfaces\IOrganization.cs" />
+    <Compile Include="Microdata\Interfaces\IPerformingGroup.cs" />
+    <Compile Include="Microdata\Interfaces\IPlace.cs" />
+    <Compile Include="Microdata\Interfaces\IPlaceOfWorship.cs" />
+    <Compile Include="Microdata\Interfaces\IProfessionalService.cs" />
+    <Compile Include="Microdata\Interfaces\IQuantity.cs" />
+    <Compile Include="Microdata\Interfaces\IRating.cs" />
+    <Compile Include="Microdata\Interfaces\IResidence.cs" />
+    <Compile Include="Microdata\Interfaces\ISportsActivityLocation.cs" />
+    <Compile Include="Microdata\Interfaces\IStore.cs" />
+    <Compile Include="Microdata\Interfaces\IStructuredValue.cs" />
+    <Compile Include="Microdata\Interfaces\IText.cs" />
+    <Compile Include="Microdata\Interfaces\IUserInteraction.cs" />
+    <Compile Include="Microdata\Interfaces\IWebPage.cs" />
+    <Compile Include="Microdata\Interfaces\IWebPageElement.cs" />
+    <Compile Include="Microdata\Interfaces\_IDataType.cs" />
+    <Compile Include="Microdata\Interfaces\_IMicrodata.cs" />
+    <Compile Include="Microdata\Interfaces\_IThing.cs" />
+    <Compile Include="Microdata\Props\About.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AcceptsReservations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AccountablePerson.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Actors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AdditionalName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Address.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AddressCountry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AddressLocality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AddressRegion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Affiliation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AggregateRating.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Albums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AlternativeHeadline.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Alumni.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AlumniOf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ArticleBody.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ArticleSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AssociatedArticle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\AssociatedMedia.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Attendees.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Audio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Author.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Availability.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Awards.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\BaseSalary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Benefits.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\BestRating.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\BirthDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Bitrate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\BlogPosts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\BookEdition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\BookFormat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Box.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\BranchOf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Brand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Breadcrumb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ByArtist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Calories.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Caption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\CarbohydrateContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Children.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\CholesterolContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Circle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Colleagues.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Comment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\CommentText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\CommentTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ContactPoints.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ContactType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ContainedIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ContentLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ContentRating.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ContentSize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ContentURL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Contributor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\CookingMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\CookTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\CopyrightHolder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\CopyrightYear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Creator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\CurrenciesAccepted.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\DateCreated.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Dateline.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\DateModified.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\DatePosted.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\DatePublished.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\DeathDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Description.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Director.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Discusses.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\DiscussionUrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Duration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Editor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\EducationRequirements.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Elevation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Email.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\EmbedURL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Employees.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\EmploymentType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\EncodesCreativeWork.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\EncodingFormat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Encodings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\EndDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\EpisodeNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Episodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Events.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ExifData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ExperienceRequirements.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Expires.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\FamilyName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\FatContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\FaxNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\FiberContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Follows.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Founders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\FoundingDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Gender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Genre.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Geo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\GivenName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Headline.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Height.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\HighPrice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\HiringOrganization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\HomeLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\HonorificPrefix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\HonorificSuffix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Illustrator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Image.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\InAlbum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Incentives.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Industry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Ingredients.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\InLanguage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\InPlaylist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\InteractionCount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Interfaces\_IProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\IProperty.cs" />
+    <Compile Include="Microdata\Props\Isbn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\IsFamilyFriendly.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\IsPartOf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ItemCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ItemListElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ItemListOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ItemOffered.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ItemReviewed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\JobLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\JobTitle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Keywords.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Knows.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Latitude.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Line.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Location.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Longitude.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\LowPrice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\MainContentOfPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Manufacturer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Maps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\MemberOf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Members.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Mentions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Menu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Model.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\MusicBy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\MusicGroupMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Name.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Nationality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\NumberOfEpisodes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\NumberOfPages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\NumTracks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Nutrition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\OccupationalCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\OfferCount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Offers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\OpeningHours.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Parents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PartOfSeason.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PartOfTVSeries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PaymentAccepted.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PerformerIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Performers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Photos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PlayerType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Polygon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PostalCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PostOfficeBoxNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PrepTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Price.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PriceCurrency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PriceRange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PriceValidUntil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PrimaryImageOfPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PrintColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PrintEdition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PrintPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PrintSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Producer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ProductID.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ProductionCompany.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ProteinContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Provider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Publisher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\PublishingPrinciples.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Qualifications.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\RatingCount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\RatingValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\RecipeCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\RecipeCuisine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\RecipeInstructions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\RecipeYield.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\RegionsAllowed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\RelatedTo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ReplyToUrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\RepresentativeOfPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\RequiresSubscription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Responsibilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ReviewBody.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ReviewCount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ReviewRating.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Reviews.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\SalaryCurrency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\SaturatedFatContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\SeasonNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Seasons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Seller.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ServesCuisine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ServingSize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Siblings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\SignificantLinks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Skills.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\SodiumContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\SourceOrganization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\SpecialCommitments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Spouse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\StartDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\StreetAddress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\SubEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\SugarContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\SuperEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Telephone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Thumbnail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\ThumbnailUrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\TickerSymbol.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Title.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\TotalTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Tracks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Trailer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Transcript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\TransFatContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\UnsaturatedFatContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\UploadDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Url.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Version.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Video.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\VideoFrameSize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\VideoQuality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\Width.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\WordCount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\WorkHours.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\WorkLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\WorksFor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Props\WorstRating.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AboutPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AccountingService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AdministrativeArea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AdultEntertainment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AggregateOffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AggregateRating.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Airport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AmusementPark.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AnimalShelter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ApartmentComplex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Aquarium.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ArtGallery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Article.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Attorney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AudioObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AutoBodyShop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AutoDealer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AutomatedTeller.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AutomotiveBusiness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AutoPartsStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AutoRental.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AutoRepair.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\AutoWash.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Bakery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BankOrCreditUnion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BarOrPub.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Beach.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BeautySalon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BedAndBreakfast.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BikeStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Blog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BlogPosting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BodyOfWater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Book.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BookFormatType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BookStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Boolean.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BowlingAlley.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Brewery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BuddhistTemple.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BusinessEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BusStation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\BusStop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\CafeOrCoffeeShop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Campground.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Canal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Casino.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\CatholicChurch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Cemetery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\CheckoutPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ChildCare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ChildrensEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Church.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\City.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\CityHall.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\CivicStructure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ClothingStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\CollectionPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\CollegeOrUniversity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ComedyClub.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ComedyEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ComputerStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ContactPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ContactPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Continent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ConvenienceStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Corporation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Country.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Courthouse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\CreativeWork.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Crematorium.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\DanceEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\DanceGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\DataType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Date.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\DaySpa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\DefenceEstablishment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Dentist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\DepartmentStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Distance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\DryCleaningOrLaundry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Duration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\EducationalOrganization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\EducationEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Electrician.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ElectronicsStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ElementarySchool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Embassy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\EmergencyService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\EmploymentAgency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Energy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\EntertainmentBusiness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Enumeration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Event.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\EventVenue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ExerciseGym.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\FastFoodRestaurant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Festival.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\FinancialService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\FireStation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Float.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Florist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\FoodEstablishment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\FoodEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\FurnitureStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GardenStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GasStation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GatedResidenceCommunity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GeneralContractor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GeoCoordinates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GeoShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GolfCourse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GovernmentBuilding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GovernmentOffice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GovernmentOrganization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\GroceryStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HairSalon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HardwareStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HealthAndBeautyBusiness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HealthClub.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HighSchool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HinduTemple.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HobbyShop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HomeAndConstructionBusiness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HomeGoodsStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Hospital.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Hostel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Hotel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HousePainter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\HVACBusiness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\IceCreamShop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ImageGallery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ImageObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\InsuranceAgency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Intangible.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Integer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\InternetCafe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ItemAvailability.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ItemList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ItemPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\JewelryStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\JobPosting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\LakeBodyOfWater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Landform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\LandmarksOrHistoricalBuildings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Language.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\LegislativeBuilding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Library.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\LiquorStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\LiteraryEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\LocalBusiness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Locksmith.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\LodgingBusiness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Map.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Mass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MediaObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MedicalClinic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MedicalOrganization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MensClothingStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MiddleSchool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MobilePhoneStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Mosque.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Motel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MotorcycleDealer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MotorcycleRepair.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Mountain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Movie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MovieRentalStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MovieTheater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MovingCompany.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Museum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MusicAlbum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MusicEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MusicGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MusicPlaylist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MusicRecording.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MusicStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MusicVenue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\MusicVideoObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\NailSalon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\NewsArticle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\NGO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\NightClub.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Notary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Number.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\NutritionInformation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\OceanBodyOfWater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Offer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\OfferItemCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\OfficeEquipmentStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Optician.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Organization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\OutletStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Painting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Park.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ParkingFacility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\PawnShop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\PerformingArtsTheater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\PerformingGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Person.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\PetStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Pharmacy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Photograph.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Physician.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Place.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\PlaceOfWorship.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Playground.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Plumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\PoliceStation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Pond.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\PostalAddress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\PostOffice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Preschool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Product.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ProfessionalService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ProfilePage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\PublicSwimmingPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Quantity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\RadioStation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Rating.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\RealEstateAgent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Recipe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\RecyclingCenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Reservoir.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Residence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Restaurant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Review.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\RiverBodyOfWater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\RoofingContractor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\RVPark.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SaleEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ScholarlyArticle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\School.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Sculpture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SeaBodyOfWater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SearchResultsPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SelfStorage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ShoeStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ShoppingCenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SingleFamilyResidence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SiteNavigationElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SkiResort.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SocialEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SportingGoodsStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SportsActivityLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SportsClub.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SportsEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SportsTeam.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\StadiumOrArena.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\State.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Store.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\StructuredValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\SubwayStation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Synagogue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Table.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TattooParlor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TaxiStand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TelevisionStation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TennisComplex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Text.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TheaterEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TheaterGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Thing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TireShop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TouristAttraction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TouristInformationCenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\ToyStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TrainStation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TravelAgency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TVEpisode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TVSeason.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\TVSeries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\URL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\UserBlocks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\UserCheckins.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\UserComments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\UserDownloads.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\UserInteraction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\UserLikes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\UserPageVisits.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\UserPlays.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\UserPlusOnes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\UserTweets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\VeterinaryCare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\VideoGallery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\VideoObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\VisualArtsEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Volcano.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Waterfall.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\WebPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\WebPageElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\WholesaleStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Winery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\WPAdBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\WPFooter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\WPHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\WPSideBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microdata\Types\Zoo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\CultureManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Languages\Core\PropertyLabels.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PropertyLabels.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Core\TypeLabels.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TypeLabels.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MicrodataInterfaceInheritanceTree.cd" />
+    <None Include="Sasoma.Core.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

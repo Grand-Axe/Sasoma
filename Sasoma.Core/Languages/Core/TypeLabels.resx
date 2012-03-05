@@ -1,0 +1,995 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+  <data name="Boolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="DataType" xml:space="preserve">
+    <value>Data Type</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Float" xml:space="preserve">
+    <value>Float</value>
+  </data>
+  <data name="Integer" xml:space="preserve">
+    <value>Integer</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="AboutPage" xml:space="preserve">
+    <value>About Page</value>
+  </data>
+  <data name="AccountingService" xml:space="preserve">
+    <value>Accounting Service</value>
+  </data>
+  <data name="AdministrativeArea" xml:space="preserve">
+    <value>Administrative Area</value>
+  </data>
+  <data name="AdultEntertainment" xml:space="preserve">
+    <value>Adult Entertainment</value>
+  </data>
+  <data name="AggregateOffer" xml:space="preserve">
+    <value>Aggregate Offer</value>
+  </data>
+  <data name="AggregateRating" xml:space="preserve">
+    <value>Aggregate Rating</value>
+  </data>
+  <data name="Airport" xml:space="preserve">
+    <value>Airport</value>
+  </data>
+  <data name="AmusementPark" xml:space="preserve">
+    <value>Amusement Park</value>
+  </data>
+  <data name="AnimalShelter" xml:space="preserve">
+    <value>Animal Shelter</value>
+  </data>
+  <data name="ApartmentComplex" xml:space="preserve">
+    <value>Apartment Complex</value>
+  </data>
+  <data name="Aquarium" xml:space="preserve">
+    <value>Aquarium</value>
+  </data>
+  <data name="ArtGallery" xml:space="preserve">
+    <value>Art Gallery</value>
+  </data>
+  <data name="Article" xml:space="preserve">
+    <value>Article</value>
+  </data>
+  <data name="Attorney" xml:space="preserve">
+    <value>Attorney</value>
+  </data>
+  <data name="AudioObject" xml:space="preserve">
+    <value>Audio Object</value>
+  </data>
+  <data name="AutoBodyShop" xml:space="preserve">
+    <value>Auto Body Shop</value>
+  </data>
+  <data name="AutoDealer" xml:space="preserve">
+    <value>Auto Dealer</value>
+  </data>
+  <data name="AutoPartsStore" xml:space="preserve">
+    <value>Auto Parts Store</value>
+  </data>
+  <data name="AutoRental" xml:space="preserve">
+    <value>Auto Rental</value>
+  </data>
+  <data name="AutoRepair" xml:space="preserve">
+    <value>Auto Repair</value>
+  </data>
+  <data name="AutoWash" xml:space="preserve">
+    <value>Auto Wash</value>
+  </data>
+  <data name="AutomatedTeller" xml:space="preserve">
+    <value>Automated Teller</value>
+  </data>
+  <data name="AutomotiveBusiness" xml:space="preserve">
+    <value>Automotive Business</value>
+  </data>
+  <data name="Bakery" xml:space="preserve">
+    <value>Bakery</value>
+  </data>
+  <data name="BankOrCreditUnion" xml:space="preserve">
+    <value>Bank or Credit Union</value>
+  </data>
+  <data name="BarOrPub" xml:space="preserve">
+    <value>Bar or Pub</value>
+  </data>
+  <data name="Beach" xml:space="preserve">
+    <value>Beach</value>
+  </data>
+  <data name="BeautySalon" xml:space="preserve">
+    <value>Beauty Salon</value>
+  </data>
+  <data name="BedAndBreakfast" xml:space="preserve">
+    <value>Bed And Breakfast</value>
+  </data>
+  <data name="BikeStore" xml:space="preserve">
+    <value>Bike Store</value>
+  </data>
+  <data name="Blog" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="BlogPosting" xml:space="preserve">
+    <value>Blog Posting</value>
+  </data>
+  <data name="BodyOfWater" xml:space="preserve">
+    <value>Body of Water</value>
+  </data>
+  <data name="Book" xml:space="preserve">
+    <value>Book</value>
+  </data>
+  <data name="BookFormatType" xml:space="preserve">
+    <value>Book Format Type</value>
+  </data>
+  <data name="BookStore" xml:space="preserve">
+    <value>Book Store</value>
+  </data>
+  <data name="BowlingAlley" xml:space="preserve">
+    <value>Bowling Alley</value>
+  </data>
+  <data name="Brewery" xml:space="preserve">
+    <value>Brewery</value>
+  </data>
+  <data name="BuddhistTemple" xml:space="preserve">
+    <value>Buddhist Temple</value>
+  </data>
+  <data name="BusStation" xml:space="preserve">
+    <value>Bus Station</value>
+  </data>
+  <data name="BusStop" xml:space="preserve">
+    <value>Bus Stop</value>
+  </data>
+  <data name="BusinessEvent" xml:space="preserve">
+    <value>Business Event</value>
+  </data>
+  <data name="CafeOrCoffeeShop" xml:space="preserve">
+    <value>Cafe or Coffee Shop</value>
+  </data>
+  <data name="Campground" xml:space="preserve">
+    <value>Campground</value>
+  </data>
+  <data name="Canal" xml:space="preserve">
+    <value>Canal</value>
+  </data>
+  <data name="Casino" xml:space="preserve">
+    <value>Casino</value>
+  </data>
+  <data name="CatholicChurch" xml:space="preserve">
+    <value>Catholic Church</value>
+  </data>
+  <data name="Cemetery" xml:space="preserve">
+    <value>Cemetery</value>
+  </data>
+  <data name="CheckoutPage" xml:space="preserve">
+    <value>Checkout Page</value>
+  </data>
+  <data name="ChildCare" xml:space="preserve">
+    <value>Child Care</value>
+  </data>
+  <data name="ChildrensEvent" xml:space="preserve">
+    <value>Childrens Event</value>
+  </data>
+  <data name="Church" xml:space="preserve">
+    <value>Church</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="CityHall" xml:space="preserve">
+    <value>City Hall</value>
+  </data>
+  <data name="CivicStructure" xml:space="preserve">
+    <value>Civic Structure</value>
+  </data>
+  <data name="ClothingStore" xml:space="preserve">
+    <value>Clothing Store</value>
+  </data>
+  <data name="CollectionPage" xml:space="preserve">
+    <value>Collection Page</value>
+  </data>
+  <data name="CollegeOrUniversity" xml:space="preserve">
+    <value>College or University</value>
+  </data>
+  <data name="ComedyClub" xml:space="preserve">
+    <value>Comedy Club</value>
+  </data>
+  <data name="ComedyEvent" xml:space="preserve">
+    <value>Comedy Event</value>
+  </data>
+  <data name="ComputerStore" xml:space="preserve">
+    <value>Computer Store</value>
+  </data>
+  <data name="ContactPage" xml:space="preserve">
+    <value>Contact Page</value>
+  </data>
+  <data name="ContactPoint" xml:space="preserve">
+    <value>Contact Point</value>
+  </data>
+  <data name="Continent" xml:space="preserve">
+    <value>Continent</value>
+  </data>
+  <data name="ConvenienceStore" xml:space="preserve">
+    <value>Convenience Store</value>
+  </data>
+  <data name="Corporation" xml:space="preserve">
+    <value>Corporation</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Courthouse" xml:space="preserve">
+    <value>Courthouse</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distance</value>
+  </data>
+  <data name="DryCleaningOrLaundry" xml:space="preserve">
+    <value>Dry Cleaning or Laundry</value>
+  </data>
+  <data name="CreativeWork" xml:space="preserve">
+    <value>Creative Work</value>
+  </data>
+  <data name="Crematorium" xml:space="preserve">
+    <value>Crematorium</value>
+  </data>
+  <data name="DanceEvent" xml:space="preserve">
+    <value>Dance Event</value>
+  </data>
+  <data name="DanceGroup" xml:space="preserve">
+    <value>Dance Group</value>
+  </data>
+  <data name="DaySpa" xml:space="preserve">
+    <value>Day Spa</value>
+  </data>
+  <data name="DefenceEstablishment" xml:space="preserve">
+    <value>Defence Establishment</value>
+  </data>
+  <data name="Dentist" xml:space="preserve">
+    <value>Dentist</value>
+  </data>
+  <data name="DepartmentStore" xml:space="preserve">
+    <value>Department Store</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="EducationEvent" xml:space="preserve">
+    <value>Education Event</value>
+  </data>
+  <data name="EducationalOrganization" xml:space="preserve">
+    <value>Educational Organization</value>
+  </data>
+  <data name="Electrician" xml:space="preserve">
+    <value>Electrician</value>
+  </data>
+  <data name="ElectronicsStore" xml:space="preserve">
+    <value>Electronics Store</value>
+  </data>
+  <data name="ElementarySchool" xml:space="preserve">
+    <value>Elementary School</value>
+  </data>
+  <data name="Embassy" xml:space="preserve">
+    <value>Embassy</value>
+  </data>
+  <data name="EmergencyService" xml:space="preserve">
+    <value>Emergency Service</value>
+  </data>
+  <data name="EmploymentAgency" xml:space="preserve">
+    <value>Employment Agency</value>
+  </data>
+  <data name="Energy" xml:space="preserve">
+    <value>Energy</value>
+  </data>
+  <data name="EntertainmentBusiness" xml:space="preserve">
+    <value>Entertainment Business</value>
+  </data>
+  <data name="Enumeration" xml:space="preserve">
+    <value>Enumeration</value>
+  </data>
+  <data name="Event" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="EventVenue" xml:space="preserve">
+    <value>Event Venue</value>
+  </data>
+  <data name="ExerciseGym" xml:space="preserve">
+    <value>Exercise Gym</value>
+  </data>
+  <data name="FastFoodRestaurant" xml:space="preserve">
+    <value>Fast Food Restaurant</value>
+  </data>
+  <data name="Festival" xml:space="preserve">
+    <value>Festival</value>
+  </data>
+  <data name="FinancialService" xml:space="preserve">
+    <value>Financial Service</value>
+  </data>
+  <data name="FireStation" xml:space="preserve">
+    <value>Fire Station</value>
+  </data>
+  <data name="Florist" xml:space="preserve">
+    <value>Florist</value>
+  </data>
+  <data name="FoodEstablishment" xml:space="preserve">
+    <value>Food Establishment</value>
+  </data>
+  <data name="FoodEvent" xml:space="preserve">
+    <value>Food Event</value>
+  </data>
+  <data name="FurnitureStore" xml:space="preserve">
+    <value>Furniture Store</value>
+  </data>
+  <data name="GardenStore" xml:space="preserve">
+    <value>Garden Store</value>
+  </data>
+  <data name="GasStation" xml:space="preserve">
+    <value>Gas Station</value>
+  </data>
+  <data name="GatedResidenceCommunity" xml:space="preserve">
+    <value>Gated Residence Community</value>
+  </data>
+  <data name="GeneralContractor" xml:space="preserve">
+    <value>General Contractor</value>
+  </data>
+  <data name="GeoCoordinates" xml:space="preserve">
+    <value>Geo Coordinates</value>
+  </data>
+  <data name="GeoShape" xml:space="preserve">
+    <value>Geo Shape</value>
+  </data>
+  <data name="GolfCourse" xml:space="preserve">
+    <value>Golf Course</value>
+  </data>
+  <data name="GovernmentBuilding" xml:space="preserve">
+    <value>Government Building</value>
+  </data>
+  <data name="GovernmentOffice" xml:space="preserve">
+    <value>Government Office</value>
+  </data>
+  <data name="GovernmentOrganization" xml:space="preserve">
+    <value>Government Organization</value>
+  </data>
+  <data name="GroceryStore" xml:space="preserve">
+    <value>Grocery Store</value>
+  </data>
+  <data name="HVACBusiness" xml:space="preserve">
+    <value>HVAC Business</value>
+  </data>
+  <data name="HairSalon" xml:space="preserve">
+    <value>Hair Salon</value>
+  </data>
+  <data name="HardwareStore" xml:space="preserve">
+    <value>Hardware Store</value>
+  </data>
+  <data name="HealthAndBeautyBusiness" xml:space="preserve">
+    <value>Health And Beauty Business</value>
+  </data>
+  <data name="HealthClub" xml:space="preserve">
+    <value>Health Club</value>
+  </data>
+  <data name="HighSchool" xml:space="preserve">
+    <value>High School</value>
+  </data>
+  <data name="HinduTemple" xml:space="preserve">
+    <value>Hindu Temple</value>
+  </data>
+  <data name="HobbyShop" xml:space="preserve">
+    <value>Hobby Shop</value>
+  </data>
+  <data name="HomeAndConstructionBusiness" xml:space="preserve">
+    <value>Home And Construction Business</value>
+  </data>
+  <data name="HomeGoodsStore" xml:space="preserve">
+    <value>Home Goods Store</value>
+  </data>
+  <data name="Hospital" xml:space="preserve">
+    <value>Hospital</value>
+  </data>
+  <data name="Hostel" xml:space="preserve">
+    <value>Hostel</value>
+  </data>
+  <data name="Hotel" xml:space="preserve">
+    <value>Hotel</value>
+  </data>
+  <data name="HousePainter" xml:space="preserve">
+    <value>House Painter</value>
+  </data>
+  <data name="IceCreamShop" xml:space="preserve">
+    <value>Ice Cream Shop</value>
+  </data>
+  <data name="ImageGallery" xml:space="preserve">
+    <value>Image Gallery</value>
+  </data>
+  <data name="ImageObject" xml:space="preserve">
+    <value>Image Object</value>
+  </data>
+  <data name="InsuranceAgency" xml:space="preserve">
+    <value>Insurance Agency</value>
+  </data>
+  <data name="Intangible" xml:space="preserve">
+    <value>Intangible</value>
+  </data>
+  <data name="InternetCafe" xml:space="preserve">
+    <value>Internet Cafe</value>
+  </data>
+  <data name="ItemAvailability" xml:space="preserve">
+    <value>Item Availability</value>
+  </data>
+  <data name="ItemList" xml:space="preserve">
+    <value>Item List</value>
+  </data>
+  <data name="ItemPage" xml:space="preserve">
+    <value>Item Page</value>
+  </data>
+  <data name="JewelryStore" xml:space="preserve">
+    <value>Jewelry Store</value>
+  </data>
+  <data name="JobPosting" xml:space="preserve">
+    <value>Job Posting</value>
+  </data>
+  <data name="LakeBodyOfWater" xml:space="preserve">
+    <value>Lake Body of Water</value>
+  </data>
+  <data name="Landform" xml:space="preserve">
+    <value>Landform</value>
+  </data>
+  <data name="LandmarksOrHistoricalBuildings" xml:space="preserve">
+    <value>Landmarks or Historical Buildings</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LegislativeBuilding" xml:space="preserve">
+    <value>Legislative Building</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="LiquorStore" xml:space="preserve">
+    <value>Liquor Store</value>
+  </data>
+  <data name="LiteraryEvent" xml:space="preserve">
+    <value>Literary Event</value>
+  </data>
+  <data name="Mosque" xml:space="preserve">
+    <value>Mosque</value>
+  </data>
+  <data name="Motel" xml:space="preserve">
+    <value>Motel</value>
+  </data>
+  <data name="LocalBusiness" xml:space="preserve">
+    <value>Local Business</value>
+  </data>
+  <data name="Locksmith" xml:space="preserve">
+    <value>Locksmith</value>
+  </data>
+  <data name="LodgingBusiness" xml:space="preserve">
+    <value>Lodging Business</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="Mass" xml:space="preserve">
+    <value>Mass</value>
+  </data>
+  <data name="MotorcycleDealer" xml:space="preserve">
+    <value>Motorcycle Dealer</value>
+  </data>
+  <data name="MediaObject" xml:space="preserve">
+    <value>Media Object</value>
+  </data>
+  <data name="MedicalClinic" xml:space="preserve">
+    <value>Medical Clinic</value>
+  </data>
+  <data name="MedicalOrganization" xml:space="preserve">
+    <value>Medical Organization</value>
+  </data>
+  <data name="MensClothingStore" xml:space="preserve">
+    <value>Mens Clothing Store</value>
+  </data>
+  <data name="MiddleSchool" xml:space="preserve">
+    <value>Middle School</value>
+  </data>
+  <data name="MobilePhoneStore" xml:space="preserve">
+    <value>Mobile Phone Store</value>
+  </data>
+  <data name="MotorcycleRepair" xml:space="preserve">
+    <value>Motorcycle Repair</value>
+  </data>
+  <data name="Mountain" xml:space="preserve">
+    <value>Mountain</value>
+  </data>
+  <data name="Movie" xml:space="preserve">
+    <value>Movie</value>
+  </data>
+  <data name="MovieRentalStore" xml:space="preserve">
+    <value>Movie Rental Store</value>
+  </data>
+  <data name="MovieTheater" xml:space="preserve">
+    <value>Movie Theater</value>
+  </data>
+  <data name="MovingCompany" xml:space="preserve">
+    <value>Moving Company</value>
+  </data>
+  <data name="Museum" xml:space="preserve">
+    <value>Museum</value>
+  </data>
+  <data name="MusicAlbum" xml:space="preserve">
+    <value>Music Album</value>
+  </data>
+  <data name="MusicEvent" xml:space="preserve">
+    <value>Music Event</value>
+  </data>
+  <data name="MusicGroup" xml:space="preserve">
+    <value>Music Group</value>
+  </data>
+  <data name="MusicPlaylist" xml:space="preserve">
+    <value>Music Playlist</value>
+  </data>
+  <data name="MusicRecording" xml:space="preserve">
+    <value>Music Recording</value>
+  </data>
+  <data name="MusicStore" xml:space="preserve">
+    <value>Music Store</value>
+  </data>
+  <data name="MusicVenue" xml:space="preserve">
+    <value>Music Venue</value>
+  </data>
+  <data name="MusicVideoObject" xml:space="preserve">
+    <value>Music Video Object</value>
+  </data>
+  <data name="NGO" xml:space="preserve">
+    <value>NGO</value>
+  </data>
+  <data name="NailSalon" xml:space="preserve">
+    <value>Nail Salon</value>
+  </data>
+  <data name="NewsArticle" xml:space="preserve">
+    <value>News Article</value>
+  </data>
+  <data name="NightClub" xml:space="preserve">
+    <value>Night Club</value>
+  </data>
+  <data name="Notary" xml:space="preserve">
+    <value>Notary</value>
+  </data>
+  <data name="NutritionInformation" xml:space="preserve">
+    <value>Nutrition Information</value>
+  </data>
+  <data name="OceanBodyOfWater" xml:space="preserve">
+    <value>Ocean Body of Water</value>
+  </data>
+  <data name="Offer" xml:space="preserve">
+    <value>Offer</value>
+  </data>
+  <data name="OfferItemCondition" xml:space="preserve">
+    <value>Offer Item Condition</value>
+  </data>
+  <data name="OfficeEquipmentStore" xml:space="preserve">
+    <value>Office Equipment Store</value>
+  </data>
+  <data name="Optician" xml:space="preserve">
+    <value>Optician</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="OutletStore" xml:space="preserve">
+    <value>Outlet Store</value>
+  </data>
+  <data name="Painting" xml:space="preserve">
+    <value>Painting</value>
+  </data>
+  <data name="Park" xml:space="preserve">
+    <value>Park</value>
+  </data>
+  <data name="ParkingFacility" xml:space="preserve">
+    <value>Parking Facility</value>
+  </data>
+  <data name="PawnShop" xml:space="preserve">
+    <value>Pawn Shop</value>
+  </data>
+  <data name="PerformingArtsTheater" xml:space="preserve">
+    <value>Performing Arts Theater</value>
+  </data>
+  <data name="PerformingGroup" xml:space="preserve">
+    <value>Performing Group</value>
+  </data>
+  <data name="Person" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="PetStore" xml:space="preserve">
+    <value>Pet Store</value>
+  </data>
+  <data name="Pharmacy" xml:space="preserve">
+    <value>Pharmacy</value>
+  </data>
+  <data name="Photograph" xml:space="preserve">
+    <value>Photograph</value>
+  </data>
+  <data name="Physician" xml:space="preserve">
+    <value>Physician</value>
+  </data>
+  <data name="Place" xml:space="preserve">
+    <value>Place</value>
+  </data>
+  <data name="PlaceOfWorship" xml:space="preserve">
+    <value>Place of Worship</value>
+  </data>
+  <data name="Playground" xml:space="preserve">
+    <value>Playground</value>
+  </data>
+  <data name="Plumber" xml:space="preserve">
+    <value>Plumber</value>
+  </data>
+  <data name="PoliceStation" xml:space="preserve">
+    <value>Police Station</value>
+  </data>
+  <data name="Pond" xml:space="preserve">
+    <value>Pond</value>
+  </data>
+  <data name="PostOffice" xml:space="preserve">
+    <value>Post Office</value>
+  </data>
+  <data name="PostalAddress" xml:space="preserve">
+    <value>Postal Address</value>
+  </data>
+  <data name="Preschool" xml:space="preserve">
+    <value>Preschool</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="ProfessionalService" xml:space="preserve">
+    <value>Professional Service</value>
+  </data>
+  <data name="ProfilePage" xml:space="preserve">
+    <value>Profile Page</value>
+  </data>
+  <data name="PublicSwimmingPool" xml:space="preserve">
+    <value>Public Swimming Pool</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="RVPark" xml:space="preserve">
+    <value>RV Park</value>
+  </data>
+  <data name="RadioStation" xml:space="preserve">
+    <value>Radio Station</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="RealEstateAgent" xml:space="preserve">
+    <value>Real Estate Agent</value>
+  </data>
+  <data name="Recipe" xml:space="preserve">
+    <value>Recipe</value>
+  </data>
+  <data name="RecyclingCenter" xml:space="preserve">
+    <value>Recycling Center</value>
+  </data>
+  <data name="Reservoir" xml:space="preserve">
+    <value>Reservoir</value>
+  </data>
+  <data name="Residence" xml:space="preserve">
+    <value>Residence</value>
+  </data>
+  <data name="Restaurant" xml:space="preserve">
+    <value>Restaurant</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="RiverBodyOfWater" xml:space="preserve">
+    <value>River Body of Water</value>
+  </data>
+  <data name="RoofingContractor" xml:space="preserve">
+    <value>Roofing Contractor</value>
+  </data>
+  <data name="SaleEvent" xml:space="preserve">
+    <value>Sale Event</value>
+  </data>
+  <data name="ScholarlyArticle" xml:space="preserve">
+    <value>Scholarly Article</value>
+  </data>
+  <data name="School" xml:space="preserve">
+    <value>School</value>
+  </data>
+  <data name="Sculpture" xml:space="preserve">
+    <value>Sculpture</value>
+  </data>
+  <data name="SeaBodyOfWater" xml:space="preserve">
+    <value>Sea Body of Water</value>
+  </data>
+  <data name="SearchResultsPage" xml:space="preserve">
+    <value>Search Results Page</value>
+  </data>
+  <data name="SelfStorage" xml:space="preserve">
+    <value>Self Storage</value>
+  </data>
+  <data name="ShoeStore" xml:space="preserve">
+    <value>Shoe Store</value>
+  </data>
+  <data name="ShoppingCenter" xml:space="preserve">
+    <value>Shopping Center</value>
+  </data>
+  <data name="SingleFamilyResidence" xml:space="preserve">
+    <value>Single Family Residence</value>
+  </data>
+  <data name="SiteNavigationElement" xml:space="preserve">
+    <value>Site Navigation Element</value>
+  </data>
+  <data name="SkiResort" xml:space="preserve">
+    <value>Ski Resort</value>
+  </data>
+  <data name="SocialEvent" xml:space="preserve">
+    <value>Social Event</value>
+  </data>
+  <data name="SportingGoodsStore" xml:space="preserve">
+    <value>Sporting Goods Store</value>
+  </data>
+  <data name="SportsActivityLocation" xml:space="preserve">
+    <value>Sports Activity Location</value>
+  </data>
+  <data name="SportsClub" xml:space="preserve">
+    <value>Sports Club</value>
+  </data>
+  <data name="SportsEvent" xml:space="preserve">
+    <value>Sports Event</value>
+  </data>
+  <data name="SportsTeam" xml:space="preserve">
+    <value>Sports Team</value>
+  </data>
+  <data name="StadiumOrArena" xml:space="preserve">
+    <value>Stadium or Arena</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Store" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="StructuredValue" xml:space="preserve">
+    <value>Structured Value</value>
+  </data>
+  <data name="SubwayStation" xml:space="preserve">
+    <value>Subway Station</value>
+  </data>
+  <data name="Synagogue" xml:space="preserve">
+    <value>Synagogue</value>
+  </data>
+  <data name="TVEpisode" xml:space="preserve">
+    <value>TV Episode</value>
+  </data>
+  <data name="TVSeason" xml:space="preserve">
+    <value>TV Season</value>
+  </data>
+  <data name="TVSeries" xml:space="preserve">
+    <value>TV Series</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="TattooParlor" xml:space="preserve">
+    <value>Tattoo Parlor</value>
+  </data>
+  <data name="TaxiStand" xml:space="preserve">
+    <value>Taxi Stand</value>
+  </data>
+  <data name="TelevisionStation" xml:space="preserve">
+    <value>Television Station</value>
+  </data>
+  <data name="TennisComplex" xml:space="preserve">
+    <value>Tennis Complex</value>
+  </data>
+  <data name="TheaterEvent" xml:space="preserve">
+    <value>Theater Event</value>
+  </data>
+  <data name="TheaterGroup" xml:space="preserve">
+    <value>Theater Group</value>
+  </data>
+  <data name="Thing" xml:space="preserve">
+    <value>Thing</value>
+  </data>
+  <data name="TireShop" xml:space="preserve">
+    <value>Tire Shop</value>
+  </data>
+  <data name="TouristAttraction" xml:space="preserve">
+    <value>Tourist Attraction</value>
+  </data>
+  <data name="TouristInformationCenter" xml:space="preserve">
+    <value>Tourist Information Center</value>
+  </data>
+  <data name="ToyStore" xml:space="preserve">
+    <value>Toy Store</value>
+  </data>
+  <data name="TrainStation" xml:space="preserve">
+    <value>Train Station</value>
+  </data>
+  <data name="TravelAgency" xml:space="preserve">
+    <value>Travel Agency</value>
+  </data>
+  <data name="UserBlocks" xml:space="preserve">
+    <value>User Blocks</value>
+  </data>
+  <data name="UserCheckins" xml:space="preserve">
+    <value>User Checkins</value>
+  </data>
+  <data name="UserComments" xml:space="preserve">
+    <value>User Comments</value>
+  </data>
+  <data name="UserDownloads" xml:space="preserve">
+    <value>User Downloads</value>
+  </data>
+  <data name="UserInteraction" xml:space="preserve">
+    <value>User Interaction</value>
+  </data>
+  <data name="UserLikes" xml:space="preserve">
+    <value>User Likes</value>
+  </data>
+  <data name="UserPageVisits" xml:space="preserve">
+    <value>User Page Visits</value>
+  </data>
+  <data name="UserPlays" xml:space="preserve">
+    <value>User Plays</value>
+  </data>
+  <data name="UserPlusOnes" xml:space="preserve">
+    <value>User Plus Ones</value>
+  </data>
+  <data name="UserTweets" xml:space="preserve">
+    <value>User Tweets</value>
+  </data>
+  <data name="VeterinaryCare" xml:space="preserve">
+    <value>Veterinary Care</value>
+  </data>
+  <data name="VideoGallery" xml:space="preserve">
+    <value>Video Gallery</value>
+  </data>
+  <data name="VideoObject" xml:space="preserve">
+    <value>Video Object</value>
+  </data>
+  <data name="VisualArtsEvent" xml:space="preserve">
+    <value>Visual Arts Event</value>
+  </data>
+  <data name="Volcano" xml:space="preserve">
+    <value>Volcano</value>
+  </data>
+  <data name="WPAdBlock" xml:space="preserve">
+    <value>WP Ad Block</value>
+  </data>
+  <data name="WPFooter" xml:space="preserve">
+    <value>WP Footer</value>
+  </data>
+  <data name="WPHeader" xml:space="preserve">
+    <value>WP Header</value>
+  </data>
+  <data name="WPSideBar" xml:space="preserve">
+    <value>WP Side Bar</value>
+  </data>
+  <data name="Waterfall" xml:space="preserve">
+    <value>Waterfall</value>
+  </data>
+  <data name="WebPage" xml:space="preserve">
+    <value>Web Page</value>
+  </data>
+  <data name="WebPageElement" xml:space="preserve">
+    <value>Web Page Element</value>
+  </data>
+  <data name="WholesaleStore" xml:space="preserve">
+    <value>Wholesale Store</value>
+  </data>
+  <data name="Winery" xml:space="preserve">
+    <value>Winery</value>
+  </data>
+  <data name="Zoo" xml:space="preserve">
+    <value>Zoo</value>
+  </data>
+</root>

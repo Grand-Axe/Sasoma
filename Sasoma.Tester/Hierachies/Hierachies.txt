@@ -1,0 +1,39 @@
+﻿USE [Microdata]
+GO
+
+DECLARE	@return_value varchar(50)
+
+--EXEC	@return_value = [dbo].[GetTypeByName]
+--		@name = 'thing'
+
+--EXEC	@return_value = [dbo].[GetTypeByName]
+--		@name = 'CreativeWork'
+		
+--EXEC	@return_value = [dbo].[GetTypeByName]
+--		@name = 'Event'
+		
+--EXEC	@return_value = [dbo].[GetTypeByName]
+--		@name = 'Intangible'
+		
+--EXEC	@return_value = [dbo].[GetTypeByName]
+--		@name = 'Organization'
+		
+--EXEC	@return_value = [dbo].[GetTypeByName]
+--		@name = 'Person'
+		
+--EXEC	@return_value = [dbo].[GetTypeByName]
+--		@name = 'Place'
+		
+EXEC	@return_value = [dbo].[GetTypeByName]
+		@name = 'Product'
+--SELECT	'Return Value' = @return_value
+
+GO
+--(thing) CreativeWork,Event,Intangible,Organization,Person,Place,Product
+--(CreativeWork) Article,Blog,Book,ItemList,Map,MediaObject,Movie,MusicPlaylist,MusicRecording,Painting,Photograph,Recipe,Review,Sculpture,TVEpisode,TVSeason,TVSeries,WebPage,WebPageElement
+--(Event) BusinessEvent,ChildrensEvent,ComedyEvent,DanceEvent,EducationEvent,Festival,FoodEvent,LiteraryEvent,MusicEvent,SaleEvent,SocialEvent,SportsEvent,TheaterEvent,UserInteraction,VisualArtsEvent
+--(Intangible) Enumeration,JobPosting,Language,Offer,Quantity,Rating,StructuredValue
+--(Organisation) Corporation,EducationalOrganization,GovernmentOrganization,LocalBusiness,NGO,PerformingGroup,SportsTeam
+--(Person)
+--(place) AdministrativeArea,CivicStructure,Landform,LandmarksOrHistoricalBuildings,LocalBusiness,Residence,TouristAttraction
+--(Product)

@@ -1,0 +1,6 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Extensions\bin\Debug\Sasoma.Extensions.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Extensions\bin\Debug\Sasoma.Extensions.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Extensions\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Extensions\obj\Debug\Sasoma.Extensions.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Extensions\obj\Debug\Sasoma.Extensions.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\MicrodataSchema\Sasoma.Extensions\bin\Debug\Sasoma.Extensions.dll.config
