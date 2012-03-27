@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// A sibling of the person.
 	/// </summary>
-	public class Siblings_Core : PropertyCore, IProperty
+	public class Siblings_Core : PropertyCore
 	{
-		public int PropertyId
+		public Siblings_Core()
 		{
-			get
-			{
-				return 207;
-			}
+			this._PropertyId = 207;
+			this._Id = "siblings";
+			string label = "";
+			GetLabel(out label, "Siblings", typeof(Siblings_Core));
+			this._Label = label;
+			this._Domains = new int[]{201};
+			this._Ranges = new int[]{201};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "siblings";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Siblings", typeof(Siblings_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{201};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{201};
-			}
-		}
-
 	}
 }

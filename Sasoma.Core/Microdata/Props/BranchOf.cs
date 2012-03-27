@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The larger organization that this local business is a branch of, if any.
 	/// </summary>
-	public class BranchOf_Core : PropertyCore, IProperty
+	public class BranchOf_Core : PropertyCore
 	{
-		public int PropertyId
+		public BranchOf_Core()
 		{
-			get
-			{
-				return 36;
-			}
+			this._PropertyId = 36;
+			this._Id = "branchOf";
+			string label = "";
+			GetLabel(out label, "BranchOf", typeof(BranchOf_Core));
+			this._Label = label;
+			this._Domains = new int[]{155};
+			this._Ranges = new int[]{193};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "branchOf";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "BranchOf", typeof(BranchOf_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{155};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{193};
-			}
-		}
-
 	}
 }

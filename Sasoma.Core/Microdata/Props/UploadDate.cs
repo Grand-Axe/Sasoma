@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Date when this media object was uploaded to this site.
 	/// </summary>
-	public class UploadDate_Core : PropertyCore, IProperty
+	public class UploadDate_Core : PropertyCore
 	{
-		public int PropertyId
+		public UploadDate_Core()
 		{
-			get
-			{
-				return 228;
-			}
+			this._PropertyId = 228;
+			this._Id = "uploadDate";
+			string label = "";
+			GetLabel(out label, "UploadDate", typeof(UploadDate_Core));
+			this._Label = label;
+			this._Domains = new int[]{161};
+			this._Ranges = new int[]{2};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "uploadDate";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "UploadDate", typeof(UploadDate_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{161};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{2};
-			}
-		}
-
 	}
 }

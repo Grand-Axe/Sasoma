@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The number of grams of protein.
 	/// </summary>
-	public class ProteinContent_Core : PropertyCore, IProperty
+	public class ProteinContent_Core : PropertyCore
 	{
-		public int PropertyId
+		public ProteinContent_Core()
 		{
-			get
-			{
-				return 177;
-			}
+			this._PropertyId = 177;
+			this._Id = "proteinContent";
+			string label = "";
+			GetLabel(out label, "ProteinContent", typeof(ProteinContent_Core));
+			this._Label = label;
+			this._Domains = new int[]{187};
+			this._Ranges = new int[]{159};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "proteinContent";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "ProteinContent", typeof(ProteinContent_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{187};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{159};
-			}
-		}
-
 	}
 }

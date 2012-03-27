@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The seasons of the TV series.
 	/// </summary>
-	public class Seasons_Core : PropertyCore, IProperty
+	public class Seasons_Core : PropertyCore
 	{
-		public int PropertyId
+		public Seasons_Core()
 		{
-			get
-			{
-				return 203;
-			}
+			this._PropertyId = 203;
+			this._Id = "seasons";
+			string label = "";
+			GetLabel(out label, "Seasons", typeof(Seasons_Core));
+			this._Label = label;
+			this._Domains = new int[]{258};
+			this._Ranges = new int[]{257};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "seasons";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Seasons", typeof(Seasons_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{258};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{257};
-			}
-		}
-
 	}
 }

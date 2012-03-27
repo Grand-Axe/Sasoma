@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Specifies the Person that is legally accountable for the CreativeWork.
 	/// </summary>
-	public class AccountablePerson_Core : PropertyCore, IProperty
+	public class AccountablePerson_Core : PropertyCore
 	{
-		public int PropertyId
+		public AccountablePerson_Core()
 		{
-			get
-			{
-				return 2;
-			}
+			this._PropertyId = 2;
+			this._Id = "accountablePerson";
+			string label = "";
+			GetLabel(out label, "AccountablePerson", typeof(AccountablePerson_Core));
+			this._Label = label;
+			this._Domains = new int[]{78};
+			this._Ranges = new int[]{201};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "accountablePerson";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "AccountablePerson", typeof(AccountablePerson_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{78};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{201};
-			}
-		}
-
 	}
 }

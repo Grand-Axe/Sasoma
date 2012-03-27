@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class Airport_Core : TypeCore, ICivicStructure
 	{
-		public int TypeId
+		public Airport_Core()
 		{
-			get
-			{
-				return 14;
-			}
-		}
+			this._TypeId = 14;
+			this._Id = "Airport";
+			this._Schema_Org_Url = "http://schema.org/Airport";
+			string label = "";
+			GetLabel(out label, "Airport", typeof(Airport_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,206,62};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{62};
+			this._Properties = new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,152};
 
-		public string Id
-		{
-			get
-			{
-				return "Airport";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/Airport";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Airport", typeof(Airport_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,206,62};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{62};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,152};
-			}
-		}
-
 
 		/// <summary>
 		/// Physical address of the item.

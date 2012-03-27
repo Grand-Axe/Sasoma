@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class DanceGroup_Core : TypeCore, IPerformingGroup
 	{
-		public int TypeId
+		public DanceGroup_Core()
 		{
-			get
-			{
-				return 81;
-			}
-		}
+			this._TypeId = 81;
+			this._Id = "DanceGroup";
+			this._Schema_Org_Url = "http://schema.org/DanceGroup";
+			string label = "";
+			GetLabel(out label, "DanceGroup", typeof(DanceGroup_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,193,200};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{200};
+			this._Properties = new int[]{67,108,143,229,5,10,47,75,77,85,91,94,95,115,130,137,199,196};
 
-		public string Id
-		{
-			get
-			{
-				return "DanceGroup";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/DanceGroup";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "DanceGroup", typeof(DanceGroup_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,193,200};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{200};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,47,75,77,85,91,94,95,115,130,137,199,196};
-			}
-		}
-
 
 		/// <summary>
 		/// Physical address of the item.

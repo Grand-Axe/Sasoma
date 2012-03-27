@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class Person_Core : TypeCore, IThing
 	{
-		public int TypeId
+		public Person_Core()
 		{
-			get
-			{
-				return 201;
-			}
-		}
+			this._TypeId = 201;
+			this._Id = "Person";
+			this._Schema_Org_Url = "http://schema.org/Person";
+			string label = "";
+			GetLabel(out label, "Person", typeof(Person_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{266};
+			this._Properties = new int[]{67,108,143,229,4,5,9,14,26,30,43,46,47,66,75,89,91,93,96,99,104,105,106,115,125,127,136,144,153,157,189,207,213,196,237,238};
 
-		public string Id
-		{
-			get
-			{
-				return "Person";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/Person";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Person", typeof(Person_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{266};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,4,5,9,14,26,30,43,46,47,66,75,89,91,93,96,99,104,105,106,115,125,127,136,144,153,157,189,207,213,196,237,238};
-			}
-		}
-
 
 		/// <summary>
 		/// An additional name for a Person, can be used for a middle name.

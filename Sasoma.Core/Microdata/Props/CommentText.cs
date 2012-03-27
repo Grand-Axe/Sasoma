@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The text of the UserComment.
 	/// </summary>
-	public class CommentText_Core : PropertyCore, IProperty
+	public class CommentText_Core : PropertyCore
 	{
-		public int PropertyId
+		public CommentText_Core()
 		{
-			get
-			{
-				return 22;
-			}
+			this._PropertyId = 22;
+			this._Id = "commentText";
+			string label = "";
+			GetLabel(out label, "CommentText", typeof(CommentText_Core));
+			this._Label = label;
+			this._Domains = new int[]{275};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "commentText";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "CommentText", typeof(CommentText_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{275};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Type of employment (e.g. full-time, part-time, contract, temporary, seasonal, internship).
 	/// </summary>
-	public class EmploymentType_Core : PropertyCore, IProperty
+	public class EmploymentType_Core : PropertyCore
 	{
-		public int PropertyId
+		public EmploymentType_Core()
 		{
-			get
-			{
-				return 78;
-			}
+			this._PropertyId = 78;
+			this._Id = "employmentType";
+			string label = "";
+			GetLabel(out label, "EmploymentType", typeof(EmploymentType_Core));
+			this._Label = label;
+			this._Domains = new int[]{144};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "employmentType";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "EmploymentType", typeof(EmploymentType_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{144};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

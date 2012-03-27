@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="Sasoma.Microdata.Interfaces.ICache">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAgAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_ICache.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IType" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAACAAAAAAAAAAAgAgAAAAAAECAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_IType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IDataType" Collapsed="true">
+    <Position X="4.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_IDataType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.ILabel">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAQAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_ILabel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IIdentified" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_IIdentified.cs</FileName>
+      <NewMemberFileName>Microdata\Interfaces\_IMicrodata.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IProperty" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_IProperty.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IThing" Collapsed="true">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAACAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_IThing.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sasoma.Microdata.Interfaces.IMicrodata" Collapsed="true">
+    <Position X="5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microdata\Interfaces\_IMicrodata.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

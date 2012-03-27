@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The frame size of the video.
 	/// </summary>
-	public class VideoFrameSize_Core : PropertyCore, IProperty
+	public class VideoFrameSize_Core : PropertyCore
 	{
-		public int PropertyId
+		public VideoFrameSize_Core()
 		{
-			get
-			{
-				return 232;
-			}
+			this._PropertyId = 232;
+			this._Id = "videoFrameSize";
+			string label = "";
+			GetLabel(out label, "VideoFrameSize", typeof(VideoFrameSize_Core));
+			this._Label = label;
+			this._Domains = new int[]{285};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "videoFrameSize";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "VideoFrameSize", typeof(VideoFrameSize_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{285};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

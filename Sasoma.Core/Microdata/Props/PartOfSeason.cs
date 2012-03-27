@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The season to which this episode belongs.
 	/// </summary>
-	public class PartOfSeason_Core : PropertyCore, IProperty
+	public class PartOfSeason_Core : PropertyCore
 	{
-		public int PropertyId
+		public PartOfSeason_Core()
 		{
-			get
-			{
-				return 154;
-			}
+			this._PropertyId = 154;
+			this._Id = "partOfSeason";
+			string label = "";
+			GetLabel(out label, "PartOfSeason", typeof(PartOfSeason_Core));
+			this._Label = label;
+			this._Domains = new int[]{256};
+			this._Ranges = new int[]{257};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "partOfSeason";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "PartOfSeason", typeof(PartOfSeason_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{256};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{257};
-			}
-		}
-
 	}
 }

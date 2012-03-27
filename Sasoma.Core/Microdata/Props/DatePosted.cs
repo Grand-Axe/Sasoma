@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Publication date for the job posting.
 	/// </summary>
-	public class DatePosted_Core : PropertyCore, IProperty
+	public class DatePosted_Core : PropertyCore
 	{
-		public int PropertyId
+		public DatePosted_Core()
 		{
-			get
-			{
-				return 63;
-			}
+			this._PropertyId = 63;
+			this._Id = "datePosted";
+			string label = "";
+			GetLabel(out label, "DatePosted", typeof(DatePosted_Core));
+			this._Label = label;
+			this._Domains = new int[]{144};
+			this._Ranges = new int[]{2};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "datePosted";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "DatePosted", typeof(DatePosted_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{144};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{2};
-			}
-		}
-
 	}
 }

@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// A secondary title of the CreativeWork.
 	/// </summary>
-	public class AlternativeHeadline_Core : PropertyCore, IProperty
+	public class AlternativeHeadline_Core : PropertyCore
 	{
-		public int PropertyId
+		public AlternativeHeadline_Core()
 		{
-			get
-			{
-				return 12;
-			}
+			this._PropertyId = 12;
+			this._Id = "alternativeHeadline";
+			string label = "";
+			GetLabel(out label, "AlternativeHeadline", typeof(AlternativeHeadline_Core));
+			this._Label = label;
+			this._Domains = new int[]{78};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "alternativeHeadline";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "AlternativeHeadline", typeof(AlternativeHeadline_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{78};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

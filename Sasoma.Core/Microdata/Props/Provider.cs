@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Specifies the Person or Organization that distributed the CreativeWork.
 	/// </summary>
-	public class Provider_Core : PropertyCore, IProperty
+	public class Provider_Core : PropertyCore
 	{
-		public int PropertyId
+		public Provider_Core()
 		{
-			get
-			{
-				return 178;
-			}
+			this._PropertyId = 178;
+			this._Id = "provider";
+			string label = "";
+			GetLabel(out label, "Provider", typeof(Provider_Core));
+			this._Label = label;
+			this._Domains = new int[]{78};
+			this._Ranges = new int[]{201,193};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "provider";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Provider", typeof(Provider_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{78};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{201,193};
-			}
-		}
-
 	}
 }

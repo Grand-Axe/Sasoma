@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,80 +14,21 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class URL_Core : TypeCore, IText
 	{
-		public int TypeId
+		public URL_Core()
 		{
-			get
-			{
-				return 7;
-			}
-		}
+			this._TypeId = 7;
+			this._Id = "URL";
+			this._Schema_Org_Url = "http://schema.org/URL";
+			string label = "";
+			GetLabel(out label, "URL", typeof(URL_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{1,6};
+			this._Instances = new int[0];
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{6};
+			this._Properties = new int[0];
 
-		public string Id
-		{
-			get
-			{
-				return "URL";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/URL";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "URL", typeof(URL_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{1,6};
-			}
-		}
-
-		public int[] Instances
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
 
 	}
 }

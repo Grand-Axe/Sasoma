@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// A person attending the event.
 	/// </summary>
-	public class Attendees_Core : PropertyCore, IProperty
+	public class Attendees_Core : PropertyCore
 	{
-		public int PropertyId
+		public Attendees_Core()
 		{
-			get
-			{
-				return 19;
-			}
+			this._PropertyId = 19;
+			this._Id = "attendees";
+			string label = "";
+			GetLabel(out label, "Attendees", typeof(Attendees_Core));
+			this._Label = label;
+			this._Domains = new int[]{98};
+			this._Ranges = new int[]{201,193};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "attendees";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Attendees", typeof(Attendees_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{98};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{201,193};
-			}
-		}
-
 	}
 }

@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class BankOrCreditUnion_Core : TypeCore, IFinancialService
 	{
-		public int TypeId
+		public BankOrCreditUnion_Core()
 		{
-			get
-			{
-				return 32;
-			}
-		}
+			this._TypeId = 32;
+			this._Id = "BankOrCreditUnion";
+			this._Schema_Org_Url = "http://schema.org/BankOrCreditUnion";
+			string label = "";
+			GetLabel(out label, "BankOrCreditUnion", typeof(BankOrCreditUnion_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,193,155,103};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{103};
+			this._Properties = new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,47,75,77,94,95,130,137,36,60,152,156,167};
 
-		public string Id
-		{
-			get
-			{
-				return "BankOrCreditUnion";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/BankOrCreditUnion";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "BankOrCreditUnion", typeof(BankOrCreditUnion_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,193,155,103};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{103};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,47,75,77,94,95,130,137,36,60,152,156,167};
-			}
-		}
-
 
 		/// <summary>
 		/// Physical address of the item.

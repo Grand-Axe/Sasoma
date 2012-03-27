@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The party holding the legal copyright to the CreativeWork.
 	/// </summary>
-	public class CopyrightHolder_Core : PropertyCore, IProperty
+	public class CopyrightHolder_Core : PropertyCore
 	{
-		public int PropertyId
+		public CopyrightHolder_Core()
 		{
-			get
-			{
-				return 57;
-			}
+			this._PropertyId = 57;
+			this._Id = "copyrightHolder";
+			string label = "";
+			GetLabel(out label, "CopyrightHolder", typeof(CopyrightHolder_Core));
+			this._Label = label;
+			this._Domains = new int[]{78};
+			this._Ranges = new int[]{201,193};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "copyrightHolder";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "CopyrightHolder", typeof(CopyrightHolder_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{78};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{201,193};
-			}
-		}
-
 	}
 }

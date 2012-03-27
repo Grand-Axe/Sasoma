@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.
 	/// </summary>
-	public class BestRating_Core : PropertyCore, IProperty
+	public class BestRating_Core : PropertyCore
 	{
-		public int PropertyId
+		public BestRating_Core()
 		{
-			get
-			{
-				return 29;
-			}
+			this._PropertyId = 29;
+			this._Id = "bestRating";
+			string label = "";
+			GetLabel(out label, "BestRating", typeof(BestRating_Core));
+			this._Label = label;
+			this._Domains = new int[]{222};
+			this._Ranges = new int[]{5,6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "bestRating";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "BestRating", typeof(BestRating_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{222};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{5,6};
-			}
-		}
-
 	}
 }

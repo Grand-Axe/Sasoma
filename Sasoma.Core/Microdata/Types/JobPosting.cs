@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class JobPosting_Core : TypeCore, IIntangible
 	{
-		public int TypeId
+		public JobPosting_Core()
 		{
-			get
-			{
-				return 144;
-			}
-		}
+			this._TypeId = 144;
+			this._Id = "JobPosting";
+			this._Schema_Org_Url = "http://schema.org/JobPosting";
+			string label = "";
+			GetLabel(out label, "JobPosting", typeof(JobPosting_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,138};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{138};
+			this._Properties = new int[]{67,108,143,229,27,28,63,73,78,87,103,112,113,124,149,181,193,200,209,212,221,236};
 
-		public string Id
-		{
-			get
-			{
-				return "JobPosting";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/JobPosting";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "JobPosting", typeof(JobPosting_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,138};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{138};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,27,28,63,73,78,87,103,112,113,124,149,181,193,200,209,212,221,236};
-			}
-		}
-
 
 		/// <summary>
 		/// The base salary of the job.

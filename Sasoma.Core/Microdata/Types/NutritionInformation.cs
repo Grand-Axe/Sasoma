@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class NutritionInformation_Core : TypeCore, IStructuredValue
 	{
-		public int TypeId
+		public NutritionInformation_Core()
 		{
-			get
-			{
-				return 187;
-			}
-		}
+			this._TypeId = 187;
+			this._Id = "NutritionInformation";
+			this._Schema_Org_Url = "http://schema.org/NutritionInformation";
+			string label = "";
+			GetLabel(out label, "NutritionInformation", typeof(NutritionInformation_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,138,253};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{253};
+			this._Properties = new int[]{67,108,143,229,40,42,44,90,92,177,201,206,210,217,225,227};
 
-		public string Id
-		{
-			get
-			{
-				return "NutritionInformation";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/NutritionInformation";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "NutritionInformation", typeof(NutritionInformation_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,138,253};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{253};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,40,42,44,90,92,177,201,206,210,217,225,227};
-			}
-		}
-
 
 		/// <summary>
 		/// The number of calories

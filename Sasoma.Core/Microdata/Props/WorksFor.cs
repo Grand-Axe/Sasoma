@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Organizations that the person works for.
 	/// </summary>
-	public class WorksFor_Core : PropertyCore, IProperty
+	public class WorksFor_Core : PropertyCore
 	{
-		public int PropertyId
+		public WorksFor_Core()
 		{
-			get
-			{
-				return 238;
-			}
+			this._PropertyId = 238;
+			this._Id = "worksFor";
+			string label = "";
+			GetLabel(out label, "WorksFor", typeof(WorksFor_Core));
+			this._Label = label;
+			this._Domains = new int[]{201};
+			this._Ranges = new int[]{193};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "worksFor";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "WorksFor", typeof(WorksFor_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{201};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{193};
-			}
-		}
-
 	}
 }

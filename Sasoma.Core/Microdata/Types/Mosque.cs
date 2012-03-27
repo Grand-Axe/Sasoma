@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class Mosque_Core : TypeCore, IPlaceOfWorship
 	{
-		public int TypeId
+		public Mosque_Core()
 		{
-			get
-			{
-				return 153;
-			}
-		}
+			this._TypeId = 153;
+			this._Id = "Mosque";
+			this._Schema_Org_Url = "http://schema.org/Mosque";
+			string label = "";
+			GetLabel(out label, "Mosque", typeof(Mosque_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,206,62,207};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{207};
+			this._Properties = new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,152};
 
-		public string Id
-		{
-			get
-			{
-				return "Mosque";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/Mosque";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Mosque", typeof(Mosque_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,206,62,207};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{207};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,152};
-			}
-		}
-
 
 		/// <summary>
 		/// Physical address of the item.

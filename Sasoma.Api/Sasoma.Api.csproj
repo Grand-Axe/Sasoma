@@ -37,6 +37,9 @@
     <AssemblyOriginatorKeyFile>Sasoma.Api.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="protobuf-net">
+      <HintPath>bin\protobuf-net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.configuration" />
@@ -52,19 +55,23 @@
   <ItemGroup>
     <Compile Include="Edge.cs" />
     <Compile Include="FixedVars\PropertiyVars.cs" />
+    <Compile Include="FixedVars\PropertyDataType.cs" />
     <Compile Include="FixedVars\TypeVars.cs" />
     <Compile Include="Graph.cs" />
     <Compile Include="GraphNode.cs" />
-    <Compile Include="Interfaces\IValue.cs" />
+    <Compile Include="Interfaces\IWork.cs" />
+    <Compile Include="Interfaces\IWriter.cs" />
     <Compile Include="KeyVal.cs" />
     <Compile Include="Languages\ErrorMessages.Designer.cs">
       <DependentUpon>ErrorMessages.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="MicrodataBase.cs" />
-    <Compile Include="MicrodataProperty.cs" />
-    <Compile Include="MicrodataType.cs" />
+    <Compile Include="MicrodataMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PluginManager.cs" />
+    <Compile Include="ProtocolBuffers.cs" />
     <Compile Include="Search.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringCache.cs" />
@@ -73,10 +80,6 @@
     <ProjectReference Include="..\Sasoma.Core\Sasoma.Core.csproj">
       <Project>{9630F4EE-25AA-44E2-83BE-3ECA193DA144}</Project>
       <Name>Sasoma.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sasoma.Extensions\Sasoma.Extensions.csproj">
-      <Project>{9E924309-0178-4653-A755-636B38AB3716}</Project>
-      <Name>Sasoma.Extensions</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +91,9 @@
       <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PropertyDatatype.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

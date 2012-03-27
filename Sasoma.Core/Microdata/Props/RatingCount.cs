@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The count of total number of ratings.
 	/// </summary>
-	public class RatingCount_Core : PropertyCore, IProperty
+	public class RatingCount_Core : PropertyCore
 	{
-		public int PropertyId
+		public RatingCount_Core()
 		{
-			get
-			{
-				return 182;
-			}
+			this._PropertyId = 182;
+			this._Id = "ratingCount";
+			string label = "";
+			GetLabel(out label, "RatingCount", typeof(RatingCount_Core));
+			this._Label = label;
+			this._Domains = new int[]{13};
+			this._Ranges = new int[]{5};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "ratingCount";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "RatingCount", typeof(RatingCount_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{13};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{5};
-			}
-		}
-
 	}
 }

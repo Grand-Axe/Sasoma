@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// A single list item.
 	/// </summary>
-	public class ItemListElement_Core : PropertyCore, IProperty
+	public class ItemListElement_Core : PropertyCore
 	{
-		public int PropertyId
+		public ItemListElement_Core()
 		{
-			get
-			{
-				return 120;
-			}
+			this._PropertyId = 120;
+			this._Id = "itemListElement";
+			string label = "";
+			GetLabel(out label, "ItemListElement", typeof(ItemListElement_Core));
+			this._Label = label;
+			this._Domains = new int[]{141};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "itemListElement";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "ItemListElement", typeof(ItemListElement_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{141};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

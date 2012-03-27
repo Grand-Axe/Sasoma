@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The number of pages in the book.
 	/// </summary>
-	public class NumberOfPages_Core : PropertyCore, IProperty
+	public class NumberOfPages_Core : PropertyCore
 	{
-		public int PropertyId
+		public NumberOfPages_Core()
 		{
-			get
-			{
-				return 147;
-			}
+			this._PropertyId = 147;
+			this._Id = "numberOfPages";
+			string label = "";
+			GetLabel(out label, "NumberOfPages", typeof(NumberOfPages_Core));
+			this._Label = label;
+			this._Domains = new int[]{41};
+			this._Ranges = new int[]{4};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "numberOfPages";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "NumberOfPages", typeof(NumberOfPages_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{41};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{4};
-			}
-		}
-
 	}
 }

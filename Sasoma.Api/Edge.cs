@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 
 using Sasoma.Api.Interfaces;
-using Sasoma.Extensions.Interfaces;
 
 namespace Sasoma.Api
 {

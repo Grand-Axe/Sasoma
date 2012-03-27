@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// A cast member of the movie, TV series, season, or episode, or video.
 	/// </summary>
-	public class Actors_Core : PropertyCore, IProperty
+	public class Actors_Core : PropertyCore
 	{
-		public int PropertyId
+		public Actors_Core()
 		{
-			get
-			{
-				return 3;
-			}
+			this._PropertyId = 3;
+			this._Id = "actors";
+			string label = "";
+			GetLabel(out label, "Actors", typeof(Actors_Core));
+			this._Label = label;
+			this._Domains = new int[]{256,169,258};
+			this._Ranges = new int[]{201};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "actors";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Actors", typeof(Actors_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{256,169,258};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{201};
-			}
-		}
-
 	}
 }

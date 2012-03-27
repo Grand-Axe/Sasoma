@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class Store_Core : TypeCore, ILocalBusiness
 	{
-		public int TypeId
+		public Store_Core()
 		{
-			get
-			{
-				return 252;
-			}
-		}
+			this._TypeId = 252;
+			this._Id = "Store";
+			this._Schema_Org_Url = "http://schema.org/Store";
+			string label = "";
+			GetLabel(out label, "Store", typeof(Store_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,193,155};
+			this._SubTypes = new int[]{25,37,43,63,68,72,85,90,105,108,109,119,122,127,129,143,151,164,166,170,179,191,194,198,202,239,245,267,270,295};
+			this._SuperTypes = new int[]{155};
+			this._Properties = new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,47,75,77,94,95,130,137,36,60,152,156,167};
 
-		public string Id
-		{
-			get
-			{
-				return "Store";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/Store";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Store", typeof(Store_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,193,155};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[]{25,37,43,63,68,72,85,90,105,108,109,119,122,127,129,143,151,164,166,170,179,191,194,198,202,239,245,267,270,295};
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{155};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,47,75,77,94,95,130,137,36,60,152,156,167};
-			}
-		}
-
 
 		/// <summary>
 		/// Physical address of the item.

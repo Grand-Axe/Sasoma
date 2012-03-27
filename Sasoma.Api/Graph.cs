@@ -13,7 +13,7 @@ namespace Sasoma.Api
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="U"></typeparam>
-    public class Graph : Core
+    public class Graph : CacheManager
     {
         private List<GraphNode> nodes;
         private List<GraphNode> GraphNodeCollection
@@ -65,12 +65,12 @@ namespace Sasoma.Api
         {
             GraphNode foundNode = new GraphNode();
             int end = 0;
-           //int start = 0;
+            //int start = 0;
             for (int i = 0; i < GraphNodeCollection.Count; i++)
             {
                 if (GraphNodeCollection[i].GraphNodeId == graphNodeId)
                 {
-                    return (GraphNode)(object)GraphNodeCollection[i];
+                    return GraphNodeCollection[i];
                 }
                 else
                 {
@@ -81,7 +81,7 @@ namespace Sasoma.Api
                             end = GraphNodeCollection[i].Edges[j].EndGraphNodeId;
                             if (end == graphNodeId)
                             {
-                                return (GraphNode)(object)GetGraphNodeById(GraphNodeCollection[i].Edges[j].EndGraphNodeId);
+                                return GetGraphNodeById(GraphNodeCollection[i].Edges[j].EndGraphNodeId);
                             }
                             else
                             {
@@ -94,7 +94,7 @@ namespace Sasoma.Api
             return foundNode;
         }
 
-        public GraphNode GetGraphNodeParent(int graphNodeId, GraphNode graphNode)
+        public GraphNode GetGraphNodeParent(int graphNodeId)
         {
             GraphNode foundNode = new GraphNode();
             int end = 0;
@@ -103,7 +103,7 @@ namespace Sasoma.Api
             {
                 if (GraphNodeCollection[i].ParentId == graphNodeId)
                 {
-                    return (GraphNode)(object)GraphNodeCollection[i];
+                    return GraphNodeCollection[i];
                 }
                 else
                 {
@@ -114,7 +114,7 @@ namespace Sasoma.Api
                             end = GraphNodeCollection[i].Edges[j].StartGraphNodeId;
                             if (end == graphNodeId)
                             {
-                                return (GraphNode)(object)GetGraphNodeById(GraphNodeCollection[i].Edges[j].StartGraphNodeId);
+                                return GetGraphNodeById(GraphNodeCollection[i].Edges[j].StartGraphNodeId);
                             }
                             else
                             {
@@ -127,7 +127,7 @@ namespace Sasoma.Api
             return foundNode;
         }
 
-        public object FindEdge(int edgeId, GraphNode graphNode)
+        public object FindEdge(int edgeId)
         {
             object foundEdge = new object();
             for (int i = 0; i < EdgeCollection.Count; i++)

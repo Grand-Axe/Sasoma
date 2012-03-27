@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The quantity produced by the recipe (for example, number of people served, number of servings, etc).
 	/// </summary>
-	public class RecipeYield_Core : PropertyCore, IProperty
+	public class RecipeYield_Core : PropertyCore
 	{
-		public int PropertyId
+		public RecipeYield_Core()
 		{
-			get
-			{
-				return 187;
-			}
+			this._PropertyId = 187;
+			this._Id = "recipeYield";
+			string label = "";
+			GetLabel(out label, "RecipeYield", typeof(RecipeYield_Core));
+			this._Label = label;
+			this._Domains = new int[]{224};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "recipeYield";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "RecipeYield", typeof(RecipeYield_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{224};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

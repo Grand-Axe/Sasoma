@@ -13,6 +13,14 @@ namespace Sasoma.Microdata
     /// </summary>
     public class VerySimpleCacheObj : ICache
     {
+        public string Id
+        {
+            get
+            {
+                return "VerySimpleCacheObj";
+            }
+        }
+
         /// <summary>
         /// Gets a key/value object with the key from the cache.
         /// </summary>

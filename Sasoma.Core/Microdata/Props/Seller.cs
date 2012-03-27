@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The seller of the product.
 	/// </summary>
-	public class Seller_Core : PropertyCore, IProperty
+	public class Seller_Core : PropertyCore
 	{
-		public int PropertyId
+		public Seller_Core()
 		{
-			get
-			{
-				return 204;
-			}
+			this._PropertyId = 204;
+			this._Id = "seller";
+			string label = "";
+			GetLabel(out label, "Seller", typeof(Seller_Core));
+			this._Label = label;
+			this._Domains = new int[]{189};
+			this._Ranges = new int[]{193};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "seller";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Seller", typeof(Seller_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{189};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{193};
-			}
-		}
-
 	}
 }

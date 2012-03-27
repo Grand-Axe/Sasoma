@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class Rating_Core : TypeCore, IIntangible
 	{
-		public int TypeId
+		public Rating_Core()
 		{
-			get
-			{
-				return 222;
-			}
-		}
+			this._TypeId = 222;
+			this._Id = "Rating";
+			this._Schema_Org_Url = "http://schema.org/Rating";
+			string label = "";
+			GetLabel(out label, "Rating", typeof(Rating_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,138};
+			this._SubTypes = new int[]{13};
+			this._SuperTypes = new int[]{138};
+			this._Properties = new int[]{67,108,143,229,29,183,239};
 
-		public string Id
-		{
-			get
-			{
-				return "Rating";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/Rating";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Rating", typeof(Rating_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,138};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[]{13};
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{138};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,29,183,239};
-			}
-		}
-
 
 		/// <summary>
 		/// The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.

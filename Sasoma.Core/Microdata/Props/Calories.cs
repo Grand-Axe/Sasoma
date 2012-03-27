@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The number of calories
 	/// </summary>
-	public class Calories_Core : PropertyCore, IProperty
+	public class Calories_Core : PropertyCore
 	{
-		public int PropertyId
+		public Calories_Core()
 		{
-			get
-			{
-				return 40;
-			}
+			this._PropertyId = 40;
+			this._Id = "calories";
+			string label = "";
+			GetLabel(out label, "Calories", typeof(Calories_Core));
+			this._Label = label;
+			this._Domains = new int[]{187};
+			this._Ranges = new int[]{95};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "calories";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Calories", typeof(Calories_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{187};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{95};
-			}
-		}
-
 	}
 }

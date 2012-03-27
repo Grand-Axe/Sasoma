@@ -3,7 +3,7 @@ using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Interfaces
 {
-    public interface IThing : IMicrodata
+    public interface IThing : IType
     {
         Description_Core Description { get; set; }
         Image_Core Image { get; set; }

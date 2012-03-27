@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The item that is being reviewed/rated.
 	/// </summary>
-	public class ItemReviewed_Core : PropertyCore, IProperty
+	public class ItemReviewed_Core : PropertyCore
 	{
-		public int PropertyId
+		public ItemReviewed_Core()
 		{
-			get
-			{
-				return 123;
-			}
+			this._PropertyId = 123;
+			this._Id = "itemReviewed";
+			string label = "";
+			GetLabel(out label, "ItemReviewed", typeof(ItemReviewed_Core));
+			this._Label = label;
+			this._Domains = new int[]{13,229};
+			this._Ranges = new int[]{266};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "itemReviewed";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "ItemReviewed", typeof(ItemReviewed_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{13,229};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{266};
-			}
-		}
-
 	}
 }

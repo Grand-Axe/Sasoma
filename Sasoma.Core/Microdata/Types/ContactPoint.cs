@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class ContactPoint_Core : TypeCore, IStructuredValue
 	{
-		public int TypeId
+		public ContactPoint_Core()
 		{
-			get
-			{
-				return 70;
-			}
-		}
+			this._TypeId = 70;
+			this._Id = "ContactPoint";
+			this._Schema_Org_Url = "http://schema.org/ContactPoint";
+			string label = "";
+			GetLabel(out label, "ContactPoint", typeof(ContactPoint_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,138,253};
+			this._SubTypes = new int[]{213};
+			this._SuperTypes = new int[]{253};
+			this._Properties = new int[]{67,108,143,229,48,75,91,196};
 
-		public string Id
-		{
-			get
-			{
-				return "ContactPoint";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/ContactPoint";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "ContactPoint", typeof(ContactPoint_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,138,253};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[]{213};
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{253};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,48,75,91,196};
-			}
-		}
-
 
 		/// <summary>
 		/// A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.

@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections.Generic;
+using System.ComponentModel.Composition;
 
 namespace Sasoma.Microdata.Interfaces
 {
-    public interface IMicrodata
+    [InheritedExport(typeof(IMicrodata))]
+    public interface IMicrodata : IIdentified
     {
-        int[] Ancestors { get; }
-        string Id { get; }
         string Label { get; }
-        int[] Properties { get; }
-        string Schema_Org_Url { get; }
-        int[] SubTypes { get; }
-        int[] SuperTypes { get; }
-        int TypeId { get; }
     }
-
 }

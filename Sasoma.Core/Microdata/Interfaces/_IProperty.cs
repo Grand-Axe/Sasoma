@@ -2,11 +2,9 @@
 
 namespace Sasoma.Microdata.Interfaces
 {
-    public interface IProperty
+    public interface IProperty: IMicrodata
     {
         int[] Domains { get; }
-        string Id { get; }
-        string Label { get; }
         int PropertyId { get; }
         int[] Ranges { get; }
     }

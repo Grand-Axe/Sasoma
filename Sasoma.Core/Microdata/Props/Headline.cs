@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Headline of the article
 	/// </summary>
-	public class Headline_Core : PropertyCore, IProperty
+	public class Headline_Core : PropertyCore
 	{
-		public int PropertyId
+		public Headline_Core()
 		{
-			get
-			{
-				return 100;
-			}
+			this._PropertyId = 100;
+			this._Id = "headline";
+			string label = "";
+			GetLabel(out label, "Headline", typeof(Headline_Core));
+			this._Label = label;
+			this._Domains = new int[]{78};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "headline";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Headline", typeof(Headline_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{78};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

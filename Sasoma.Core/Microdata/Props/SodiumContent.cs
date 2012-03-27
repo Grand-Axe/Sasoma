@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The number of milligrams of sodium.
 	/// </summary>
-	public class SodiumContent_Core : PropertyCore, IProperty
+	public class SodiumContent_Core : PropertyCore
 	{
-		public int PropertyId
+		public SodiumContent_Core()
 		{
-			get
-			{
-				return 210;
-			}
+			this._PropertyId = 210;
+			this._Id = "sodiumContent";
+			string label = "";
+			GetLabel(out label, "SodiumContent", typeof(SodiumContent_Core));
+			this._Label = label;
+			this._Domains = new int[]{187};
+			this._Ranges = new int[]{159};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "sodiumContent";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "SodiumContent", typeof(SodiumContent_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{187};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{159};
-			}
-		}
-
 	}
 }

@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The highest price of all offers available.
 	/// </summary>
-	public class HighPrice_Core : PropertyCore, IProperty
+	public class HighPrice_Core : PropertyCore
 	{
-		public int PropertyId
+		public HighPrice_Core()
 		{
-			get
-			{
-				return 102;
-			}
+			this._PropertyId = 102;
+			this._Id = "highPrice";
+			string label = "";
+			GetLabel(out label, "HighPrice", typeof(HighPrice_Core));
+			this._Label = label;
+			this._Domains = new int[]{12};
+			this._Ranges = new int[]{5,6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "highPrice";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "HighPrice", typeof(HighPrice_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{12};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{5,6};
-			}
-		}
-
 	}
 }

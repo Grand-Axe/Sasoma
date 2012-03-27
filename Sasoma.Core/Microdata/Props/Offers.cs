@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// An offer to sell this item\u2014for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
 	/// </summary>
-	public class Offers_Core : PropertyCore, IProperty
+	public class Offers_Core : PropertyCore
 	{
-		public int PropertyId
+		public Offers_Core()
 		{
-			get
-			{
-				return 151;
-			}
+			this._PropertyId = 151;
+			this._Id = "offers";
+			string label = "";
+			GetLabel(out label, "Offers", typeof(Offers_Core));
+			this._Label = label;
+			this._Domains = new int[]{215,78,98};
+			this._Ranges = new int[]{189};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "offers";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Offers", typeof(Offers_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{215,78,98};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{189};
-			}
-		}
-
 	}
 }

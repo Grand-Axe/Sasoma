@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// A NewsArticle associated with the Media Object.
 	/// </summary>
-	public class AssociatedArticle_Core : PropertyCore, IProperty
+	public class AssociatedArticle_Core : PropertyCore
 	{
-		public int PropertyId
+		public AssociatedArticle_Core()
 		{
-			get
-			{
-				return 17;
-			}
+			this._PropertyId = 17;
+			this._Id = "associatedArticle";
+			string label = "";
+			GetLabel(out label, "AssociatedArticle", typeof(AssociatedArticle_Core));
+			this._Label = label;
+			this._Domains = new int[]{161};
+			this._Ranges = new int[]{184};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "associatedArticle";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "AssociatedArticle", typeof(AssociatedArticle_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{161};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{184};
-			}
-		}
-
 	}
 }

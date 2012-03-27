@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Nutrition information about the recipe.
 	/// </summary>
-	public class Nutrition_Core : PropertyCore, IProperty
+	public class Nutrition_Core : PropertyCore
 	{
-		public int PropertyId
+		public Nutrition_Core()
 		{
-			get
-			{
-				return 148;
-			}
+			this._PropertyId = 148;
+			this._Id = "nutrition";
+			string label = "";
+			GetLabel(out label, "Nutrition", typeof(Nutrition_Core));
+			this._Label = label;
+			this._Domains = new int[]{224};
+			this._Ranges = new int[]{187};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "nutrition";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Nutrition", typeof(Nutrition_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{224};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{187};
-			}
-		}
-
 	}
 }

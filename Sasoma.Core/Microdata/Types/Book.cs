@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class Book_Core : TypeCore, ICreativeWork
 	{
-		public int TypeId
+		public Book_Core()
 		{
-			get
-			{
-				return 41;
-			}
-		}
+			this._TypeId = 41;
+			this._Id = "Book";
+			this._Schema_Org_Url = "http://schema.org/Book";
+			string label = "";
+			GetLabel(out label, "Book", typeof(Book_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,78};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{78};
+			this._Properties = new int[]{67,108,143,229,0,2,10,12,18,20,24,26,21,50,51,54,57,58,59,61,62,64,70,72,81,97,100,110,115,116,126,138,151,178,179,180,199,211,219,230,231,33,34,107,118,147};
 
-		public string Id
-		{
-			get
-			{
-				return "Book";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/Book";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Book", typeof(Book_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,78};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{78};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,0,2,10,12,18,20,24,26,21,50,51,54,57,58,59,61,62,64,70,72,81,97,100,110,115,116,126,138,151,178,179,180,199,211,219,230,231,33,34,107,118,147};
-			}
-		}
-
 
 		/// <summary>
 		/// The subject matter of the content.

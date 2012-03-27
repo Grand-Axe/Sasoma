@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class PostalAddress_Core : TypeCore, IContactPoint
 	{
-		public int TypeId
+		public PostalAddress_Core()
 		{
-			get
-			{
-				return 213;
-			}
-		}
+			this._TypeId = 213;
+			this._Id = "PostalAddress";
+			this._Schema_Org_Url = "http://schema.org/PostalAddress";
+			string label = "";
+			GetLabel(out label, "PostalAddress", typeof(PostalAddress_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,138,253,70};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{70};
+			this._Properties = new int[]{67,108,143,229,48,75,91,196,6,7,8,162,163,215};
 
-		public string Id
-		{
-			get
-			{
-				return "PostalAddress";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/PostalAddress";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "PostalAddress", typeof(PostalAddress_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,138,253,70};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{70};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,48,75,91,196,6,7,8,162,163,215};
-			}
-		}
-
 
 		/// <summary>
 		/// The country. For example, USA. You can also provide the two-letter <a href=\http://en.wikipedia.org/wiki/ISO_3166-1\ target=\new\>ISO 3166-1 alpha-2 country code</a>.

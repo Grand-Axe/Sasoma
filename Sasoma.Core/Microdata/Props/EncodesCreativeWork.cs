@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The creative work encoded by this media object
 	/// </summary>
-	public class EncodesCreativeWork_Core : PropertyCore, IProperty
+	public class EncodesCreativeWork_Core : PropertyCore
 	{
-		public int PropertyId
+		public EncodesCreativeWork_Core()
 		{
-			get
-			{
-				return 79;
-			}
+			this._PropertyId = 79;
+			this._Id = "encodesCreativeWork";
+			string label = "";
+			GetLabel(out label, "EncodesCreativeWork", typeof(EncodesCreativeWork_Core));
+			this._Label = label;
+			this._Domains = new int[]{161};
+			this._Ranges = new int[]{78};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "encodesCreativeWork";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "EncodesCreativeWork", typeof(EncodesCreativeWork_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{161};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{78};
-			}
-		}
-
 	}
 }

@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,80 +14,21 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class Float_Core : TypeCore, INumber
 	{
-		public int TypeId
+		public Float_Core()
 		{
-			get
-			{
-				return 3;
-			}
-		}
+			this._TypeId = 3;
+			this._Id = "Float";
+			this._Schema_Org_Url = "http://schema.org/Float";
+			string label = "";
+			GetLabel(out label, "Float", typeof(Float_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{1,5};
+			this._Instances = new int[0];
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{5};
+			this._Properties = new int[0];
 
-		public string Id
-		{
-			get
-			{
-				return "Float";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/Float";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Float", typeof(Float_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{1,5};
-			}
-		}
-
-		public int[] Instances
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{5};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
 
 	}
 }

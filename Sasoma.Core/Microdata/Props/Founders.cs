@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// A person who founded this organization.
 	/// </summary>
-	public class Founders_Core : PropertyCore, IProperty
+	public class Founders_Core : PropertyCore
 	{
-		public int PropertyId
+		public Founders_Core()
 		{
-			get
-			{
-				return 94;
-			}
+			this._PropertyId = 94;
+			this._Id = "founders";
+			string label = "";
+			GetLabel(out label, "Founders", typeof(Founders_Core));
+			this._Label = label;
+			this._Domains = new int[]{193};
+			this._Ranges = new int[]{201};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "founders";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Founders", typeof(Founders_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{193};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{201};
-			}
-		}
-
 	}
 }

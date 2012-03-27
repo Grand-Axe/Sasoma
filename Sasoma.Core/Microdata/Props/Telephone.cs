@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The telephone number.
 	/// </summary>
-	public class Telephone_Core : PropertyCore, IProperty
+	public class Telephone_Core : PropertyCore
 	{
-		public int PropertyId
+		public Telephone_Core()
 		{
-			get
-			{
-				return 196;
-			}
+			this._PropertyId = 196;
+			this._Id = "telephone";
+			string label = "";
+			GetLabel(out label, "Telephone", typeof(Telephone_Core));
+			this._Label = label;
+			this._Domains = new int[]{193,70,206,201};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "telephone";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Telephone", typeof(Telephone_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{193,70,206,201};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

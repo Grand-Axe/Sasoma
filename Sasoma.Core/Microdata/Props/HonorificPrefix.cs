@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// An honorific prefix preceding a Person's name such as Dr/Mrs/Mr.
 	/// </summary>
-	public class HonorificPrefix_Core : PropertyCore, IProperty
+	public class HonorificPrefix_Core : PropertyCore
 	{
-		public int PropertyId
+		public HonorificPrefix_Core()
 		{
-			get
-			{
-				return 105;
-			}
+			this._PropertyId = 105;
+			this._Id = "honorificPrefix";
+			string label = "";
+			GetLabel(out label, "HonorificPrefix", typeof(HonorificPrefix_Core));
+			this._Label = label;
+			this._Domains = new int[]{201};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "honorificPrefix";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "HonorificPrefix", typeof(HonorificPrefix_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{201};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

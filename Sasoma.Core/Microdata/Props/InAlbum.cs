@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The album to which this recording belongs.
 	/// </summary>
-	public class InAlbum_Core : PropertyCore, IProperty
+	public class InAlbum_Core : PropertyCore
 	{
-		public int PropertyId
+		public InAlbum_Core()
 		{
-			get
-			{
-				return 109;
-			}
+			this._PropertyId = 109;
+			this._Id = "inAlbum";
+			string label = "";
+			GetLabel(out label, "InAlbum", typeof(InAlbum_Core));
+			this._Label = label;
+			this._Domains = new int[]{178};
+			this._Ranges = new int[]{174};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "inAlbum";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "InAlbum", typeof(InAlbum_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{178};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{174};
-			}
-		}
-
 	}
 }

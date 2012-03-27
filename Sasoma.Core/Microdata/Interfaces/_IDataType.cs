@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Sasoma.Microdata.Interfaces
 {
-    public interface IDataType : IMicrodata
+    public interface IDataType : IType
     {
     }
 }

@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The time it takes to actually cook the dish, in <a href=\http://en.wikipedia.org/wiki/ISO_8601\ target=\new\>ISO 8601 duration format</a>.
 	/// </summary>
-	public class CookTime_Core : PropertyCore, IProperty
+	public class CookTime_Core : PropertyCore
 	{
-		public int PropertyId
+		public CookTime_Core()
 		{
-			get
-			{
-				return 55;
-			}
+			this._PropertyId = 55;
+			this._Id = "cookTime";
+			string label = "";
+			GetLabel(out label, "CookTime", typeof(CookTime_Core));
+			this._Label = label;
+			this._Domains = new int[]{224};
+			this._Ranges = new int[]{86};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "cookTime";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "CookTime", typeof(CookTime_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{224};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{86};
-			}
-		}
-
 	}
 }

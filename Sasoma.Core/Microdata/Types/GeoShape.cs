@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class GeoShape_Core : TypeCore, IStructuredValue
 	{
-		public int TypeId
+		public GeoShape_Core()
 		{
-			get
-			{
-				return 114;
-			}
-		}
+			this._TypeId = 114;
+			this._Id = "GeoShape";
+			this._Schema_Org_Url = "http://schema.org/GeoShape";
+			string label = "";
+			GetLabel(out label, "GeoShape", typeof(GeoShape_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,138,253};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{253};
+			this._Properties = new int[]{67,108,143,229,35,45,74,129,161};
 
-		public string Id
-		{
-			get
-			{
-				return "GeoShape";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/GeoShape";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "GeoShape", typeof(GeoShape_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,138,253};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{253};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,35,45,74,129,161};
-			}
-		}
-
 
 		/// <summary>
 		/// A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more spacedelimited points where the first and final points are identical.

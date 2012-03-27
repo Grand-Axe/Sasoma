@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The price range of the business, for example <code>$$$</code>.
 	/// </summary>
-	public class PriceRange_Core : PropertyCore, IProperty
+	public class PriceRange_Core : PropertyCore
 	{
-		public int PropertyId
+		public PriceRange_Core()
 		{
-			get
-			{
-				return 167;
-			}
+			this._PropertyId = 167;
+			this._Id = "priceRange";
+			string label = "";
+			GetLabel(out label, "PriceRange", typeof(PriceRange_Core));
+			this._Label = label;
+			this._Domains = new int[]{155};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "priceRange";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "PriceRange", typeof(PriceRange_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{155};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class WebPage_Core : TypeCore, ICreativeWork
 	{
-		public int TypeId
+		public WebPage_Core()
 		{
-			get
-			{
-				return 293;
-			}
-		}
+			this._TypeId = 293;
+			this._Id = "WebPage";
+			this._Schema_Org_Url = "http://schema.org/WebPage";
+			string label = "";
+			GetLabel(out label, "WebPage", typeof(WebPage_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,78};
+			this._SubTypes = new int[]{8,56,64,69,142,217,237};
+			this._SuperTypes = new int[]{78};
+			this._Properties = new int[]{67,108,143,229,0,2,10,12,18,20,24,26,21,50,51,54,57,58,59,61,62,64,70,72,81,97,100,110,115,116,126,138,151,178,179,180,199,211,219,230,231,38,117,133,169,208};
 
-		public string Id
-		{
-			get
-			{
-				return "WebPage";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/WebPage";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "WebPage", typeof(WebPage_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,78};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[]{8,56,64,69,142,217,237};
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{78};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,0,2,10,12,18,20,24,26,21,50,51,54,57,58,59,61,62,64,70,72,81,97,100,110,115,116,126,138,151,178,179,180,199,211,219,230,231,38,117,133,169,208};
-			}
-		}
-
 
 		/// <summary>
 		/// The subject matter of the content.

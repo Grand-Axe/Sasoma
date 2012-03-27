@@ -9,9 +9,17 @@ using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata
 {
-    public class Core
+    public class CacheManager : ICache
     {
-        private ICache cacheManager = new VerySimpleCacheObj();
+        private ICache cache = new VerySimpleCacheObj();
+
+        public string Id
+        {
+            get
+            {
+                return "CacheManager";
+            }
+        }
 
         /// <summary>
         /// 
@@ -21,15 +29,15 @@ namespace Sasoma.Microdata
         /// <summary>
         /// 
         /// </summary>
-        public ICache CacheManager 
+        public ICache Cache
         {
             get
             {
-                return cacheManager;
+                return cache;
             }
             set
             {
-                cacheManager = value;
+                cache = value;
             }
         }
 
@@ -40,7 +48,7 @@ namespace Sasoma.Microdata
         /// <returns></returns>
         public object GetFromCache(string name)
         {
-            return CacheManager.GetFromCache(name);
+            return Cache.GetFromCache(name);
         }
 
         /// <summary>
@@ -50,7 +58,7 @@ namespace Sasoma.Microdata
         /// <param name="value"></param>
         public void SetCache(string name, object value)
         {
-            CacheManager.SetCache(name, value);
+            Cache.SetCache(name, value);
         }
 
     }

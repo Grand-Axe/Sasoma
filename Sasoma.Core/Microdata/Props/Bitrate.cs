@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The bitrate of the media object.
 	/// </summary>
-	public class Bitrate_Core : PropertyCore, IProperty
+	public class Bitrate_Core : PropertyCore
 	{
-		public int PropertyId
+		public Bitrate_Core()
 		{
-			get
-			{
-				return 31;
-			}
+			this._PropertyId = 31;
+			this._Id = "bitrate";
+			string label = "";
+			GetLabel(out label, "Bitrate", typeof(Bitrate_Core));
+			this._Label = label;
+			this._Domains = new int[]{161};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "bitrate";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Bitrate", typeof(Bitrate_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{161};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

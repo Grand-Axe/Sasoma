@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Link to page describing the editorial principles of the organization primarily responsible for the creation of the CreativeWork.
 	/// </summary>
-	public class PublishingPrinciples_Core : PropertyCore, IProperty
+	public class PublishingPrinciples_Core : PropertyCore
 	{
-		public int PropertyId
+		public PublishingPrinciples_Core()
 		{
-			get
-			{
-				return 180;
-			}
+			this._PropertyId = 180;
+			this._Id = "publishingPrinciples";
+			string label = "";
+			GetLabel(out label, "PublishingPrinciples", typeof(PublishingPrinciples_Core));
+			this._Label = label;
+			this._Domains = new int[]{78};
+			this._Ranges = new int[]{7};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "publishingPrinciples";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "PublishingPrinciples", typeof(PublishingPrinciples_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{78};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{7};
-			}
-		}
-
 	}
 }

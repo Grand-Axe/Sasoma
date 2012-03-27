@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class CafeOrCoffeeShop_Core : TypeCore, IFoodEstablishment
 	{
-		public int TypeId
+		public CafeOrCoffeeShop_Core()
 		{
-			get
-			{
-				return 50;
-			}
-		}
+			this._TypeId = 50;
+			this._Id = "CafeOrCoffeeShop";
+			this._Schema_Org_Url = "http://schema.org/CafeOrCoffeeShop";
+			string label = "";
+			GetLabel(out label, "CafeOrCoffeeShop", typeof(CafeOrCoffeeShop_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,193,155,106};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{106};
+			this._Properties = new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,47,75,77,94,95,130,137,36,60,152,156,167,1,139,205};
 
-		public string Id
-		{
-			get
-			{
-				return "CafeOrCoffeeShop";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/CafeOrCoffeeShop";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "CafeOrCoffeeShop", typeof(CafeOrCoffeeShop_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,193,155,106};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{106};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,47,75,77,94,95,130,137,36,60,152,156,167,1,139,205};
-			}
-		}
-
 
 		/// <summary>
 		/// Either <code>Yes/No</code>, or a URL at which reservations can be made.

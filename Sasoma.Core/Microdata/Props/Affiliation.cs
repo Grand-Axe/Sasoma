@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// An organization that this person is affiliated with. For example, a school/university, a club, or a team.
 	/// </summary>
-	public class Affiliation_Core : PropertyCore, IProperty
+	public class Affiliation_Core : PropertyCore
 	{
-		public int PropertyId
+		public Affiliation_Core()
 		{
-			get
-			{
-				return 9;
-			}
+			this._PropertyId = 9;
+			this._Id = "affiliation";
+			string label = "";
+			GetLabel(out label, "Affiliation", typeof(Affiliation_Core));
+			this._Label = label;
+			this._Domains = new int[]{201};
+			this._Ranges = new int[]{193};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "affiliation";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Affiliation", typeof(Affiliation_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{201};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{193};
-			}
-		}
-
 	}
 }

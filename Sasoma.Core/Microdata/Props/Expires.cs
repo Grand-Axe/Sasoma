@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Date the content expires and is no longer useful or available. Useful for videos.
 	/// </summary>
-	public class Expires_Core : PropertyCore, IProperty
+	public class Expires_Core : PropertyCore
 	{
-		public int PropertyId
+		public Expires_Core()
 		{
-			get
-			{
-				return 88;
-			}
+			this._PropertyId = 88;
+			this._Id = "expires";
+			string label = "";
+			GetLabel(out label, "Expires", typeof(Expires_Core));
+			this._Label = label;
+			this._Domains = new int[]{161};
+			this._Ranges = new int[]{2};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "expires";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Expires", typeof(Expires_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{161};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{2};
-			}
-		}
-
 	}
 }

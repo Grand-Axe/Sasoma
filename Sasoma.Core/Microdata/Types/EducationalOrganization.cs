@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class EducationalOrganization_Core : TypeCore, IOrganization
 	{
-		public int TypeId
+		public EducationalOrganization_Core()
 		{
-			get
-			{
-				return 88;
-			}
-		}
+			this._TypeId = 88;
+			this._Id = "EducationalOrganization";
+			this._Schema_Org_Url = "http://schema.org/EducationalOrganization";
+			string label = "";
+			GetLabel(out label, "EducationalOrganization", typeof(EducationalOrganization_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,193};
+			this._SubTypes = new int[]{65,91,125,165,214,234};
+			this._SuperTypes = new int[]{193};
+			this._Properties = new int[]{67,108,143,229,5,10,47,75,77,85,91,94,95,115,130,137,199,196,13};
 
-		public string Id
-		{
-			get
-			{
-				return "EducationalOrganization";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/EducationalOrganization";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "EducationalOrganization", typeof(EducationalOrganization_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,193};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[]{65,91,125,165,214,234};
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{193};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,47,75,77,85,91,94,95,115,130,137,199,196,13};
-			}
-		}
-
 
 		/// <summary>
 		/// Physical address of the item.

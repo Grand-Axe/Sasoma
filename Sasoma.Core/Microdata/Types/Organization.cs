@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class Organization_Core : TypeCore, IThing
 	{
-		public int TypeId
+		public Organization_Core()
 		{
-			get
-			{
-				return 193;
-			}
-		}
+			this._TypeId = 193;
+			this._Id = "Organization";
+			this._Schema_Org_Url = "http://schema.org/Organization";
+			string label = "";
+			GetLabel(out label, "Organization", typeof(Organization_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266};
+			this._SubTypes = new int[]{73,88,118,155,182,200,249};
+			this._SuperTypes = new int[]{266};
+			this._Properties = new int[]{67,108,143,229,5,10,47,75,77,85,91,94,95,115,130,137,199,196};
 
-		public string Id
-		{
-			get
-			{
-				return "Organization";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/Organization";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Organization", typeof(Organization_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[]{73,88,118,155,182,200,249};
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{266};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,47,75,77,85,91,94,95,115,130,137,199,196};
-			}
-		}
-
 
 		/// <summary>
 		/// Physical address of the item.

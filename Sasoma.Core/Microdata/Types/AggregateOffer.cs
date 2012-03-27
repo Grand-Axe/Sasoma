@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class AggregateOffer_Core : TypeCore, IOffer
 	{
-		public int TypeId
+		public AggregateOffer_Core()
 		{
-			get
-			{
-				return 12;
-			}
-		}
+			this._TypeId = 12;
+			this._Id = "AggregateOffer";
+			this._Schema_Org_Url = "http://schema.org/AggregateOffer";
+			string label = "";
+			GetLabel(out label, "AggregateOffer", typeof(AggregateOffer_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,138,189};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{189};
+			this._Properties = new int[]{67,108,143,229,10,25,119,122,165,166,168,199,204,102,132,150};
 
-		public string Id
-		{
-			get
-			{
-				return "AggregateOffer";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/AggregateOffer";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "AggregateOffer", typeof(AggregateOffer_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,138,189};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{189};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,10,25,119,122,165,166,168,199,204,102,132,150};
-			}
-		}
-
 
 		/// <summary>
 		/// The overall rating, based on a collection of reviews or ratings, of the item.

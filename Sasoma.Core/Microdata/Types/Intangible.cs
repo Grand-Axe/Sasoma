@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class Intangible_Core : TypeCore, IThing
 	{
-		public int TypeId
+		public Intangible_Core()
 		{
-			get
-			{
-				return 138;
-			}
-		}
+			this._TypeId = 138;
+			this._Id = "Intangible";
+			this._Schema_Org_Url = "http://schema.org/Intangible";
+			string label = "";
+			GetLabel(out label, "Intangible", typeof(Intangible_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266};
+			this._SubTypes = new int[]{97,144,148,189,219,222,253};
+			this._SuperTypes = new int[]{266};
+			this._Properties = new int[]{67,108,143,229};
 
-		public string Id
-		{
-			get
-			{
-				return "Intangible";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/Intangible";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Intangible", typeof(Intangible_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[]{97,144,148,189,219,222,253};
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{266};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229};
-			}
-		}
-
 
 		/// <summary>
 		/// A short description of the item.

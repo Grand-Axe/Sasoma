@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.
 	/// </summary>
-	public class WorstRating_Core : PropertyCore, IProperty
+	public class WorstRating_Core : PropertyCore
 	{
-		public int PropertyId
+		public WorstRating_Core()
 		{
-			get
-			{
-				return 239;
-			}
+			this._PropertyId = 239;
+			this._Id = "worstRating";
+			string label = "";
+			GetLabel(out label, "WorstRating", typeof(WorstRating_Core));
+			this._Label = label;
+			this._Domains = new int[]{222};
+			this._Ranges = new int[]{5,6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "worstRating";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "WorstRating", typeof(WorstRating_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{222};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{5,6};
-			}
-		}
-
 	}
 }

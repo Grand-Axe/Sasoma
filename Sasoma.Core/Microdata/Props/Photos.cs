@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Photographs of this place.
 	/// </summary>
-	public class Photos_Core : PropertyCore, IProperty
+	public class Photos_Core : PropertyCore
 	{
-		public int PropertyId
+		public Photos_Core()
 		{
-			get
-			{
-				return 159;
-			}
+			this._PropertyId = 159;
+			this._Id = "photos";
+			string label = "";
+			GetLabel(out label, "Photos", typeof(Photos_Core));
+			this._Label = label;
+			this._Domains = new int[]{206};
+			this._Ranges = new int[]{204,136};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "photos";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Photos", typeof(Photos_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{206};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{204,136};
-			}
-		}
-
 	}
 }

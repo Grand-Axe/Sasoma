@@ -39,6 +39,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -57,11 +58,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TypeLabels.resx</DependentUpon>
     </Compile>
+    <Compile Include="Microdata\Interfaces\_IIdentified.cs" />
+    <Compile Include="Microdata\Interfaces\_ILabel.cs" />
     <Compile Include="Microdata\Core\MicrodataCore.cs" />
     <Compile Include="Microdata\Core\VerySimpleCacheObj.cs" />
     <Compile Include="Microdata\Interfaces\_ICache.cs" />
     <Compile Include="Microdata\Core\TypeCore.cs" />
-    <Compile Include="Microdata\Core\Core.cs" />
+    <Compile Include="Microdata\Core\CacheManager.cs" />
     <Compile Include="Microdata\Core\PropertyCore.cs" />
     <Compile Include="Microdata\Interfaces\IAdministrativeArea.cs" />
     <Compile Include="Microdata\Interfaces\IArticle.cs" />
@@ -107,6 +110,7 @@
     <Compile Include="Microdata\Interfaces\IWebPageElement.cs" />
     <Compile Include="Microdata\Interfaces\_IDataType.cs" />
     <Compile Include="Microdata\Interfaces\_IMicrodata.cs" />
+    <Compile Include="Microdata\Interfaces\_IType.cs" />
     <Compile Include="Microdata\Interfaces\_IThing.cs" />
     <Compile Include="Microdata\Props\About.cs">
       <SubType>Code</SubType>
@@ -1741,6 +1745,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="CoreInterfaceInheritance.cd" />
     <None Include="MicrodataInterfaceInheritanceTree.cd" />
     <None Include="Sasoma.Core.snk" />
   </ItemGroup>

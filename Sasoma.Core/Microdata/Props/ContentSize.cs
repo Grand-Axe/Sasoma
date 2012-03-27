@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// File size in (mega/kilo) bytes.
 	/// </summary>
-	public class ContentSize_Core : PropertyCore, IProperty
+	public class ContentSize_Core : PropertyCore
 	{
-		public int PropertyId
+		public ContentSize_Core()
 		{
-			get
-			{
-				return 52;
-			}
+			this._PropertyId = 52;
+			this._Id = "contentSize";
+			string label = "";
+			GetLabel(out label, "ContentSize", typeof(ContentSize_Core));
+			this._Label = label;
+			this._Domains = new int[]{161};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "contentSize";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "ContentSize", typeof(ContentSize_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{161};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

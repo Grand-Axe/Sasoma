@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class SocialEvent_Core : TypeCore, IEvent
 	{
-		public int TypeId
+		public SocialEvent_Core()
 		{
-			get
-			{
-				return 244;
-			}
-		}
+			this._TypeId = 244;
+			this._Id = "SocialEvent";
+			this._Schema_Org_Url = "http://schema.org/SocialEvent";
+			string label = "";
+			GetLabel(out label, "SocialEvent", typeof(SocialEvent_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,98};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{98};
+			this._Properties = new int[]{67,108,143,229,19,71,82,130,151,158,214,216,218};
 
-		public string Id
-		{
-			get
-			{
-				return "SocialEvent";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/SocialEvent";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "SocialEvent", typeof(SocialEvent_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,98};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{98};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,19,71,82,130,151,158,214,216,218};
-			}
-		}
-
 
 		/// <summary>
 		/// A person attending the event.

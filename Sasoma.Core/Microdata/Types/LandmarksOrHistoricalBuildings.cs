@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class LandmarksOrHistoricalBuildings_Core : TypeCore, IPlace
 	{
-		public int TypeId
+		public LandmarksOrHistoricalBuildings_Core()
 		{
-			get
-			{
-				return 147;
-			}
-		}
+			this._TypeId = 147;
+			this._Id = "LandmarksOrHistoricalBuildings";
+			this._Schema_Org_Url = "http://schema.org/LandmarksOrHistoricalBuildings";
+			string label = "";
+			GetLabel(out label, "LandmarksOrHistoricalBuildings", typeof(LandmarksOrHistoricalBuildings_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,206};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{206};
+			this._Properties = new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196};
 
-		public string Id
-		{
-			get
-			{
-				return "LandmarksOrHistoricalBuildings";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/LandmarksOrHistoricalBuildings";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "LandmarksOrHistoricalBuildings", typeof(LandmarksOrHistoricalBuildings_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,206};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{206};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196};
-			}
-		}
-
 
 		/// <summary>
 		/// Physical address of the item.

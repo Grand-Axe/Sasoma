@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The overall rating, based on a collection of reviews or ratings, of the item.
 	/// </summary>
-	public class AggregateRating_Core : PropertyCore, IProperty
+	public class AggregateRating_Core : PropertyCore
 	{
-		public int PropertyId
+		public AggregateRating_Core()
 		{
-			get
-			{
-				return 10;
-			}
+			this._PropertyId = 10;
+			this._Id = "aggregateRating";
+			string label = "";
+			GetLabel(out label, "AggregateRating", typeof(AggregateRating_Core));
+			this._Label = label;
+			this._Domains = new int[]{193,215,78,206,189};
+			this._Ranges = new int[]{13};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "aggregateRating";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "AggregateRating", typeof(AggregateRating_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{193,215,78,206,189};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{13};
-			}
-		}
-
 	}
 }

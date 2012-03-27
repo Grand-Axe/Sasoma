@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.
 	/// </summary>
-	public class Circle_Core : PropertyCore, IProperty
+	public class Circle_Core : PropertyCore
 	{
-		public int PropertyId
+		public Circle_Core()
 		{
-			get
-			{
-				return 45;
-			}
+			this._PropertyId = 45;
+			this._Id = "circle";
+			string label = "";
+			GetLabel(out label, "Circle", typeof(Circle_Core));
+			this._Label = label;
+			this._Domains = new int[]{114};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "circle";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "Circle", typeof(Circle_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{114};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

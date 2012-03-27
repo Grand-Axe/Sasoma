@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class OfferItemCondition_Core : TypeCore, IEnumeration
 	{
-		public int TypeId
+		public OfferItemCondition_Core()
 		{
-			get
-			{
-				return 190;
-			}
-		}
+			this._TypeId = 190;
+			this._Id = "OfferItemCondition";
+			this._Schema_Org_Url = "http://schema.org/OfferItemCondition";
+			string label = "";
+			GetLabel(out label, "OfferItemCondition", typeof(OfferItemCondition_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,138,97};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{97};
+			this._Properties = new int[]{67,108,143,229};
 
-		public string Id
-		{
-			get
-			{
-				return "OfferItemCondition";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/OfferItemCondition";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "OfferItemCondition", typeof(OfferItemCondition_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,138,97};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{97};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229};
-			}
-		}
-
 
 		/// <summary>
 		/// A short description of the item.

@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// Category or categories describing the job. Use BLS O*NET-SOC taxonomy: http://www.onetcenter.org/taxonomy.html. Ideally includes textual label and formal code, with the property repeated for each applicable value.
 	/// </summary>
-	public class OccupationalCategory_Core : PropertyCore, IProperty
+	public class OccupationalCategory_Core : PropertyCore
 	{
-		public int PropertyId
+		public OccupationalCategory_Core()
 		{
-			get
-			{
-				return 149;
-			}
+			this._PropertyId = 149;
+			this._Id = "occupationalCategory";
+			string label = "";
+			GetLabel(out label, "OccupationalCategory", typeof(OccupationalCategory_Core));
+			this._Label = label;
+			this._Domains = new int[]{144};
+			this._Ranges = new int[]{6};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "occupationalCategory";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "OccupationalCategory", typeof(OccupationalCategory_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{144};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{6};
-			}
-		}
-
 	}
 }

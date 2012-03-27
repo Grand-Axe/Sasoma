@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class SportsActivityLocation_Core : TypeCore, ILocalBusiness
 	{
-		public int TypeId
+		public SportsActivityLocation_Core()
 		{
-			get
-			{
-				return 246;
-			}
-		}
+			this._TypeId = 246;
+			this._Id = "SportsActivityLocation";
+			this._Schema_Org_Url = "http://schema.org/SportsActivityLocation";
+			string label = "";
+			GetLabel(out label, "SportsActivityLocation", typeof(SportsActivityLocation_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,193,155};
+			this._SubTypes = new int[]{44,100,115,124,218,243,247,250,263};
+			this._SuperTypes = new int[]{155};
+			this._Properties = new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,47,75,77,94,95,130,137,36,60,152,156,167};
 
-		public string Id
-		{
-			get
-			{
-				return "SportsActivityLocation";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/SportsActivityLocation";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "SportsActivityLocation", typeof(SportsActivityLocation_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,193,155};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[]{44,100,115,124,218,243,247,250,263};
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{155};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,47,75,77,94,95,130,137,36,60,152,156,167};
-			}
-		}
-
 
 		/// <summary>
 		/// Physical address of the item.

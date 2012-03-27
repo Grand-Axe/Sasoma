@@ -3,58 +3,26 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
+using Sasoma.Microdata.Interfaces;
 using Sasoma.Languages.Core;
 using Sasoma.Microdata.Types;
-using Sasoma.Microdata.Interfaces;
 
 namespace Sasoma.Microdata.Properties
 {
 	/// <summary>
 	/// The year during which the claimed copyright for the CreativeWork was first asserted.
 	/// </summary>
-	public class CopyrightYear_Core : PropertyCore, IProperty
+	public class CopyrightYear_Core : PropertyCore
 	{
-		public int PropertyId
+		public CopyrightYear_Core()
 		{
-			get
-			{
-				return 58;
-			}
+			this._PropertyId = 58;
+			this._Id = "copyrightYear";
+			string label = "";
+			GetLabel(out label, "CopyrightYear", typeof(CopyrightYear_Core));
+			this._Label = label;
+			this._Domains = new int[]{78};
+			this._Ranges = new int[]{5};
 		}
-
-		public string Id
-		{
-			get
-			{
-				return "copyrightYear";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "CopyrightYear", typeof(CopyrightYear_Core));
-				return label;
-			}
-		}
-
-		public int[] Domains
-		{
-			get
-			{
-				return new int[]{78};
-			}
-		}
-
-		public int[] Ranges
-		{
-			get
-			{
-				return new int[]{5};
-			}
-		}
-
 	}
 }

@@ -3,8 +3,8 @@ using System.Globalization;
 using System.Collections.Generic;
 
 using Sasoma.Utils;
-using Sasoma.Languages.Core;
 using Sasoma.Microdata.Interfaces;
+using Sasoma.Languages.Core;
 using Sasoma.Microdata.Properties;
 
 namespace Sasoma.Microdata.Types
@@ -14,72 +14,20 @@ namespace Sasoma.Microdata.Types
 	/// </summary>
 	public class DaySpa_Core : TypeCore, IHealthAndBeautyBusiness
 	{
-		public int TypeId
+		public DaySpa_Core()
 		{
-			get
-			{
-				return 82;
-			}
-		}
+			this._TypeId = 82;
+			this._Id = "DaySpa";
+			this._Schema_Org_Url = "http://schema.org/DaySpa";
+			string label = "";
+			GetLabel(out label, "DaySpa", typeof(DaySpa_Core));
+			this._Label = label;
+			this._Ancestors = new int[]{266,193,155,123};
+			this._SubTypes = new int[0];
+			this._SuperTypes = new int[]{123};
+			this._Properties = new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,47,75,77,94,95,130,137,36,60,152,156,167};
 
-		public string Id
-		{
-			get
-			{
-				return "DaySpa";
-			}
 		}
-
-		public string Schema_Org_Url
-		{
-			get
-			{
-				return "http://schema.org/DaySpa";
-			}
-		}
-
-		private string label;
-		public string Label
-		{
-			get
-			{
-				GetLabel(out label, "DaySpa", typeof(DaySpa_Core));
-				return label;
-			}
-		}
-
-		public int[] Ancestors
-		{
-			get
-			{
-				return new int[]{266,193,155,123};
-			}
-		}
-
-		public int[] SubTypes
-		{
-			get
-			{
-				return new int[0];
-			}
-		}
-
-		public int[] SuperTypes
-		{
-			get
-			{
-				return new int[]{123};
-			}
-		}
-
-		public int[] Properties
-		{
-			get
-			{
-				return new int[]{67,108,143,229,5,10,49,85,91,98,115,135,159,199,196,47,75,77,94,95,130,137,36,60,152,156,167};
-			}
-		}
-
 
 		/// <summary>
 		/// Physical address of the item.
