@@ -32,72 +32,240 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// The country. For example, USA. You can also provide the two-letter <a href=\http://en.wikipedia.org/wiki/ISO_3166-1\ target=\new\>ISO 3166-1 alpha-2 country code</a>.
 		/// </summary>
-		public AddressCountry_Core AddressCountry { get; set; }
+		private AddressCountry_Core addressCountry;
+		public AddressCountry_Core AddressCountry
+		{
+			get
+			{
+				return addressCountry;
+			}
+			set
+			{
+				addressCountry = value;
+				SetPropertyInstance(addressCountry);
+			}
+		}
 
 		/// <summary>
 		/// The locality. For example, Mountain View.
 		/// </summary>
-		public AddressLocality_Core AddressLocality { get; set; }
+		private AddressLocality_Core addressLocality;
+		public AddressLocality_Core AddressLocality
+		{
+			get
+			{
+				return addressLocality;
+			}
+			set
+			{
+				addressLocality = value;
+				SetPropertyInstance(addressLocality);
+			}
+		}
 
 		/// <summary>
 		/// The region. For example, CA.
 		/// </summary>
-		public AddressRegion_Core AddressRegion { get; set; }
+		private AddressRegion_Core addressRegion;
+		public AddressRegion_Core AddressRegion
+		{
+			get
+			{
+				return addressRegion;
+			}
+			set
+			{
+				addressRegion = value;
+				SetPropertyInstance(addressRegion);
+			}
+		}
 
 		/// <summary>
 		/// A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.
 		/// </summary>
-		public ContactType_Core ContactType { get; set; }
+		private ContactType_Core contactType;
+		public ContactType_Core ContactType
+		{
+			get
+			{
+				return contactType;
+			}
+			set
+			{
+				contactType = value;
+				SetPropertyInstance(contactType);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// Email address.
 		/// </summary>
-		public Email_Core Email { get; set; }
+		private Email_Core email;
+		public Email_Core Email
+		{
+			get
+			{
+				return email;
+			}
+			set
+			{
+				email = value;
+				SetPropertyInstance(email);
+			}
+		}
 
 		/// <summary>
 		/// The fax number.
 		/// </summary>
-		public FaxNumber_Core FaxNumber { get; set; }
+		private FaxNumber_Core faxNumber;
+		public FaxNumber_Core FaxNumber
+		{
+			get
+			{
+				return faxNumber;
+			}
+			set
+			{
+				faxNumber = value;
+				SetPropertyInstance(faxNumber);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// The postal code. For example, 94043.
 		/// </summary>
-		public PostalCode_Core PostalCode { get; set; }
+		private PostalCode_Core postalCode;
+		public PostalCode_Core PostalCode
+		{
+			get
+			{
+				return postalCode;
+			}
+			set
+			{
+				postalCode = value;
+				SetPropertyInstance(postalCode);
+			}
+		}
 
 		/// <summary>
 		/// The post offce box number for PO box addresses.
 		/// </summary>
-		public PostOfficeBoxNumber_Core PostOfficeBoxNumber { get; set; }
+		private PostOfficeBoxNumber_Core postOfficeBoxNumber;
+		public PostOfficeBoxNumber_Core PostOfficeBoxNumber
+		{
+			get
+			{
+				return postOfficeBoxNumber;
+			}
+			set
+			{
+				postOfficeBoxNumber = value;
+				SetPropertyInstance(postOfficeBoxNumber);
+			}
+		}
 
 		/// <summary>
 		/// The street address. For example, 1600 Amphitheatre Pkwy.
 		/// </summary>
-		public StreetAddress_Core StreetAddress { get; set; }
+		private StreetAddress_Core streetAddress;
+		public StreetAddress_Core StreetAddress
+		{
+			get
+			{
+				return streetAddress;
+			}
+			set
+			{
+				streetAddress = value;
+				SetPropertyInstance(streetAddress);
+			}
+		}
 
 		/// <summary>
 		/// The telephone number.
 		/// </summary>
-		public Telephone_Core Telephone { get; set; }
+		private Telephone_Core telephone;
+		public Telephone_Core Telephone
+		{
+			get
+			{
+				return telephone;
+			}
+			set
+			{
+				telephone = value;
+				SetPropertyInstance(telephone);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 	}
 }

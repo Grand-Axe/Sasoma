@@ -32,52 +32,172 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.
 		/// </summary>
-		public BestRating_Core BestRating { get; set; }
+		private BestRating_Core bestRating;
+		public BestRating_Core BestRating
+		{
+			get
+			{
+				return bestRating;
+			}
+			set
+			{
+				bestRating = value;
+				SetPropertyInstance(bestRating);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// The item that is being reviewed/rated.
 		/// </summary>
-		public ItemReviewed_Core ItemReviewed { get; set; }
+		private ItemReviewed_Core itemReviewed;
+		public ItemReviewed_Core ItemReviewed
+		{
+			get
+			{
+				return itemReviewed;
+			}
+			set
+			{
+				itemReviewed = value;
+				SetPropertyInstance(itemReviewed);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// The count of total number of ratings.
 		/// </summary>
-		public RatingCount_Core RatingCount { get; set; }
+		private RatingCount_Core ratingCount;
+		public RatingCount_Core RatingCount
+		{
+			get
+			{
+				return ratingCount;
+			}
+			set
+			{
+				ratingCount = value;
+				SetPropertyInstance(ratingCount);
+			}
+		}
 
 		/// <summary>
 		/// The rating for the content.
 		/// </summary>
-		public RatingValue_Core RatingValue { get; set; }
+		private RatingValue_Core ratingValue;
+		public RatingValue_Core RatingValue
+		{
+			get
+			{
+				return ratingValue;
+			}
+			set
+			{
+				ratingValue = value;
+				SetPropertyInstance(ratingValue);
+			}
+		}
 
 		/// <summary>
 		/// The count of total number of reviews.
 		/// </summary>
-		public ReviewCount_Core ReviewCount { get; set; }
+		private ReviewCount_Core reviewCount;
+		public ReviewCount_Core ReviewCount
+		{
+			get
+			{
+				return reviewCount;
+			}
+			set
+			{
+				reviewCount = value;
+				SetPropertyInstance(reviewCount);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 		/// <summary>
 		/// The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.
 		/// </summary>
-		public WorstRating_Core WorstRating { get; set; }
+		private WorstRating_Core worstRating;
+		public WorstRating_Core WorstRating
+		{
+			get
+			{
+				return worstRating;
+			}
+			set
+			{
+				worstRating = value;
+				SetPropertyInstance(worstRating);
+			}
+		}
 
 	}
 }

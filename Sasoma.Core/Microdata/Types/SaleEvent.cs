@@ -32,67 +32,223 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// A person attending the event.
 		/// </summary>
-		public Attendees_Core Attendees { get; set; }
+		private Attendees_Core attendees;
+		public Attendees_Core Attendees
+		{
+			get
+			{
+				return attendees;
+			}
+			set
+			{
+				attendees = value;
+				SetPropertyInstance(attendees);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// The duration of the item (movie, audio recording, event, etc.) in <a href=\http://en.wikipedia.org/wiki/ISO_8601\ target=\new\>ISO 8601 date format</a>.
 		/// </summary>
-		public Properties.Duration_Core Duration { get; set; }
+		private Properties.Duration_Core duration;
+		public Properties.Duration_Core Duration
+		{
+			get
+			{
+				return duration;
+			}
+			set
+			{
+				duration = value;
+				SetPropertyInstance(duration);
+			}
+		}
 
 		/// <summary>
 		/// The end date and time of the event (in <a href=\http://en.wikipedia.org/wiki/ISO_8601\ target=\new\>ISO 8601 date format</a>).
 		/// </summary>
-		public EndDate_Core EndDate { get; set; }
+		private EndDate_Core endDate;
+		public EndDate_Core EndDate
+		{
+			get
+			{
+				return endDate;
+			}
+			set
+			{
+				endDate = value;
+				SetPropertyInstance(endDate);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// The location of the event or organization.
 		/// </summary>
-		public Location_Core Location { get; set; }
+		private Location_Core location;
+		public Location_Core Location
+		{
+			get
+			{
+				return location;
+			}
+			set
+			{
+				location = value;
+				SetPropertyInstance(location);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// An offer to sell this item\u2014for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
 		/// </summary>
-		public Offers_Core Offers { get; set; }
+		private Offers_Core offers;
+		public Offers_Core Offers
+		{
+			get
+			{
+				return offers;
+			}
+			set
+			{
+				offers = value;
+				SetPropertyInstance(offers);
+			}
+		}
 
 		/// <summary>
 		/// The main performer or performers of the event\u2014for example, a presenter, musician, or actor.
 		/// </summary>
-		public Performers_Core Performers { get; set; }
+		private Performers_Core performers;
+		public Performers_Core Performers
+		{
+			get
+			{
+				return performers;
+			}
+			set
+			{
+				performers = value;
+				SetPropertyInstance(performers);
+			}
+		}
 
 		/// <summary>
 		/// The start date and time of the event (in <a href=\http://en.wikipedia.org/wiki/ISO_8601\ target=\new\>ISO 8601 date format</a>).
 		/// </summary>
-		public StartDate_Core StartDate { get; set; }
+		private StartDate_Core startDate;
+		public StartDate_Core StartDate
+		{
+			get
+			{
+				return startDate;
+			}
+			set
+			{
+				startDate = value;
+				SetPropertyInstance(startDate);
+			}
+		}
 
 		/// <summary>
 		/// Events that are a part of this event. For example, a conference event includes many presentations, each are subEvents of the conference.
 		/// </summary>
-		public SubEvents_Core SubEvents { get; set; }
+		private SubEvents_Core subEvents;
+		public SubEvents_Core SubEvents
+		{
+			get
+			{
+				return subEvents;
+			}
+			set
+			{
+				subEvents = value;
+				SetPropertyInstance(subEvents);
+			}
+		}
 
 		/// <summary>
 		/// An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.
 		/// </summary>
-		public SuperEvent_Core SuperEvent { get; set; }
+		private SuperEvent_Core superEvent;
+		public SuperEvent_Core SuperEvent
+		{
+			get
+			{
+				return superEvent;
+			}
+			set
+			{
+				superEvent = value;
+				SetPropertyInstance(superEvent);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 	}
 }

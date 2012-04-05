@@ -29,9 +29,73 @@ namespace Sasoma.Microdata.Types
 
 		}
 
-        public Description_Core Description { get; set; }
-        public Image_Core Image { get; set; }
-        public Name_Core Name { get; set; }
-        public Properties.URL_Core URL { get; set; }
+        /// <summary>
+        /// A short description of the item.
+        /// </summary>
+        private Description_Core description;
+        public Description_Core Description
+        {
+            get
+            {
+                return description;
+            }
+            set
+            {
+                description = value;
+                SetPropertyInstance(description);
+            }
+        }
+
+        /// <summary>
+        /// URL of an image of the item.
+        /// </summary>
+        private Image_Core image;
+        public Image_Core Image
+        {
+            get
+            {
+                return image;
+            }
+            set
+            {
+                image = value;
+                SetPropertyInstance(image);
+            }
+        }
+
+        /// <summary>
+        /// The name of the item.
+        /// </summary>
+        private Name_Core name;
+        public Name_Core Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+                SetPropertyInstance(name);
+            }
+        }
+
+        /// <summary>
+        /// URL of the item.
+        /// </summary>
+        private Properties.URL_Core uRL;
+        public Properties.URL_Core URL
+        {
+            get
+            {
+                return uRL;
+            }
+            set
+            {
+                uRL = value;
+                SetPropertyInstance(uRL);
+            }
+        }
+
 	}
 }

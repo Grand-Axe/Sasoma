@@ -32,42 +32,138 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.
 		/// </summary>
-		public ContactType_Core ContactType { get; set; }
+		private ContactType_Core contactType;
+		public ContactType_Core ContactType
+		{
+			get
+			{
+				return contactType;
+			}
+			set
+			{
+				contactType = value;
+				SetPropertyInstance(contactType);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// Email address.
 		/// </summary>
-		public Email_Core Email { get; set; }
+		private Email_Core email;
+		public Email_Core Email
+		{
+			get
+			{
+				return email;
+			}
+			set
+			{
+				email = value;
+				SetPropertyInstance(email);
+			}
+		}
 
 		/// <summary>
 		/// The fax number.
 		/// </summary>
-		public FaxNumber_Core FaxNumber { get; set; }
+		private FaxNumber_Core faxNumber;
+		public FaxNumber_Core FaxNumber
+		{
+			get
+			{
+				return faxNumber;
+			}
+			set
+			{
+				faxNumber = value;
+				SetPropertyInstance(faxNumber);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// The telephone number.
 		/// </summary>
-		public Telephone_Core Telephone { get; set; }
+		private Telephone_Core telephone;
+		public Telephone_Core Telephone
+		{
+			get
+			{
+				return telephone;
+			}
+			set
+			{
+				telephone = value;
+				SetPropertyInstance(telephone);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 	}
 }

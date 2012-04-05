@@ -26,6 +26,7 @@ namespace Sasoma.Microdata.Types
 			this._SubTypes = new int[]{0,2,5,6};
 			this._SuperTypes = new int[0];
 			this._Properties = new int[0];
+
 		}
 
 	}

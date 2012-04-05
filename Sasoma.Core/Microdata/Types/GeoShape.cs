@@ -32,47 +32,155 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more spacedelimited points where the first and final points are identical.
 		/// </summary>
-		public Box_Core Box { get; set; }
+		private Box_Core box;
+		public Box_Core Box
+		{
+			get
+			{
+				return box;
+			}
+			set
+			{
+				box = value;
+				SetPropertyInstance(box);
+			}
+		}
 
 		/// <summary>
 		/// A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.
 		/// </summary>
-		public Circle_Core Circle { get; set; }
+		private Circle_Core circle;
+		public Circle_Core Circle
+		{
+			get
+			{
+				return circle;
+			}
+			set
+			{
+				circle = value;
+				SetPropertyInstance(circle);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// The elevation of a location.
 		/// </summary>
-		public Elevation_Core Elevation { get; set; }
+		private Elevation_Core elevation;
+		public Elevation_Core Elevation
+		{
+			get
+			{
+				return elevation;
+			}
+			set
+			{
+				elevation = value;
+				SetPropertyInstance(elevation);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.
 		/// </summary>
-		public Line_Core Line { get; set; }
+		private Line_Core line;
+		public Line_Core Line
+		{
+			get
+			{
+				return line;
+			}
+			set
+			{
+				line = value;
+				SetPropertyInstance(line);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more spacedelimited points where the first and final points are identical.
 		/// </summary>
-		public Polygon_Core Polygon { get; set; }
+		private Polygon_Core polygon;
+		public Polygon_Core Polygon
+		{
+			get
+			{
+				return polygon;
+			}
+			set
+			{
+				polygon = value;
+				SetPropertyInstance(polygon);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 	}
 }

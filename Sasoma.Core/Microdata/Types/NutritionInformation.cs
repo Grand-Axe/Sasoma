@@ -32,82 +32,274 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// The number of calories
 		/// </summary>
-		public Calories_Core Calories { get; set; }
+		private Calories_Core calories;
+		public Calories_Core Calories
+		{
+			get
+			{
+				return calories;
+			}
+			set
+			{
+				calories = value;
+				SetPropertyInstance(calories);
+			}
+		}
 
 		/// <summary>
 		/// The number of grams of carbohydrates.
 		/// </summary>
-		public CarbohydrateContent_Core CarbohydrateContent { get; set; }
+		private CarbohydrateContent_Core carbohydrateContent;
+		public CarbohydrateContent_Core CarbohydrateContent
+		{
+			get
+			{
+				return carbohydrateContent;
+			}
+			set
+			{
+				carbohydrateContent = value;
+				SetPropertyInstance(carbohydrateContent);
+			}
+		}
 
 		/// <summary>
 		/// The number of milligrams of cholesterol.
 		/// </summary>
-		public CholesterolContent_Core CholesterolContent { get; set; }
+		private CholesterolContent_Core cholesterolContent;
+		public CholesterolContent_Core CholesterolContent
+		{
+			get
+			{
+				return cholesterolContent;
+			}
+			set
+			{
+				cholesterolContent = value;
+				SetPropertyInstance(cholesterolContent);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// The number of grams of fat.
 		/// </summary>
-		public FatContent_Core FatContent { get; set; }
+		private FatContent_Core fatContent;
+		public FatContent_Core FatContent
+		{
+			get
+			{
+				return fatContent;
+			}
+			set
+			{
+				fatContent = value;
+				SetPropertyInstance(fatContent);
+			}
+		}
 
 		/// <summary>
 		/// The number of grams of fiber.
 		/// </summary>
-		public FiberContent_Core FiberContent { get; set; }
+		private FiberContent_Core fiberContent;
+		public FiberContent_Core FiberContent
+		{
+			get
+			{
+				return fiberContent;
+			}
+			set
+			{
+				fiberContent = value;
+				SetPropertyInstance(fiberContent);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// The number of grams of protein.
 		/// </summary>
-		public ProteinContent_Core ProteinContent { get; set; }
+		private ProteinContent_Core proteinContent;
+		public ProteinContent_Core ProteinContent
+		{
+			get
+			{
+				return proteinContent;
+			}
+			set
+			{
+				proteinContent = value;
+				SetPropertyInstance(proteinContent);
+			}
+		}
 
 		/// <summary>
 		/// The number of grams of saturated fat.
 		/// </summary>
-		public SaturatedFatContent_Core SaturatedFatContent { get; set; }
+		private SaturatedFatContent_Core saturatedFatContent;
+		public SaturatedFatContent_Core SaturatedFatContent
+		{
+			get
+			{
+				return saturatedFatContent;
+			}
+			set
+			{
+				saturatedFatContent = value;
+				SetPropertyInstance(saturatedFatContent);
+			}
+		}
 
 		/// <summary>
 		/// The serving size, in terms of the number of volume or mass
 		/// </summary>
-		public ServingSize_Core ServingSize { get; set; }
+		private ServingSize_Core servingSize;
+		public ServingSize_Core ServingSize
+		{
+			get
+			{
+				return servingSize;
+			}
+			set
+			{
+				servingSize = value;
+				SetPropertyInstance(servingSize);
+			}
+		}
 
 		/// <summary>
 		/// The number of milligrams of sodium.
 		/// </summary>
-		public SodiumContent_Core SodiumContent { get; set; }
+		private SodiumContent_Core sodiumContent;
+		public SodiumContent_Core SodiumContent
+		{
+			get
+			{
+				return sodiumContent;
+			}
+			set
+			{
+				sodiumContent = value;
+				SetPropertyInstance(sodiumContent);
+			}
+		}
 
 		/// <summary>
 		/// The number of grams of sugar.
 		/// </summary>
-		public SugarContent_Core SugarContent { get; set; }
+		private SugarContent_Core sugarContent;
+		public SugarContent_Core SugarContent
+		{
+			get
+			{
+				return sugarContent;
+			}
+			set
+			{
+				sugarContent = value;
+				SetPropertyInstance(sugarContent);
+			}
+		}
 
 		/// <summary>
 		/// The number of grams of trans fat.
 		/// </summary>
-		public TransFatContent_Core TransFatContent { get; set; }
+		private TransFatContent_Core transFatContent;
+		public TransFatContent_Core TransFatContent
+		{
+			get
+			{
+				return transFatContent;
+			}
+			set
+			{
+				transFatContent = value;
+				SetPropertyInstance(transFatContent);
+			}
+		}
 
 		/// <summary>
 		/// The number of grams of unsaturated fat.
 		/// </summary>
-		public UnsaturatedFatContent_Core UnsaturatedFatContent { get; set; }
+		private UnsaturatedFatContent_Core unsaturatedFatContent;
+		public UnsaturatedFatContent_Core UnsaturatedFatContent
+		{
+			get
+			{
+				return unsaturatedFatContent;
+			}
+			set
+			{
+				unsaturatedFatContent = value;
+				SetPropertyInstance(unsaturatedFatContent);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 	}
 }

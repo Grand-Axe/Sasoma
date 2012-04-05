@@ -32,92 +32,308 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// Physical address of the item.
 		/// </summary>
-		public Address_Core Address { get; set; }
+		private Address_Core address;
+		public Address_Core Address
+		{
+			get
+			{
+				return address;
+			}
+			set
+			{
+				address = value;
+				SetPropertyInstance(address);
+			}
+		}
 
 		/// <summary>
 		/// The overall rating, based on a collection of reviews or ratings, of the item.
 		/// </summary>
-		public Properties.AggregateRating_Core AggregateRating { get; set; }
+		private Properties.AggregateRating_Core aggregateRating;
+		public Properties.AggregateRating_Core AggregateRating
+		{
+			get
+			{
+				return aggregateRating;
+			}
+			set
+			{
+				aggregateRating = value;
+				SetPropertyInstance(aggregateRating);
+			}
+		}
 
 		/// <summary>
 		/// A contact point for a person or organization.
 		/// </summary>
-		public ContactPoints_Core ContactPoints { get; set; }
+		private ContactPoints_Core contactPoints;
+		public ContactPoints_Core ContactPoints
+		{
+			get
+			{
+				return contactPoints;
+			}
+			set
+			{
+				contactPoints = value;
+				SetPropertyInstance(contactPoints);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// Email address.
 		/// </summary>
-		public Email_Core Email { get; set; }
+		private Email_Core email;
+		public Email_Core Email
+		{
+			get
+			{
+				return email;
+			}
+			set
+			{
+				email = value;
+				SetPropertyInstance(email);
+			}
+		}
 
 		/// <summary>
 		/// People working for this organization.
 		/// </summary>
-		public Employees_Core Employees { get; set; }
+		private Employees_Core employees;
+		public Employees_Core Employees
+		{
+			get
+			{
+				return employees;
+			}
+			set
+			{
+				employees = value;
+				SetPropertyInstance(employees);
+			}
+		}
 
 		/// <summary>
 		/// Upcoming or past events associated with this place or organization.
 		/// </summary>
-		public Events_Core Events { get; set; }
+		private Events_Core events;
+		public Events_Core Events
+		{
+			get
+			{
+				return events;
+			}
+			set
+			{
+				events = value;
+				SetPropertyInstance(events);
+			}
+		}
 
 		/// <summary>
 		/// The fax number.
 		/// </summary>
-		public FaxNumber_Core FaxNumber { get; set; }
+		private FaxNumber_Core faxNumber;
+		public FaxNumber_Core FaxNumber
+		{
+			get
+			{
+				return faxNumber;
+			}
+			set
+			{
+				faxNumber = value;
+				SetPropertyInstance(faxNumber);
+			}
+		}
 
 		/// <summary>
 		/// A person who founded this organization.
 		/// </summary>
-		public Founders_Core Founders { get; set; }
+		private Founders_Core founders;
+		public Founders_Core Founders
+		{
+			get
+			{
+				return founders;
+			}
+			set
+			{
+				founders = value;
+				SetPropertyInstance(founders);
+			}
+		}
 
 		/// <summary>
 		/// The date that this organization was founded.
 		/// </summary>
-		public FoundingDate_Core FoundingDate { get; set; }
+		private FoundingDate_Core foundingDate;
+		public FoundingDate_Core FoundingDate
+		{
+			get
+			{
+				return foundingDate;
+			}
+			set
+			{
+				foundingDate = value;
+				SetPropertyInstance(foundingDate);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// A count of a specific user interactions with this item\u2014for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=\http://schema.org/UserInteraction\>UserInteraction</a>.
 		/// </summary>
-		public InteractionCount_Core InteractionCount { get; set; }
+		private InteractionCount_Core interactionCount;
+		public InteractionCount_Core InteractionCount
+		{
+			get
+			{
+				return interactionCount;
+			}
+			set
+			{
+				interactionCount = value;
+				SetPropertyInstance(interactionCount);
+			}
+		}
 
 		/// <summary>
 		/// The location of the event or organization.
 		/// </summary>
-		public Location_Core Location { get; set; }
+		private Location_Core location;
+		public Location_Core Location
+		{
+			get
+			{
+				return location;
+			}
+			set
+			{
+				location = value;
+				SetPropertyInstance(location);
+			}
+		}
 
 		/// <summary>
 		/// A member of this organization.
 		/// </summary>
-		public Members_Core Members { get; set; }
+		private Members_Core members;
+		public Members_Core Members
+		{
+			get
+			{
+				return members;
+			}
+			set
+			{
+				members = value;
+				SetPropertyInstance(members);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// Review of the item.
 		/// </summary>
-		public Reviews_Core Reviews { get; set; }
+		private Reviews_Core reviews;
+		public Reviews_Core Reviews
+		{
+			get
+			{
+				return reviews;
+			}
+			set
+			{
+				reviews = value;
+				SetPropertyInstance(reviews);
+			}
+		}
 
 		/// <summary>
 		/// The telephone number.
 		/// </summary>
-		public Telephone_Core Telephone { get; set; }
+		private Telephone_Core telephone;
+		public Telephone_Core Telephone
+		{
+			get
+			{
+				return telephone;
+			}
+			set
+			{
+				telephone = value;
+				SetPropertyInstance(telephone);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 	}
 }

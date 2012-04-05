@@ -32,112 +32,376 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// The base salary of the job.
 		/// </summary>
-		public BaseSalary_Core BaseSalary { get; set; }
+		private BaseSalary_Core baseSalary;
+		public BaseSalary_Core BaseSalary
+		{
+			get
+			{
+				return baseSalary;
+			}
+			set
+			{
+				baseSalary = value;
+				SetPropertyInstance(baseSalary);
+			}
+		}
 
 		/// <summary>
 		/// Description of benefits associated with the job.
 		/// </summary>
-		public Benefits_Core Benefits { get; set; }
+		private Benefits_Core benefits;
+		public Benefits_Core Benefits
+		{
+			get
+			{
+				return benefits;
+			}
+			set
+			{
+				benefits = value;
+				SetPropertyInstance(benefits);
+			}
+		}
 
 		/// <summary>
 		/// Publication date for the job posting.
 		/// </summary>
-		public DatePosted_Core DatePosted { get; set; }
+		private DatePosted_Core datePosted;
+		public DatePosted_Core DatePosted
+		{
+			get
+			{
+				return datePosted;
+			}
+			set
+			{
+				datePosted = value;
+				SetPropertyInstance(datePosted);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// Educational background needed for the position.
 		/// </summary>
-		public EducationRequirements_Core EducationRequirements { get; set; }
+		private EducationRequirements_Core educationRequirements;
+		public EducationRequirements_Core EducationRequirements
+		{
+			get
+			{
+				return educationRequirements;
+			}
+			set
+			{
+				educationRequirements = value;
+				SetPropertyInstance(educationRequirements);
+			}
+		}
 
 		/// <summary>
 		/// Type of employment (e.g. full-time, part-time, contract, temporary, seasonal, internship).
 		/// </summary>
-		public EmploymentType_Core EmploymentType { get; set; }
+		private EmploymentType_Core employmentType;
+		public EmploymentType_Core EmploymentType
+		{
+			get
+			{
+				return employmentType;
+			}
+			set
+			{
+				employmentType = value;
+				SetPropertyInstance(employmentType);
+			}
+		}
 
 		/// <summary>
 		/// Description of skills and experience needed for the position.
 		/// </summary>
-		public ExperienceRequirements_Core ExperienceRequirements { get; set; }
+		private ExperienceRequirements_Core experienceRequirements;
+		public ExperienceRequirements_Core ExperienceRequirements
+		{
+			get
+			{
+				return experienceRequirements;
+			}
+			set
+			{
+				experienceRequirements = value;
+				SetPropertyInstance(experienceRequirements);
+			}
+		}
 
 		/// <summary>
 		/// Organization offering the job position.
 		/// </summary>
-		public HiringOrganization_Core HiringOrganization { get; set; }
+		private HiringOrganization_Core hiringOrganization;
+		public HiringOrganization_Core HiringOrganization
+		{
+			get
+			{
+				return hiringOrganization;
+			}
+			set
+			{
+				hiringOrganization = value;
+				SetPropertyInstance(hiringOrganization);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// Description of bonus and commission compensation aspects of the job.
 		/// </summary>
-		public Incentives_Core Incentives { get; set; }
+		private Incentives_Core incentives;
+		public Incentives_Core Incentives
+		{
+			get
+			{
+				return incentives;
+			}
+			set
+			{
+				incentives = value;
+				SetPropertyInstance(incentives);
+			}
+		}
 
 		/// <summary>
 		/// The industry associated with the job position.
 		/// </summary>
-		public Industry_Core Industry { get; set; }
+		private Industry_Core industry;
+		public Industry_Core Industry
+		{
+			get
+			{
+				return industry;
+			}
+			set
+			{
+				industry = value;
+				SetPropertyInstance(industry);
+			}
+		}
 
 		/// <summary>
 		/// A (typically single) geographic location associated with the job position.
 		/// </summary>
-		public JobLocation_Core JobLocation { get; set; }
+		private JobLocation_Core jobLocation;
+		public JobLocation_Core JobLocation
+		{
+			get
+			{
+				return jobLocation;
+			}
+			set
+			{
+				jobLocation = value;
+				SetPropertyInstance(jobLocation);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// Category or categories describing the job. Use BLS O*NET-SOC taxonomy: http://www.onetcenter.org/taxonomy.html. Ideally includes textual label and formal code, with the property repeated for each applicable value.
 		/// </summary>
-		public OccupationalCategory_Core OccupationalCategory { get; set; }
+		private OccupationalCategory_Core occupationalCategory;
+		public OccupationalCategory_Core OccupationalCategory
+		{
+			get
+			{
+				return occupationalCategory;
+			}
+			set
+			{
+				occupationalCategory = value;
+				SetPropertyInstance(occupationalCategory);
+			}
+		}
 
 		/// <summary>
 		/// Specific qualifications required for this role.
 		/// </summary>
-		public Qualifications_Core Qualifications { get; set; }
+		private Qualifications_Core qualifications;
+		public Qualifications_Core Qualifications
+		{
+			get
+			{
+				return qualifications;
+			}
+			set
+			{
+				qualifications = value;
+				SetPropertyInstance(qualifications);
+			}
+		}
 
 		/// <summary>
 		/// Responsibilities associated with this role.
 		/// </summary>
-		public Responsibilities_Core Responsibilities { get; set; }
+		private Responsibilities_Core responsibilities;
+		public Responsibilities_Core Responsibilities
+		{
+			get
+			{
+				return responsibilities;
+			}
+			set
+			{
+				responsibilities = value;
+				SetPropertyInstance(responsibilities);
+			}
+		}
 
 		/// <summary>
 		/// The currency (coded using ISO 4217, http://en.wikipedia.org/wiki/ISO_4217 used for the main salary information in this job posting.
 		/// </summary>
-		public SalaryCurrency_Core SalaryCurrency { get; set; }
+		private SalaryCurrency_Core salaryCurrency;
+		public SalaryCurrency_Core SalaryCurrency
+		{
+			get
+			{
+				return salaryCurrency;
+			}
+			set
+			{
+				salaryCurrency = value;
+				SetPropertyInstance(salaryCurrency);
+			}
+		}
 
 		/// <summary>
 		/// Skills required to fulfill this role.
 		/// </summary>
-		public Skills_Core Skills { get; set; }
+		private Skills_Core skills;
+		public Skills_Core Skills
+		{
+			get
+			{
+				return skills;
+			}
+			set
+			{
+				skills = value;
+				SetPropertyInstance(skills);
+			}
+		}
 
 		/// <summary>
 		/// Any special commitments associated with this job posting. Valid entries include VeteranCommit, MilitarySpouseCommit, etc.
 		/// </summary>
-		public SpecialCommitments_Core SpecialCommitments { get; set; }
+		private SpecialCommitments_Core specialCommitments;
+		public SpecialCommitments_Core SpecialCommitments
+		{
+			get
+			{
+				return specialCommitments;
+			}
+			set
+			{
+				specialCommitments = value;
+				SetPropertyInstance(specialCommitments);
+			}
+		}
 
 		/// <summary>
 		/// The title of the job.
 		/// </summary>
-		public Title_Core Title { get; set; }
+		private Title_Core title;
+		public Title_Core Title
+		{
+			get
+			{
+				return title;
+			}
+			set
+			{
+				title = value;
+				SetPropertyInstance(title);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 		/// <summary>
 		/// The typical working hours for this job (e.g. 1st shift, night shift, 8am-5pm).
 		/// </summary>
-		public WorkHours_Core WorkHours { get; set; }
+		private WorkHours_Core workHours;
+		public WorkHours_Core WorkHours
+		{
+			get
+			{
+				return workHours;
+			}
+			set
+			{
+				workHours = value;
+				SetPropertyInstance(workHours);
+			}
+		}
 
 	}
 }

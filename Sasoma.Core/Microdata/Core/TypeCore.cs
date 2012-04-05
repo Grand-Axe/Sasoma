@@ -82,6 +82,15 @@ namespace Sasoma.Microdata
             }
         }
 
+        protected PropertyCore[] _PropertyInstances;
+        public PropertyCore[] PropertyInstances
+        {
+            get
+            {
+                return _PropertyInstances;
+            }
+        }        
+
         protected int[] _Instances;
         public int[] Instances
         {
@@ -95,5 +104,15 @@ namespace Sasoma.Microdata
         /// 
         /// </summary>
         internal const string BaseName = "Sasoma.Languages.Core.TypeLabels";
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="propertyCore"></param>
+        protected void SetPropertyInstance(PropertyCore propertyCore)
+        {
+            int index = Array.IndexOf(Properties, propertyCore.PropertyId);
+            PropertyInstances[index] = propertyCore;
+        }
     }
 }

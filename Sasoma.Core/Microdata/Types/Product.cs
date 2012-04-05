@@ -32,57 +32,189 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// The overall rating, based on a collection of reviews or ratings, of the item.
 		/// </summary>
-		public Properties.AggregateRating_Core AggregateRating { get; set; }
+		private Properties.AggregateRating_Core aggregateRating;
+		public Properties.AggregateRating_Core AggregateRating
+		{
+			get
+			{
+				return aggregateRating;
+			}
+			set
+			{
+				aggregateRating = value;
+				SetPropertyInstance(aggregateRating);
+			}
+		}
 
 		/// <summary>
 		/// The brand of the product.
 		/// </summary>
-		public Brand_Core Brand { get; set; }
+		private Brand_Core brand;
+		public Brand_Core Brand
+		{
+			get
+			{
+				return brand;
+			}
+			set
+			{
+				brand = value;
+				SetPropertyInstance(brand);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// The manufacturer of the product.
 		/// </summary>
-		public Manufacturer_Core Manufacturer { get; set; }
+		private Manufacturer_Core manufacturer;
+		public Manufacturer_Core Manufacturer
+		{
+			get
+			{
+				return manufacturer;
+			}
+			set
+			{
+				manufacturer = value;
+				SetPropertyInstance(manufacturer);
+			}
+		}
 
 		/// <summary>
 		/// The model of the product.
 		/// </summary>
-		public Model_Core Model { get; set; }
+		private Model_Core model;
+		public Model_Core Model
+		{
+			get
+			{
+				return model;
+			}
+			set
+			{
+				model = value;
+				SetPropertyInstance(model);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// An offer to sell this item\u2014for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
 		/// </summary>
-		public Offers_Core Offers { get; set; }
+		private Offers_Core offers;
+		public Offers_Core Offers
+		{
+			get
+			{
+				return offers;
+			}
+			set
+			{
+				offers = value;
+				SetPropertyInstance(offers);
+			}
+		}
 
 		/// <summary>
 		/// The product identifier, such as ISBN. For example: <code>&lt;meta itemprop='productID' content='isbn:123-456-789'/&gt;</code>.
 		/// </summary>
-		public ProductID_Core ProductID { get; set; }
+		private ProductID_Core productID;
+		public ProductID_Core ProductID
+		{
+			get
+			{
+				return productID;
+			}
+			set
+			{
+				productID = value;
+				SetPropertyInstance(productID);
+			}
+		}
 
 		/// <summary>
 		/// Review of the item.
 		/// </summary>
-		public Reviews_Core Reviews { get; set; }
+		private Reviews_Core reviews;
+		public Reviews_Core Reviews
+		{
+			get
+			{
+				return reviews;
+			}
+			set
+			{
+				reviews = value;
+				SetPropertyInstance(reviews);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 	}
 }

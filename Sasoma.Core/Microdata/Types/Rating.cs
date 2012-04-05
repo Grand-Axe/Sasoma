@@ -32,37 +32,121 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.
 		/// </summary>
-		public BestRating_Core BestRating { get; set; }
+		private BestRating_Core bestRating;
+		public BestRating_Core BestRating
+		{
+			get
+			{
+				return bestRating;
+			}
+			set
+			{
+				bestRating = value;
+				SetPropertyInstance(bestRating);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// The rating for the content.
 		/// </summary>
-		public RatingValue_Core RatingValue { get; set; }
+		private RatingValue_Core ratingValue;
+		public RatingValue_Core RatingValue
+		{
+			get
+			{
+				return ratingValue;
+			}
+			set
+			{
+				ratingValue = value;
+				SetPropertyInstance(ratingValue);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 		/// <summary>
 		/// The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.
 		/// </summary>
-		public WorstRating_Core WorstRating { get; set; }
+		private WorstRating_Core worstRating;
+		public WorstRating_Core WorstRating
+		{
+			get
+			{
+				return worstRating;
+			}
+			set
+			{
+				worstRating = value;
+				SetPropertyInstance(worstRating);
+			}
+		}
 
 	}
 }

@@ -32,302 +32,1022 @@ namespace Sasoma.Microdata.Types
 		/// <summary>
 		/// The subject matter of the content.
 		/// </summary>
-		public About_Core About { get; set; }
+		private About_Core about;
+		public About_Core About
+		{
+			get
+			{
+				return about;
+			}
+			set
+			{
+				about = value;
+				SetPropertyInstance(about);
+			}
+		}
 
 		/// <summary>
 		/// Specifies the Person that is legally accountable for the CreativeWork.
 		/// </summary>
-		public AccountablePerson_Core AccountablePerson { get; set; }
+		private AccountablePerson_Core accountablePerson;
+		public AccountablePerson_Core AccountablePerson
+		{
+			get
+			{
+				return accountablePerson;
+			}
+			set
+			{
+				accountablePerson = value;
+				SetPropertyInstance(accountablePerson);
+			}
+		}
 
 		/// <summary>
 		/// The overall rating, based on a collection of reviews or ratings, of the item.
 		/// </summary>
-		public Properties.AggregateRating_Core AggregateRating { get; set; }
+		private Properties.AggregateRating_Core aggregateRating;
+		public Properties.AggregateRating_Core AggregateRating
+		{
+			get
+			{
+				return aggregateRating;
+			}
+			set
+			{
+				aggregateRating = value;
+				SetPropertyInstance(aggregateRating);
+			}
+		}
 
 		/// <summary>
 		/// A secondary title of the CreativeWork.
 		/// </summary>
-		public AlternativeHeadline_Core AlternativeHeadline { get; set; }
+		private AlternativeHeadline_Core alternativeHeadline;
+		public AlternativeHeadline_Core AlternativeHeadline
+		{
+			get
+			{
+				return alternativeHeadline;
+			}
+			set
+			{
+				alternativeHeadline = value;
+				SetPropertyInstance(alternativeHeadline);
+			}
+		}
 
 		/// <summary>
 		/// A NewsArticle associated with the Media Object.
 		/// </summary>
-		public AssociatedArticle_Core AssociatedArticle { get; set; }
+		private AssociatedArticle_Core associatedArticle;
+		public AssociatedArticle_Core AssociatedArticle
+		{
+			get
+			{
+				return associatedArticle;
+			}
+			set
+			{
+				associatedArticle = value;
+				SetPropertyInstance(associatedArticle);
+			}
+		}
 
 		/// <summary>
 		/// The media objects that encode this creative work. This property is a synonym for encodings.
 		/// </summary>
-		public AssociatedMedia_Core AssociatedMedia { get; set; }
+		private AssociatedMedia_Core associatedMedia;
+		public AssociatedMedia_Core AssociatedMedia
+		{
+			get
+			{
+				return associatedMedia;
+			}
+			set
+			{
+				associatedMedia = value;
+				SetPropertyInstance(associatedMedia);
+			}
+		}
 
 		/// <summary>
 		/// An embedded audio object.
 		/// </summary>
-		public Audio_Core Audio { get; set; }
+		private Audio_Core audio;
+		public Audio_Core Audio
+		{
+			get
+			{
+				return audio;
+			}
+			set
+			{
+				audio = value;
+				SetPropertyInstance(audio);
+			}
+		}
 
 		/// <summary>
 		/// The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangabely.
 		/// </summary>
-		public Author_Core Author { get; set; }
+		private Author_Core author;
+		public Author_Core Author
+		{
+			get
+			{
+				return author;
+			}
+			set
+			{
+				author = value;
+				SetPropertyInstance(author);
+			}
+		}
 
 		/// <summary>
 		/// Awards won by this person or for this creative work.
 		/// </summary>
-		public Awards_Core Awards { get; set; }
+		private Awards_Core awards;
+		public Awards_Core Awards
+		{
+			get
+			{
+				return awards;
+			}
+			set
+			{
+				awards = value;
+				SetPropertyInstance(awards);
+			}
+		}
 
 		/// <summary>
 		/// The bitrate of the media object.
 		/// </summary>
-		public Bitrate_Core Bitrate { get; set; }
+		private Bitrate_Core bitrate;
+		public Bitrate_Core Bitrate
+		{
+			get
+			{
+				return bitrate;
+			}
+			set
+			{
+				bitrate = value;
+				SetPropertyInstance(bitrate);
+			}
+		}
 
 		/// <summary>
 		/// The caption for this object.
 		/// </summary>
-		public Caption_Core Caption { get; set; }
+		private Caption_Core caption;
+		public Caption_Core Caption
+		{
+			get
+			{
+				return caption;
+			}
+			set
+			{
+				caption = value;
+				SetPropertyInstance(caption);
+			}
+		}
 
 		/// <summary>
 		/// Comments, typically from users, on this CreativeWork.
 		/// </summary>
-		public Comment_Core Comment { get; set; }
+		private Comment_Core comment;
+		public Comment_Core Comment
+		{
+			get
+			{
+				return comment;
+			}
+			set
+			{
+				comment = value;
+				SetPropertyInstance(comment);
+			}
+		}
 
 		/// <summary>
 		/// The location of the content.
 		/// </summary>
-		public ContentLocation_Core ContentLocation { get; set; }
+		private ContentLocation_Core contentLocation;
+		public ContentLocation_Core ContentLocation
+		{
+			get
+			{
+				return contentLocation;
+			}
+			set
+			{
+				contentLocation = value;
+				SetPropertyInstance(contentLocation);
+			}
+		}
 
 		/// <summary>
 		/// Official rating of a piece of content\u2014for example,'MPAA PG-13'.
 		/// </summary>
-		public ContentRating_Core ContentRating { get; set; }
+		private ContentRating_Core contentRating;
+		public ContentRating_Core ContentRating
+		{
+			get
+			{
+				return contentRating;
+			}
+			set
+			{
+				contentRating = value;
+				SetPropertyInstance(contentRating);
+			}
+		}
 
 		/// <summary>
 		/// File size in (mega/kilo) bytes.
 		/// </summary>
-		public ContentSize_Core ContentSize { get; set; }
+		private ContentSize_Core contentSize;
+		public ContentSize_Core ContentSize
+		{
+			get
+			{
+				return contentSize;
+			}
+			set
+			{
+				contentSize = value;
+				SetPropertyInstance(contentSize);
+			}
+		}
 
 		/// <summary>
 		/// Actual bytes of the media object, for example the image file or video file.
 		/// </summary>
-		public ContentURL_Core ContentURL { get; set; }
+		private ContentURL_Core contentURL;
+		public ContentURL_Core ContentURL
+		{
+			get
+			{
+				return contentURL;
+			}
+			set
+			{
+				contentURL = value;
+				SetPropertyInstance(contentURL);
+			}
+		}
 
 		/// <summary>
 		/// A secondary contributor to the CreativeWork.
 		/// </summary>
-		public Contributor_Core Contributor { get; set; }
+		private Contributor_Core contributor;
+		public Contributor_Core Contributor
+		{
+			get
+			{
+				return contributor;
+			}
+			set
+			{
+				contributor = value;
+				SetPropertyInstance(contributor);
+			}
+		}
 
 		/// <summary>
 		/// The party holding the legal copyright to the CreativeWork.
 		/// </summary>
-		public CopyrightHolder_Core CopyrightHolder { get; set; }
+		private CopyrightHolder_Core copyrightHolder;
+		public CopyrightHolder_Core CopyrightHolder
+		{
+			get
+			{
+				return copyrightHolder;
+			}
+			set
+			{
+				copyrightHolder = value;
+				SetPropertyInstance(copyrightHolder);
+			}
+		}
 
 		/// <summary>
 		/// The year during which the claimed copyright for the CreativeWork was first asserted.
 		/// </summary>
-		public CopyrightYear_Core CopyrightYear { get; set; }
+		private CopyrightYear_Core copyrightYear;
+		public CopyrightYear_Core CopyrightYear
+		{
+			get
+			{
+				return copyrightYear;
+			}
+			set
+			{
+				copyrightYear = value;
+				SetPropertyInstance(copyrightYear);
+			}
+		}
 
 		/// <summary>
 		/// The creator/author of this CreativeWork or UserComments. This is the same as the Author property for CreativeWork.
 		/// </summary>
-		public Creator_Core Creator { get; set; }
+		private Creator_Core creator;
+		public Creator_Core Creator
+		{
+			get
+			{
+				return creator;
+			}
+			set
+			{
+				creator = value;
+				SetPropertyInstance(creator);
+			}
+		}
 
 		/// <summary>
 		/// The date on which the CreativeWork was created.
 		/// </summary>
-		public DateCreated_Core DateCreated { get; set; }
+		private DateCreated_Core dateCreated;
+		public DateCreated_Core DateCreated
+		{
+			get
+			{
+				return dateCreated;
+			}
+			set
+			{
+				dateCreated = value;
+				SetPropertyInstance(dateCreated);
+			}
+		}
 
 		/// <summary>
 		/// The date on which the CreativeWork was most recently modified.
 		/// </summary>
-		public DateModified_Core DateModified { get; set; }
+		private DateModified_Core dateModified;
+		public DateModified_Core DateModified
+		{
+			get
+			{
+				return dateModified;
+			}
+			set
+			{
+				dateModified = value;
+				SetPropertyInstance(dateModified);
+			}
+		}
 
 		/// <summary>
 		/// Date of first broadcast/publication.
 		/// </summary>
-		public DatePublished_Core DatePublished { get; set; }
+		private DatePublished_Core datePublished;
+		public DatePublished_Core DatePublished
+		{
+			get
+			{
+				return datePublished;
+			}
+			set
+			{
+				datePublished = value;
+				SetPropertyInstance(datePublished);
+			}
+		}
 
 		/// <summary>
 		/// A short description of the item.
 		/// </summary>
-		public Description_Core Description { get; set; }
+		private Description_Core description;
+		public Description_Core Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				SetPropertyInstance(description);
+			}
+		}
 
 		/// <summary>
 		/// A link to the page containing the comments of the CreativeWork.
 		/// </summary>
-		public DiscussionURL_Core DiscussionURL { get; set; }
+		private DiscussionURL_Core discussionURL;
+		public DiscussionURL_Core DiscussionURL
+		{
+			get
+			{
+				return discussionURL;
+			}
+			set
+			{
+				discussionURL = value;
+				SetPropertyInstance(discussionURL);
+			}
+		}
 
 		/// <summary>
 		/// The duration of the item (movie, audio recording, event, etc.) in <a href=\http://en.wikipedia.org/wiki/ISO_8601\ target=\new\>ISO 8601 date format</a>.
 		/// </summary>
-		public Properties.Duration_Core Duration { get; set; }
+		private Properties.Duration_Core duration;
+		public Properties.Duration_Core Duration
+		{
+			get
+			{
+				return duration;
+			}
+			set
+			{
+				duration = value;
+				SetPropertyInstance(duration);
+			}
+		}
 
 		/// <summary>
 		/// Specifies the Person who edited the CreativeWork.
 		/// </summary>
-		public Editor_Core Editor { get; set; }
+		private Editor_Core editor;
+		public Editor_Core Editor
+		{
+			get
+			{
+				return editor;
+			}
+			set
+			{
+				editor = value;
+				SetPropertyInstance(editor);
+			}
+		}
 
 		/// <summary>
 		/// A URL pointing to a player for a specific video. In general, this is the information in the <code>src</code> element of an <code>embed</code> tag and should not be the same as the content of the <code>loc</code> tag.
 		/// </summary>
-		public EmbedURL_Core EmbedURL { get; set; }
+		private EmbedURL_Core embedURL;
+		public EmbedURL_Core EmbedURL
+		{
+			get
+			{
+				return embedURL;
+			}
+			set
+			{
+				embedURL = value;
+				SetPropertyInstance(embedURL);
+			}
+		}
 
 		/// <summary>
 		/// The creative work encoded by this media object
 		/// </summary>
-		public EncodesCreativeWork_Core EncodesCreativeWork { get; set; }
+		private EncodesCreativeWork_Core encodesCreativeWork;
+		public EncodesCreativeWork_Core EncodesCreativeWork
+		{
+			get
+			{
+				return encodesCreativeWork;
+			}
+			set
+			{
+				encodesCreativeWork = value;
+				SetPropertyInstance(encodesCreativeWork);
+			}
+		}
 
 		/// <summary>
 		/// mp3, mpeg4, etc.
 		/// </summary>
-		public EncodingFormat_Core EncodingFormat { get; set; }
+		private EncodingFormat_Core encodingFormat;
+		public EncodingFormat_Core EncodingFormat
+		{
+			get
+			{
+				return encodingFormat;
+			}
+			set
+			{
+				encodingFormat = value;
+				SetPropertyInstance(encodingFormat);
+			}
+		}
 
 		/// <summary>
 		/// The media objects that encode this creative work
 		/// </summary>
-		public Encodings_Core Encodings { get; set; }
+		private Encodings_Core encodings;
+		public Encodings_Core Encodings
+		{
+			get
+			{
+				return encodings;
+			}
+			set
+			{
+				encodings = value;
+				SetPropertyInstance(encodings);
+			}
+		}
 
 		/// <summary>
 		/// exif data for this object.
 		/// </summary>
-		public ExifData_Core ExifData { get; set; }
+		private ExifData_Core exifData;
+		public ExifData_Core ExifData
+		{
+			get
+			{
+				return exifData;
+			}
+			set
+			{
+				exifData = value;
+				SetPropertyInstance(exifData);
+			}
+		}
 
 		/// <summary>
 		/// Date the content expires and is no longer useful or available. Useful for videos.
 		/// </summary>
-		public Expires_Core Expires { get; set; }
+		private Expires_Core expires;
+		public Expires_Core Expires
+		{
+			get
+			{
+				return expires;
+			}
+			set
+			{
+				expires = value;
+				SetPropertyInstance(expires);
+			}
+		}
 
 		/// <summary>
 		/// Genre of the creative work
 		/// </summary>
-		public Genre_Core Genre { get; set; }
+		private Genre_Core genre;
+		public Genre_Core Genre
+		{
+			get
+			{
+				return genre;
+			}
+			set
+			{
+				genre = value;
+				SetPropertyInstance(genre);
+			}
+		}
 
 		/// <summary>
 		/// Headline of the article
 		/// </summary>
-		public Headline_Core Headline { get; set; }
+		private Headline_Core headline;
+		public Headline_Core Headline
+		{
+			get
+			{
+				return headline;
+			}
+			set
+			{
+				headline = value;
+				SetPropertyInstance(headline);
+			}
+		}
 
 		/// <summary>
 		/// The height of the media object.
 		/// </summary>
-		public Height_Core Height { get; set; }
+		private Height_Core height;
+		public Height_Core Height
+		{
+			get
+			{
+				return height;
+			}
+			set
+			{
+				height = value;
+				SetPropertyInstance(height);
+			}
+		}
 
 		/// <summary>
 		/// URL of an image of the item.
 		/// </summary>
-		public Image_Core Image { get; set; }
+		private Image_Core image;
+		public Image_Core Image
+		{
+			get
+			{
+				return image;
+			}
+			set
+			{
+				image = value;
+				SetPropertyInstance(image);
+			}
+		}
 
 		/// <summary>
 		/// The language of the content. please use one of the language codes from the <a href=\http://tools.ietf.org/html/bcp47\>IETF BCP 47 standard.</a>
 		/// </summary>
-		public InLanguage_Core InLanguage { get; set; }
+		private InLanguage_Core inLanguage;
+		public InLanguage_Core InLanguage
+		{
+			get
+			{
+				return inLanguage;
+			}
+			set
+			{
+				inLanguage = value;
+				SetPropertyInstance(inLanguage);
+			}
+		}
 
 		/// <summary>
 		/// A count of a specific user interactions with this item\u2014for example, <code>20 UserLikes</code>, <code>5 UserComments</code>, or <code>300 UserDownloads</code>. The user interaction type should be one of the sub types of <a href=\http://schema.org/UserInteraction\>UserInteraction</a>.
 		/// </summary>
-		public InteractionCount_Core InteractionCount { get; set; }
+		private InteractionCount_Core interactionCount;
+		public InteractionCount_Core InteractionCount
+		{
+			get
+			{
+				return interactionCount;
+			}
+			set
+			{
+				interactionCount = value;
+				SetPropertyInstance(interactionCount);
+			}
+		}
 
 		/// <summary>
 		/// Indicates whether this content is family friendly.
 		/// </summary>
-		public IsFamilyFriendly_Core IsFamilyFriendly { get; set; }
+		private IsFamilyFriendly_Core isFamilyFriendly;
+		public IsFamilyFriendly_Core IsFamilyFriendly
+		{
+			get
+			{
+				return isFamilyFriendly;
+			}
+			set
+			{
+				isFamilyFriendly = value;
+				SetPropertyInstance(isFamilyFriendly);
+			}
+		}
 
 		/// <summary>
 		/// The keywords/tags used to describe this content.
 		/// </summary>
-		public Keywords_Core Keywords { get; set; }
+		private Keywords_Core keywords;
+		public Keywords_Core Keywords
+		{
+			get
+			{
+				return keywords;
+			}
+			set
+			{
+				keywords = value;
+				SetPropertyInstance(keywords);
+			}
+		}
 
 		/// <summary>
 		/// Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.
 		/// </summary>
-		public Mentions_Core Mentions { get; set; }
+		private Mentions_Core mentions;
+		public Mentions_Core Mentions
+		{
+			get
+			{
+				return mentions;
+			}
+			set
+			{
+				mentions = value;
+				SetPropertyInstance(mentions);
+			}
+		}
 
 		/// <summary>
 		/// The name of the item.
 		/// </summary>
-		public Name_Core Name { get; set; }
+		private Name_Core name;
+		public Name_Core Name
+		{
+			get
+			{
+				return name;
+			}
+			set
+			{
+				name = value;
+				SetPropertyInstance(name);
+			}
+		}
 
 		/// <summary>
 		/// An offer to sell this item\u2014for example, an offer to sell a product, the DVD of a movie, or tickets to an event.
 		/// </summary>
-		public Offers_Core Offers { get; set; }
+		private Offers_Core offers;
+		public Offers_Core Offers
+		{
+			get
+			{
+				return offers;
+			}
+			set
+			{
+				offers = value;
+				SetPropertyInstance(offers);
+			}
+		}
 
 		/// <summary>
 		/// Player type required\u2014for example, Flash or Silverlight.
 		/// </summary>
-		public PlayerType_Core PlayerType { get; set; }
+		private PlayerType_Core playerType;
+		public PlayerType_Core PlayerType
+		{
+			get
+			{
+				return playerType;
+			}
+			set
+			{
+				playerType = value;
+				SetPropertyInstance(playerType);
+			}
+		}
 
 		/// <summary>
 		/// Specifies the Person or Organization that distributed the CreativeWork.
 		/// </summary>
-		public Provider_Core Provider { get; set; }
+		private Provider_Core provider;
+		public Provider_Core Provider
+		{
+			get
+			{
+				return provider;
+			}
+			set
+			{
+				provider = value;
+				SetPropertyInstance(provider);
+			}
+		}
 
 		/// <summary>
 		/// The publisher of the creative work.
 		/// </summary>
-		public Publisher_Core Publisher { get; set; }
+		private Publisher_Core publisher;
+		public Publisher_Core Publisher
+		{
+			get
+			{
+				return publisher;
+			}
+			set
+			{
+				publisher = value;
+				SetPropertyInstance(publisher);
+			}
+		}
 
 		/// <summary>
 		/// Link to page describing the editorial principles of the organization primarily responsible for the creation of the CreativeWork.
 		/// </summary>
-		public PublishingPrinciples_Core PublishingPrinciples { get; set; }
+		private PublishingPrinciples_Core publishingPrinciples;
+		public PublishingPrinciples_Core PublishingPrinciples
+		{
+			get
+			{
+				return publishingPrinciples;
+			}
+			set
+			{
+				publishingPrinciples = value;
+				SetPropertyInstance(publishingPrinciples);
+			}
+		}
 
 		/// <summary>
 		/// The regions where the media is allowed. If not specified, then it's assumed to be allowed everywhere. Specify the countries in <a href=\http://en.wikipedia.org/wiki/ISO_3166\ target=\new\>ISO 3166 format</a>.
 		/// </summary>
-		public RegionsAllowed_Core RegionsAllowed { get; set; }
+		private RegionsAllowed_Core regionsAllowed;
+		public RegionsAllowed_Core RegionsAllowed
+		{
+			get
+			{
+				return regionsAllowed;
+			}
+			set
+			{
+				regionsAllowed = value;
+				SetPropertyInstance(regionsAllowed);
+			}
+		}
 
 		/// <summary>
 		/// Indicates whether this image is representative of the content of the page.
 		/// </summary>
-		public RepresentativeOfPage_Core RepresentativeOfPage { get; set; }
+		private RepresentativeOfPage_Core representativeOfPage;
+		public RepresentativeOfPage_Core RepresentativeOfPage
+		{
+			get
+			{
+				return representativeOfPage;
+			}
+			set
+			{
+				representativeOfPage = value;
+				SetPropertyInstance(representativeOfPage);
+			}
+		}
 
 		/// <summary>
 		/// Indicates if use of the media require a subscription  (either paid or free). Allowed values are <code>yes</code> or <code>no</code>.
 		/// </summary>
-		public RequiresSubscription_Core RequiresSubscription { get; set; }
+		private RequiresSubscription_Core requiresSubscription;
+		public RequiresSubscription_Core RequiresSubscription
+		{
+			get
+			{
+				return requiresSubscription;
+			}
+			set
+			{
+				requiresSubscription = value;
+				SetPropertyInstance(requiresSubscription);
+			}
+		}
 
 		/// <summary>
 		/// Review of the item.
 		/// </summary>
-		public Reviews_Core Reviews { get; set; }
+		private Reviews_Core reviews;
+		public Reviews_Core Reviews
+		{
+			get
+			{
+				return reviews;
+			}
+			set
+			{
+				reviews = value;
+				SetPropertyInstance(reviews);
+			}
+		}
 
 		/// <summary>
 		/// The Organization on whose behalf the creator was working.
 		/// </summary>
-		public SourceOrganization_Core SourceOrganization { get; set; }
+		private SourceOrganization_Core sourceOrganization;
+		public SourceOrganization_Core SourceOrganization
+		{
+			get
+			{
+				return sourceOrganization;
+			}
+			set
+			{
+				sourceOrganization = value;
+				SetPropertyInstance(sourceOrganization);
+			}
+		}
 
 		/// <summary>
 		/// Thumbnail image for an image or video.
 		/// </summary>
-		public Thumbnail_Core Thumbnail { get; set; }
+		private Thumbnail_Core thumbnail;
+		public Thumbnail_Core Thumbnail
+		{
+			get
+			{
+				return thumbnail;
+			}
+			set
+			{
+				thumbnail = value;
+				SetPropertyInstance(thumbnail);
+			}
+		}
 
 		/// <summary>
 		/// A thumbnail image relevant to the Thing.
 		/// </summary>
-		public ThumbnailURL_Core ThumbnailURL { get; set; }
+		private ThumbnailURL_Core thumbnailURL;
+		public ThumbnailURL_Core ThumbnailURL
+		{
+			get
+			{
+				return thumbnailURL;
+			}
+			set
+			{
+				thumbnailURL = value;
+				SetPropertyInstance(thumbnailURL);
+			}
+		}
 
 		/// <summary>
 		/// Date when this media object was uploaded to this site.
 		/// </summary>
-		public UploadDate_Core UploadDate { get; set; }
+		private UploadDate_Core uploadDate;
+		public UploadDate_Core UploadDate
+		{
+			get
+			{
+				return uploadDate;
+			}
+			set
+			{
+				uploadDate = value;
+				SetPropertyInstance(uploadDate);
+			}
+		}
 
 		/// <summary>
 		/// URL of the item.
 		/// </summary>
-		public Properties.URL_Core URL { get; set; }
+		private Properties.URL_Core uRL;
+		public Properties.URL_Core URL
+		{
+			get
+			{
+				return uRL;
+			}
+			set
+			{
+				uRL = value;
+				SetPropertyInstance(uRL);
+			}
+		}
 
 		/// <summary>
 		/// The version of the CreativeWork embodied by a specified resource.
 		/// </summary>
-		public Version_Core Version { get; set; }
+		private Version_Core version;
+		public Version_Core Version
+		{
+			get
+			{
+				return version;
+			}
+			set
+			{
+				version = value;
+				SetPropertyInstance(version);
+			}
+		}
 
 		/// <summary>
 		/// An embedded video object.
 		/// </summary>
-		public Video_Core Video { get; set; }
+		private Video_Core video;
+		public Video_Core Video
+		{
+			get
+			{
+				return video;
+			}
+			set
+			{
+				video = value;
+				SetPropertyInstance(video);
+			}
+		}
 
 		/// <summary>
 		/// The width of the media object.
 		/// </summary>
-		public Width_Core Width { get; set; }
+		private Width_Core width;
+		public Width_Core Width
+		{
+			get
+			{
+				return width;
+			}
+			set
+			{
+				width = value;
+				SetPropertyInstance(width);
+			}
+		}
 
 	}
 }
